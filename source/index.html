@@ -8,19 +8,19 @@
 
     <header class="page-header">
       <nav class="main-nav">
-        <div class="main-nav__mobile-menu">
+        <div class="mobile-menu">
           <ul class="mobile-menu__list">
             <li class="mobile-menu__item mobile-menu__item--current">
-              <a class="button mobile-menu__link" href="#">Главная</a>
+              <a class="mobile-menu__link button" href="#">Главная</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="button mobile-menu__link" href="#">Фото и видео</a>
+              <a class="mobile-menu__link button" href="#">Фото и видео</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="button mobile-menu__link" href="#">Форма Отзыва</a>
+              <a class="mobile-menu__link button" href="#">Форма Отзыва</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="button mobile-menu__link" href="#">HTML ACADEMY</a>
+              <a class="mobile-menu__link button" href="#">HTML ACADEMY</a>
             </li>
           </ul>
           <button class="menu-button menu-button--close mobile-menu-button">Закрыть меню</button>
@@ -34,7 +34,7 @@
               <a class="main-menu__link" href="#">Фото и видео</a>
             </li>
             <li class="main-menu__item main-menu__item--logo">
-              <a class="logo main-menu__link">
+              <a class="main-menu__link logo">
                 <img class="logo-img" src="img/placeholder.png" width="102" height="84" alt="Логотип City of Sedona">
               </a>
             </li>
@@ -53,18 +53,18 @@
     <main class="page-main">
       <article class="lead">
         <div class="lead__wrapper">
-          <h1 class="title lead__title">
+          <h1 class="lead__title title">
             Седона - сайт для туристов
           </h1>
           <p class="lead__description">
-            <span class="description__content-item">Welcome to the gorgeous Sedona</span>
-            <p class="description__content-item"></p>
-            <p class="description__content-item"></p>
-            <p class="description__content-item"></p>
+            <span class="lead__content-item">Welcome to the gorgeous Sedona</span>
+            <p class="lead__content-item"></p>
+            <p class="lead__content-item"></p>
+            <p class="lead__content-item"></p>
           </p>
           <p class="lead__slogan">
-            <span class="slogan__content-item">Because the Grand Canyon sucks!</span>
-            <p class="slogan__content-item"></p>
+            <span class="lead__slogan-item">Because the Grand Canyon sucks!</span>
+            <p class="lead__slogan-item"></p>
           </p>
         </div>
       </article>
@@ -79,37 +79,40 @@
         <ul class="advantages__list">
           <li class="advantages__item advantage">
             <div class="advantage__description-wrapper">
-              <h3 class="title advantage__title">
+              <h3 class="advantage__title title">
                 НАСТОЯЩИЙ ГОРОДОК
-                <p class="advantage__title--number">— №1 —</p>
+                <p class="advantage__number">— №1 —</p>
               </h3>
               <p class="advantage__description">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
             </div>
-            <div class="advantage__photo">
+            <div class="advantage__photo photo">
               <img class="photo__image" src="img/placeholder.png" width="520" height="260" alt="Кафе в городе на фоне гор">
             </div>
             <div class="city-advantages">
               <h4 class="title city-advantages__title">Преимущества посещения полноценного города</h4>
-              <ul class="city-advantages__list">
-                <li class="city-advantages__item">
-                  <p class="city-advantages__icon"></p>
-                  <div class="city-advantages__description-wrapper">
-                    <h4 class="city-advantages__title">Жилье</h4>
-                    <p class="city-advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <ul class="advantages__list">
+                <li class="advantages__item advantage">
+                  <div class="advantage__description-wrapper">
+                    <h5 class="advantage__title title">
+                      Жилье
+                    </h5>
+                    <p class="advantage__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                   </div>
                 </li>
-                <li class="city-advantages__item">
-                  <p class="city-advantages__icon"></p>
-                  <div class="city-advantages__description-wrapper">
-                    <h4 class="city-advantages__title">СУВЕНИРЫ</h4>
-                    <p class="city-advantages__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <li class="advantages__item advantage">
+                  <div class="advantage__description-wrapper">
+                    <h5 class="advantage__title title">
+                      СУВЕНИРЫ
+                    </h5>
+                    <p class="advantage__description">Не только китайского, но и местного производства!</p>
                   </div>
                 </li>
-                <li class="city-advantages__item">
-                  <p class="city-advantages__icon"></p>
-                  <div class="city-advantages__description-wrapper">
-                    <h4 class="city-advantages__title">ЕДА</h4>
-                    <p class="city-advantages__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+                <li class="advantages__item advantage">
+                  <div class="advantage__description-wrapper">
+                    <h5 class="advantage__title title">
+                      ЕДА
+                    </h5>
+                    <p class="advantage__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
                   </div>
                 </li>
               </ul>
@@ -117,39 +120,39 @@
           </li>
           <li class="advantages__item advantage">
             <div class="advantage__description-wrapper">
-              <h3 class="title advantage__title">
+              <h3 class="advantage__title title">
                 ТАМ ЕСТЬ Мост дьявола
-                <p class="advantage__title--number">— №2 —</p>
+                <p class="advantage__number">— №2 —</p>
               </h3>
               <p class="advantage__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <div class="advantage__photo">
+            <div class="advantage__photo photo">
               <img class="photo__image" src="img/placeholder.png" width="520" height="260" alt="Кафе в городе на фоне гор">
             </div>
           </li>
           <li class="advantages__item advantage">
             <div class="advantage__description-wrapper">
-              <h3 class="title advantage__title">
+              <h3 class="advantage__title title">
                 НЕБОЛЬШАЯ ПЛОЩАДЬ
-                <p class="advantage__title--number">— №3 —</p>
+                <p class="advantage__number">— №3 —</p>
               </h3>
               <p class="advantage__description">ВСЕ интересные места находятся очень близко</p>
             </div>
           </li>
           <li class="advantages__item advantage">
             <div class="advantage__description-wrapper">
-              <h3 class="title advantage__title">
+              <h3 class="advantage__title title">
                 КРАСИВАЯ ДОРОГА
-                <p class="advantage__title--number">— №4 —</p>
+                <p class="advantage__number">— №4 —</p>
               </h3>
               <p class="advantage__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
             </div>
           </li>
           <li class="advantages__item advantage">
             <div class="advantage__description-wrapper">
-              <h3 class="title advantage__title">
+              <h3 class="advantage__title title">
                 МАЛО ТУРИСТОВ
-                <p class="advantage__title--number">— №5 —</p>
+                <p class="advantage__number">— №5 —</p>
               </h3>
               <p class="advantage__description">Большинство едет в гранд каньон и толпится там</p>
             </div>
@@ -158,10 +161,10 @@
       </section>
 
       <section class="selection-preview">
-        <h2 class="title selection-preview__title">Поиск гостиниц</h2>
+        <h2 class="selection-preview__title title">Поиск гостиниц</h2>
         <p class="selection-preview__slogan">Заинтересовались?</p>
         <p class="selection-preview__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <p class="selection-preview__button">
+        <p class="selection-preview__button-wrapper">
           <a class="button" href="#">НАЙТИ гостиницу</a>
         </p>
       </section>
@@ -173,18 +176,24 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <p class="page-footer__hashtag">#visitSEDONA</p>
-        <ul class="page-footer__socials social-list">
-          <li class="social-list__item">
-            <span>twitter</span>
+        <ul class="page-footer__socials socials-list">
+          <li class="socials-list__item">
+            <a class="social-list__link">
+              <span>twitter</span>
+            </a>
           </li>
-          <li class="social-list__item">
-            <span>facebook</span>
+          <li class="socials-list__item">
+            <a class="social-list__link">
+              <span>facebook</span>
+            </a>
           </li>
-          <li class="social-list__item">
-            <span>YouTube</span>
+          <li class="socials-list__item">
+            <a class="social-list__link">
+              <span>YouTube</span>
+            </a>
           </li>
         </ul>
-        <p class="page-footer__copy">
+        <p class="page-footer__copy copy">
           Разработано
           <div class="copy__logo"></div>
         </p>
