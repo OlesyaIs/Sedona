@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: {{Sedona}}</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
 
@@ -14,7 +15,7 @@
               <a class="mobile-menu__link button" href="#">Главная</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link button" href="#">Фото и видео</a>
+              <a class="mobile-menu__link button" href="catalog.html">Фото и видео</a>
             </li>
             <li class="mobile-menu__item">
               <a class="mobile-menu__link button" href="form.html">Форма Отзыва</a>
@@ -23,9 +24,13 @@
               <a class="mobile-menu__link button" href="#">html academy</a>
             </li>
           </ul>
-          <button class="menu-button menu-button--close mobile-menu-button">Закрыть меню</button>
+          <button class="mobile-menu__button mobile-menu__button--close">Закрыть меню</button>
+          <a class="mobile-menu__link logo">
+            <img class="logo__img" src="img/logo/logotype-mobile.png" width="102" height="84" alt="Логотип City of Sedona">
+          </a>
+          <button class="mobile-menu__button mobile-menu__button--open">Открыть меню</button>
         </div>
-        <div class="main-menu">
+        <!-- <div class="main-menu">
           <ul class="main-menu__list">
             <li class="main-menu__item main-menu__item--current">
               <a class="main-menu__link" href="#">Главная</a>
@@ -45,36 +50,32 @@
               <a class="main-menu__link" href="#">html academy</a>
             </li>
           </ul>
-          <button class="menu-button menu-button--open mobile-menu-button">Открыть меню</button>
-        </div>
+        </div> -->
       </nav>
+      <section class="page-header__slogan slogan">
+        <div class="slogan__wrapper">
+          <p class="slogan__text">Welcome to the gorgeous Sedona</p>
+          <p class="slogan__picture"></p>
+          <p class="slogan__picture"></p>
+          <p class="slogan__picture"></p>
+          <p class="slogan__text">Because the Grand Canyon sucks!</p>
+          <p class="slogan__picture"></p>
+        </div>
+      </section>
     </header>
 
     <main class="page-main">
-      <article class="lead">
-        <div class="lead__wrapper">
-          <h1 class="lead__title title">
-            Седона - сайт для туристов
-          </h1>
-          <div class="lead__description">
-            <p class="lead__content-item">Welcome to the gorgeous Sedona</p>
-            <p class="lead__content-item"></p>
-            <p class="lead__content-item"></p>
-            <p class="lead__content-item"></p>
-          </div>
-          <div class="lead__slogan slogan">
-            <p class="slogan__text">Because the Grand Canyon sucks!</p>
-            <p class="slogan__picture"></p>
-          </div>
-        </div>
-      </article>
-
+      <h1 class="lead__title title">
+        Седона - сайт для туристов
+      </h1>
       <section class="advantages">
-        <h2 class="advantages__title">Преимущества Седоны</h2>
-        <div class="slogan">
-          <p class="slogan__text">Седона — небольшой городок в аризоне, заслуживающий большего!</p>
+        <div class="lead">
+          <h2 class="lead__title title">Преимущества Седоны</h2>
+          <div class="slogan">
+            <p class="slogan__text">Седона — небольшой городок в аризоне, заслуживающий большего!</p>
+          </div>
+          <p class="lead__content">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </div>
-        <p class="advantages__content">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ol class="advantages__list">
           <li class="advantages__item advantage">
             <div class="advantage__description-wrapper">
@@ -88,7 +89,7 @@
               <img class="photo__image" src="img/placeholder.png" width="520" height="260" alt="Кафе в городе на фоне гор">
             </p>
             <div class="city-advantages">
-              <h4 class="title city-advantages__title">Преимущества посещения полноценного города</h4>
+              <h4 class="city-advantages__title title">Преимущества посещения полноценного города</h4>
               <ul class="city-advantages__list">
                 <li class="city-advantages__item city-advantage city-advantage--home">
                   <div class="city-advantage__description-wrapper">

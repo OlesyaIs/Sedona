@@ -1,0 +1,59 @@
+// Basic colors
+
+$basic: #81B3D2;
+$white: #FFFFFF;
+$extra-light: #F2F2F2;
+$light: #E5E5E5;
+$dark: #D5D5D5;
+$extra-dark: #333333;
+$extra-dark-opacity: rgba(51, 51, 51, 0.3);
+$black: #000000;
+
+// Main manu colors
+
+$main-menu: $black;
+$main-menu-hover: $basic;
+$main-menu-active: rgba(0, 0, 0, 0.3);
+$main-menu-current: #766357;
+$main-menu-current-hover: #604E43;
+$main-menu-current-active: rgba(118, 99, 87, 0.3);
+
+// Buttons colors
+
+$button: $basic;
+$button-hover: #669EC0;
+$button-active: #5496BD;
+$button-disabled: #E5E5E5;
+
+$button-text: $white;
+$button-text-hover: $white;
+$button-text-active: rgba(255, 255, 255, 0.3);
+$button-text-disabled: $white;
+
+$button-shadow: rgba(255, 255, 255, 0.2);
+
+// Mobile menu buttons colors
+
+$open-button: $basic;
+$open-button-hover: rgba(129, 179, 210, 0.6);
+$open-button-active: rgba(129, 179, 210, 0.3);
+
+$close-button: $white;
+$close-button-hover: rgba(255, 255, 255, 0.6);
+$close-button-active: rgba(255, 255, 255, 0.3);
+
+// Copy logo colors
+
+$copy-logo: $black;
+$copy-logo-hover: $basic;
+$copy-logo-active: rgba(0, 0, 0, 0.3);
+
+// Video controls colors
+
+$controls-background: rgba(102, 102, 102, 0.6);
+$controls: $white;
+$controls-hover: rgba(255, 255, 255, 0.6);
+$controls-active: rgba(255, 255, 255, 0.3);
+$mobile-controls-background: #F2F2F2;
+$mobile-controls-hover: #333333;
+$mobile-controls-active: rgba(51, 51, 51, 0.3);
