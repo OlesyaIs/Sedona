@@ -1,29 +1,36 @@
 // Basic colors
 
-$basic: #81B3D2;
-$white: #FFFFFF;
-$extra-light: #F2F2F2;
-$light: #E5E5E5;
-$dark: #D5D5D5;
+$basic: #81b3d2;
+$white: #ffffff;
+$extra-light: #f2f2f2;
+$pretty-light: #eee;
+$light: #e5e5e5;
+$dark: #d5d5d5;
 $extra-dark: #333333;
 $extra-dark-opacity: rgba(51, 51, 51, 0.3);
 $black: #000000;
 
-// Main manu colors
+// Text colors
+
+$basic-text: $extra-dark;
+$title-text: $black;
+$special-text: $white;
+
+// Main menu colors
 
 $main-menu: $black;
 $main-menu-hover: $basic;
 $main-menu-active: rgba(0, 0, 0, 0.3);
 $main-menu-current: #766357;
-$main-menu-current-hover: #604E43;
+$main-menu-current-hover: #604e43;
 $main-menu-current-active: rgba(118, 99, 87, 0.3);
 
 // Buttons colors
 
 $button: $basic;
-$button-hover: #669EC0;
-$button-active: #5496BD;
-$button-disabled: #E5E5E5;
+$button-hover: #669ec0;
+$button-active: #5496bd;
+$button-disabled: #e5e5e5;
 
 $button-text: $white;
 $button-text-hover: $white;
@@ -54,6 +61,14 @@ $controls-background: rgba(102, 102, 102, 0.6);
 $controls: $white;
 $controls-hover: rgba(255, 255, 255, 0.6);
 $controls-active: rgba(255, 255, 255, 0.3);
-$mobile-controls-background: #F2F2F2;
+$mobile-controls-background: #f2f2f2;
 $mobile-controls-hover: #333333;
 $mobile-controls-active: rgba(51, 51, 51, 0.3);
+
+
+// Background colors
+
+$page-slogan: #dceaf3;
+$photo-city: #b5c3b6;
+$photo-bridge: #a56a56;
+$map: #f2f3eb;

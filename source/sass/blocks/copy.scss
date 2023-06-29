@@ -1,0 +1,9 @@
+.copy {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.copy__logo {
+  @include content-center;
+}

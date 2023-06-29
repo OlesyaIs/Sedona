@@ -1,0 +1,38 @@
+.advantage__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.48em;
+  background-color: $pretty-light;
+
+  &--big {
+    .advantage__title {
+      color: $special-text;
+    }
+    color: $special-text;
+    background-color: $basic;
+  }
+}
+
+.advantage__title {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.advantage__number {
+  margin: 0;
+  margin-bottom: 0.24em;
+  padding: 0;
+}
+
+.advantage__text {
+  margin: 0;
+  padding: 0;
+}
+
+.advantage__photo {
+  margin: 0;
+  padding: 0;
+}

@@ -1,4 +1,10 @@
 .button {
+  padding: 5px 32px;
+  box-sizing: border-box;
+
   color: $button-text;
+  text-transform: uppercase;
+  text-decoration: none;
   background-color: $button;
+  border: none;
 }
