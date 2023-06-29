@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: {{Sedona}}</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
 
@@ -14,7 +15,7 @@
               <a class="mobile-menu__link button" href="#">Главная</a>
             </li>
             <li class="mobile-menu__item">
-              <a class="mobile-menu__link button" href="#">Фото и видео</a>
+              <a class="mobile-menu__link button" href="catalog.html">Фото и видео</a>
             </li>
             <li class="mobile-menu__item">
               <a class="mobile-menu__link button" href="form.html">Форма Отзыва</a>
@@ -23,9 +24,13 @@
               <a class="mobile-menu__link button" href="#">html academy</a>
             </li>
           </ul>
-          <button class="menu-button menu-button--close mobile-menu-button">Закрыть меню</button>
+          <button class="mobile-menu__button mobile-menu__button--close">Закрыть меню</button>
+          <a class="mobile-menu__link logo">
+            <img class="logo__img" src="img/logo/logotype-mobile.png" width="102" height="84" alt="Логотип City of Sedona">
+          </a>
+          <button class="mobile-menu__button mobile-menu__button--open">Открыть меню</button>
         </div>
-        <div class="main-menu">
+        <!-- <div class="main-menu">
           <ul class="main-menu__list">
             <li class="main-menu__item main-menu__item--current">
               <a class="main-menu__link" href="#">Главная</a>
@@ -45,51 +50,46 @@
               <a class="main-menu__link" href="#">html academy</a>
             </li>
           </ul>
-          <button class="menu-button menu-button--open mobile-menu-button">Открыть меню</button>
-        </div>
+        </div> -->
       </nav>
+      <section class="page-header__slogan slogan">
+        <div class="slogan__wrapper">
+          <p class="slogan__text">Welcome to the gorgeous Sedona</p>
+          <p class="slogan__picture"></p>
+          <p class="slogan__picture"></p>
+          <p class="slogan__picture"></p>
+          <p class="slogan__text">Because the Grand Canyon sucks!</p>
+          <p class="slogan__picture"></p>
+        </div>
+      </section>
     </header>
 
     <main class="page-main">
-      <article class="lead">
-        <div class="lead__wrapper">
-          <h1 class="lead__title title">
-            Седона - сайт для туристов
-          </h1>
-          <p class="lead__description">
-            <span class="lead__content-item">Welcome to the gorgeous Sedona</span>
-            <p class="lead__content-item"></p>
-            <p class="lead__content-item"></p>
-            <p class="lead__content-item"></p>
-          </p>
-          <p class="lead__slogan">
-            <span class="lead__slogan-item">Because the Grand Canyon sucks!</span>
-            <p class="lead__slogan-item"></p>
-          </p>
-        </div>
-      </article>
-
-      <section class="slogan">
-        <p class="slogan__content">Седона — небольшой городок в аризоне, заслуживающий большего!</p>
-      </section>
-
+      <h1 class="lead__title title">
+        Седона - сайт для туристов
+      </h1>
       <section class="advantages">
-        <h2 class="advantages__title">Наши преимущества</h2>
-        <p class="advantages__content">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
+        <div class="lead">
+          <h2 class="lead__title title">Преимущества Седоны</h2>
+          <div class="slogan">
+            <p class="slogan__text">Седона — небольшой городок в аризоне, заслуживающий большего!</p>
+          </div>
+          <p class="lead__content">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
         <ol class="advantages__list">
           <li class="advantages__item advantage">
             <div class="advantage__description-wrapper">
               <h3 class="advantage__title title">
                 Настоящий городок
-                <p class="advantage__number">— №1 —</p>
+                <span class="advantage__number">— №1 —</span>
               </h3>
               <p class="advantage__description">седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <div class="advantage__photo photo">
+            <p class="advantage__photo photo">
               <img class="photo__image" src="img/placeholder.png" width="520" height="260" alt="Кафе в городе на фоне гор">
-            </div>
+            </p>
             <div class="city-advantages">
-              <h4 class="title city-advantages__title">Преимущества посещения полноценного города</h4>
+              <h4 class="city-advantages__title title">Преимущества посещения полноценного города</h4>
               <ul class="city-advantages__list">
                 <li class="city-advantages__item city-advantage city-advantage--home">
                   <div class="city-advantage__description-wrapper">
@@ -122,19 +122,19 @@
             <div class="advantage__description-wrapper">
               <h3 class="advantage__title title">
                 Там есть мост дьявола
-                <p class="advantage__number">— №2 —</p>
+                <span class="advantage__number">— №2 —</span>
               </h3>
               <p class="advantage__description">Да, по нему можно пройти! если вы осмелитесь, конечно</p>
             </div>
-            <div class="advantage__photo photo">
+            <p class="advantage__photo photo">
               <img class="photo__image" src="img/placeholder.png" width="520" height="260" alt="Кафе в городе на фоне гор">
-            </div>
+            </p>
           </li>
           <li class="advantages__item advantage advantage--small">
             <div class="advantage__description-wrapper">
               <h3 class="advantage__title title">
                 Небольшая площадь
-                <p class="advantage__number">— №3 —</p>
+                <span class="advantage__number">— №3 —</span>
               </h3>
               <p class="advantage__description">Все интересные места находятся очень близко</p>
             </div>
@@ -143,7 +143,7 @@
             <div class="advantage__description-wrapper">
               <h3 class="advantage__title title">
                 Красивая дорога
-                <p class="advantage__number">— №4 —</p>
+                <span class="advantage__number">— №4 —</span>
               </h3>
               <p class="advantage__description">Ехать в седону из лас-вегаса совсем не скучно!</p>
             </div>
@@ -152,7 +152,7 @@
             <div class="advantage__description-wrapper">
               <h3 class="advantage__title title">
                 Мало туристов
-                <p class="advantage__number">— №5 —</p>
+                <span class="advantage__number">— №5 —</span>
               </h3>
               <p class="advantage__description">Большинство едет в гранд каньон и толпится там</p>
             </div>
@@ -169,7 +169,9 @@
         </p>
       </section>
 
-      <section class="map"></section>
+      <section class="map">
+        <h2>Где находится Седона</h2>
+      </section>
 
     </main>
 
@@ -193,14 +195,14 @@
             </a>
           </li>
         </ul>
-        <p class="page-footer__copy copy">
+        <div class="page-footer__copy copy">
           Разработано
-          <p class="copy__logo">
+          <div class="copy__logo">
             <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
-              </svg>
-          </p>
-        </p>
+            </svg>
+          </div>
+        </div>
       </div>
       <p class="course-copy">Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a class="course-copy__button" href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
     </footer>
