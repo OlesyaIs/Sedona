@@ -1,0 +1,20 @@
+.page-footer {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.page-footer__hashtag {
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}

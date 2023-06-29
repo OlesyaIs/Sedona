@@ -1,0 +1,18 @@
+.socials-list {
+  display: flex;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.socials-list__link {
+  padding: 5px;
+  box-sizing: border-box;
+  min-width: 46px;
+  min-height: 48px;
+  color: $special-text;
+  text-decoration: none;
+  background-color: $button;
+  @include content-center;
+}
