@@ -59,33 +59,33 @@
 
         <form class="form form--reviews" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="form__group form__group--name">
-            <legend class="form__group-title">Представьтесь:</legend>
+            <legend class="form__group-title title">Представьтесь:</legend>
             <p class="form__input-wrapper">
               <label class="form__input-title" for="name">Имя*:</label>
-              <input class="form__input" type="text" placeholder="Петр" name="name" id="name" autofocus required>
+              <input class="form__input form__input--text" type="text" placeholder="Петр" name="name" id="name" autofocus required>
             </p>
             <p class="form__input-wrapper">
               <label class="form__input-title" for="surname">Фамилия*:</label>
-              <input class="form__input" type="text" placeholder="Иванов" name="surname" id="surname" required>
+              <input class="form__input form__input--text" type="text" placeholder="Иванов" name="surname" id="surname" required>
             </p>
             <p class="form__input-wrapper">
               <label class="form__input-title" for="second-name">Отчество:</label>
-              <input class="form__input" type="text" placeholder="Александрович" name="second-name" id="second-name">
+              <input class="form__input form__input--text" type="text" placeholder="Александрович" name="second-name" id="second-name">
             </p>
           </fieldset>
           <fieldset class="form__group form__group--contacts">
-            <legend class="form__title">Контактная информация:</legend>
+            <legend class="form__group-title title">Контактная информация:</legend>
             <p class="form__input-wrapper">
               <label class="form__input-title" for="phone">Контактный телефон*:</label>
-              <input class="form__input form__input--phone" type="tel" placeholder="Введите телефон" name="phone" id="phone" required>
+              <input class="form__input form__input--text form__input--phone" type="tel" placeholder="Введите телефон" name="phone" id="phone" required>
             </p>
             <p class="form__input-wrapper">
               <label class="form__input-title">Электронная почта*:</label>
-              <input class="form__input form__input--email" type="email" placeholder="Введите e-mail" name="email" id="email" required>
+              <input class="form__input form__input--text form__input--email" type="email" placeholder="Введите e-mail" name="email" id="email" required>
             </p>
           </fieldset>
           <fieldset class="form__group form__group--impression">
-            <legend class="form__title">Ваше общее впечатление:</legend>
+            <legend class="form__group-title title">Ваше общее впечатление:</legend>
             <p class="form__input-wrapper">
               <input class="form__input" type="radio" name="impression" id="positive-impression" value="+" checked>
               <label class="form__input-title" for="positive-impression">Скорее положительное</label>
@@ -100,7 +100,7 @@
             </p>
           </fieldset>
           <fieldset class="form__group form__group--places">
-            <legend class="form__title">Посещенные достопримечательности:</legend>
+            <legend class="form__group-title title">Посещенные достопримечательности:</legend>
             <p class="form__input-wrapper">
               <input class="form__input" type="checkbox" name="devil's-bridge" id="devil's-bridge" checked>
               <label class="form__input-title" for="devil's-bridge">Мост Дьявола</label>
@@ -119,7 +119,7 @@
             </p>
           </fieldset>
           <fieldset class="form__group">
-            <legend class="form__title">Опишите свои эмоции:</legend>
+            <legend class="form__group-title title">Опишите свои эмоции:</legend>
             <p class="form__input-wrapper">
               <textarea class="form__input" placeholder="Опишите подробно все свои восторги" name="emotions" id="emotions" rows="4"></textarea>
             </p>
