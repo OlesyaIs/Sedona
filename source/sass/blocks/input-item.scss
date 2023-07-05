@@ -1,0 +1,123 @@
+
+.input-item {
+  &--name {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 15px;
+  }
+
+  &--contacts {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.input-item__title {
+  line-height: 26px;
+}
+
+.input-item--contacts .input-item__title {
+  align-self: flex-start;
+  margin-left: 20px;
+}
+
+.input-item__input[type="radio"] + .input-item__title {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  position: relative;
+  &::before {
+    content: '';
+    width: 56px;
+    height: 56px;
+    background-color: $radio;
+    border-radius: 50%;
+  }
+}
+
+.input-item__input[type="radio"]:checked + .input-item__title {
+    &::after {
+      content: '';
+      position: absolute;
+      top: center;
+      left: 16px;
+      width: 24px;
+      height: 24px;
+      background-color: $radio-checked;
+      border-radius: 50%;
+    }
+}
+
+.input-item__input[type="checkbox"] + .input-item__title {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  position: relative;
+  &::before {
+    content: '';
+    width: 56px;
+    height: 56px;
+    background-color: $radio;
+    border-radius: 5px;
+  }
+}
+
+.input-item__input[type="checkbox"]:checked + .input-item__title {
+    &::after {
+      content: '';
+      position: absolute;
+      top: center;
+      left: 16px;
+      width: 24px;
+      height: 24px;
+      background-color: $radio-checked;
+      border-radius: 50%;
+    }
+}
+
+.input-item__input-wrapper {
+  display: flex;
+}
+
+.input-item--contacts .input-item__input-wrapper {
+  &::after {
+    content: '';
+    height: auto;
+    width: 58px;
+    background-color: $contacts-icon-bg;
+  }
+}
+
+.input-item__input {
+  width: 100%;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $title-text;
+  background-color: $extra-light;
+  border: none;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    color: $title-text;
+  }
+
+  &--text {
+    padding: 18px 20px 14px;
+    min-height: 58px;
+    box-sizing: border-box;
+  }
+
+  &--textarea {
+    padding: 13px 22px 29px;
+    max-width: 100%;
+  }
+}
+
+.input-item--contacts .input-item__input {
+  display: flex;
+}

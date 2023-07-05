@@ -1,0 +1,17 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__group {
+  margin: 0;
+  padding: 0 20px;
+}
+
+.form__button {
+  margin: 0 auto;
+  padding-top: 18px;
+  padding-bottom: 14px;
+  min-width: 280px;
+  min-height: 58px;
+}
