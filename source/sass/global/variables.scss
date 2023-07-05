@@ -62,15 +62,18 @@ $copy-logo-hover: $basic;
 $copy-logo-active: rgba(0, 0, 0, 0.3);
 
 // Video controls' colors
+$timeline: rgba(255, 255, 255, 0.2);
+$timeline-bg: rgba(102, 102, 102, 0.6);
+$timeline-mark: $white;
 
-$controls-background: rgba(102, 102, 102, 0.6);
-$controls: $white;
-$controls-hover: rgba(255, 255, 255, 0.6);
-$controls-active: rgba(255, 255, 255, 0.3);
+$mobile-control-button: #5C6870;
 $mobile-controls-background: #f2f2f2;
-$mobile-controls-hover: #333333;
-$mobile-controls-active: rgba(51, 51, 51, 0.3);
+$mobile-control-button-hover: #333333;
+$mobile-control-button-active: rgba(51, 51, 51, 0.3);
 
+$control-button: $white;
+$control-button-hover: rgba(255, 255, 255, 0.6);
+$control-button-active: rgba(255, 255, 255, 0.3);
 
 // Background's colors
 
@@ -78,3 +81,4 @@ $page-slogan: #dceaf3;
 $photo-city: #b5c3b6;
 $photo-bridge: #a56a56;
 $map: #f2f3eb;
+$video: #D3AA94;
