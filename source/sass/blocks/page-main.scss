@@ -2,6 +2,14 @@
   text-transform: uppercase;
 }
 
+.page-main__title {
+  margin: 24px auto 26px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+}
+
 .page-main__advantages {
   margin: 0;
   padding: 0;
@@ -24,4 +32,14 @@
   min-height: 350px;
   background-image: url(../img/map-mobile.png);
   background-color: $map;
+}
+
+.page-main__gallery {
+  margin: 0;
+  padding: 0 20px;
+}
+
+.page-main__video-gallery {
+  margin: 0;
+  padding: 0 20px;
 }
