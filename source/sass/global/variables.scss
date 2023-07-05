@@ -10,13 +10,13 @@ $extra-dark: #333333;
 $extra-dark-opacity: rgba(51, 51, 51, 0.3);
 $black: #000000;
 
-// Text colors
+// Text's colors
 
 $basic-text: $extra-dark;
 $title-text: $black;
 $special-text: $white;
 
-// Main menu colors
+// Main menu's colors
 
 $main-menu: $black;
 $main-menu-hover: $basic;
@@ -25,7 +25,7 @@ $main-menu-current: #766357;
 $main-menu-current-hover: #604e43;
 $main-menu-current-active: rgba(118, 99, 87, 0.3);
 
-// Buttons colors
+// Buttons' colors
 
 $button: $basic;
 $button-hover: #669ec0;
@@ -39,7 +39,7 @@ $button-text-disabled: $white;
 
 $button-shadow: rgba(255, 255, 255, 0.2);
 
-// Mobile menu buttons colors
+// Mobile menu buttons' colors
 
 $open-button: $basic;
 $open-button-hover: rgba(129, 179, 210, 0.6);
@@ -49,13 +49,19 @@ $close-button: $white;
 $close-button-hover: rgba(255, 255, 255, 0.6);
 $close-button-active: rgba(255, 255, 255, 0.3);
 
-// Copy logo colors
+// Form buttons' colors
+
+$contacts-icon-bg: #e6e6e6;
+$radio: $extra-light;
+$radio-checked: $extra-dark;
+
+// Copy logo's colors
 
 $copy-logo: $black;
 $copy-logo-hover: $basic;
 $copy-logo-active: rgba(0, 0, 0, 0.3);
 
-// Video controls colors
+// Video controls' colors
 
 $controls-background: rgba(102, 102, 102, 0.6);
 $controls: $white;
@@ -66,7 +72,7 @@ $mobile-controls-hover: #333333;
 $mobile-controls-active: rgba(51, 51, 51, 0.3);
 
 
-// Background colors
+// Background's colors
 
 $page-slogan: #dceaf3;
 $photo-city: #b5c3b6;
