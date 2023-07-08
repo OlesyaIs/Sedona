@@ -1,5 +1,6 @@
 .city-advantages {
   background-color: $white;
+  grid-column: span 3;
 }
 
 .city-advantages__list {
@@ -8,4 +9,9 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
