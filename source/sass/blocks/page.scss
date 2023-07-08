@@ -1,7 +1,6 @@
 .page__body {
   margin: 0;
   padding: 0;
-  min-width: 320px;
 
   font-family: 'PT Sans', sans-serif;
   font-size: 14px;
@@ -11,7 +10,8 @@
   background-color: $white;
 }
 
-.page__footer {
-  margin: 0;
-  padding: 0;
+.page__wrapper {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1200px;
 }

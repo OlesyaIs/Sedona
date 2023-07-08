@@ -1,9 +1,95 @@
 .main-nav {
-  color: $title-text;
+  position: relative;
+  min-height: 56px;
+  font-size: 18px;
+  line-height: 40px;
   font-weight: 700;
+  color: $title-text;
+
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      content: "";
+      display: block;
+      height: 56px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 26px;
+  }
 }
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.main-nav__item {
+  background-color: $button;
+
+  @media (min-width: $tablet-width) {
+    width: calc(20% - 1px);
+    &:nth-of-type(2),
+    &:nth-of-type(6) {
+      margin-right: auto;
+    }
+    background-color: transparent;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  min-height: 55px;
+  margin: 0 20px;
+  padding: 10px 0 5px;
+  box-sizing: border-box;
+
+  color: $button-text;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+
+  @include content-center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 10px 9px;
+    color: $title-text;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
 
 .main-nav__logo {
   margin: 0;
   padding: 0;
+  position: absolute;
+  left: calc(50% - 51px);
+
+  @media (max-width: $mobile-width-only) {
+    bottom: -28px;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+  }
 }
