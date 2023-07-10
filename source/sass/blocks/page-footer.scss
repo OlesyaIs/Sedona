@@ -1,5 +1,14 @@
 .page-footer {
+  padding: 29px 20px 23px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 36px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 36px 160px;
+  }
 }
 
 .page-footer__wrapper {

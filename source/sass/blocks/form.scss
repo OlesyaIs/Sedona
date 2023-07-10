@@ -1,17 +1,41 @@
 .form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .form__group {
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
+
+  &--wide {
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--first {
+      order: -1;
+    }
+  }
 }
 
 .form__button {
-  margin: 0 auto;
+  margin: 0;
   padding-top: 18px;
   padding-bottom: 14px;
   min-width: 280px;
   min-height: 58px;
+  align-self: center;
+}
+
+.form__footnote {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }

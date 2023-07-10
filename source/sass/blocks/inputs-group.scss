@@ -1,22 +1,10 @@
 .inputs-group {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   border: none;
 
   &--name {
-    gap: 20px;
-  }
-
-  &--contacts {
-    gap: 14px;
-  }
-
-  &--radio {
-    gap: 13px;
-  }
-
-  &--checkbox {
-    gap: 24px;
+    row-gap: 20px;
   }
 }
 

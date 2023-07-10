@@ -1,31 +1,16 @@
 
-.input-item {
-  &--name {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    gap: 15px;
-  }
+// .input-item {
 
-  &--contacts {
-    display: flex;
-    flex-direction: column;
-  }
-}
+// }
 
 .input-item__title {
   line-height: 26px;
 }
 
-.input-item--contacts .input-item__title {
-  align-self: flex-start;
-  margin-left: 20px;
-}
+// .input-item--contacts .input-item__title {
+// }
 
 .input-item__input[type="radio"] + .input-item__title {
-  display: flex;
-  align-items: center;
-  gap: 22px;
   position: relative;
   &::before {
     content: '';
@@ -50,9 +35,6 @@
 }
 
 .input-item__input[type="checkbox"] + .input-item__title {
-  display: flex;
-  align-items: center;
-  gap: 22px;
   position: relative;
   &::before {
     content: '';
@@ -90,7 +72,7 @@
 }
 
 .input-item__input {
-  width: 100%;
+  box-sizing: border-box;
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -106,18 +88,12 @@
     color: $title-text;
   }
 
-  &--text {
-    padding: 18px 20px 14px;
-    min-height: 58px;
-    box-sizing: border-box;
-  }
+  // &--text {
+  //   padding: 18px 22px 14px;
+  //   min-height: 58px;
+  // }
 
-  &--textarea {
-    padding: 13px 22px 29px;
-    max-width: 100%;
-  }
-}
-
-.input-item--contacts .input-item__input {
-  display: flex;
+  // &--textarea {
+  //   padding: 13px 22px 29px;
+  // }
 }
