@@ -9,7 +9,7 @@
 
 .form__group {
   margin: 0;
-  padding: 0;
+  padding: 20px 0 25px;
 
   &--wide {
     grid-column: 1/-1;
@@ -18,6 +18,26 @@
   @media (min-width: $tablet-width) {
     &--first {
       order: -1;
+    }
+
+    &--small {
+      padding-left: 60px;
+    }
+
+    &--wide-adaptive {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 30px;
+      width: 490px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    width: 100%;
+
+    &--small {
+      padding-left: 80px;
     }
   }
 }

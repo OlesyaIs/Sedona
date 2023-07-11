@@ -1,17 +1,35 @@
+.field {
+  max-width: 100%;
+  &--name {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 15px;
+  }
 
-// .input-item {
+  &--contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    column-gap: 16px;
 
-// }
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+}
 
-.input-item__title {
+.field__title {
   line-height: 26px;
 }
 
-// .input-item--contacts .input-item__title {
-// }
-
-.input-item__input[type="radio"] + .input-item__title {
+.field__input[type="radio"] + .field__title {
   position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  max-width: max-content;
   &::before {
     content: '';
     width: 56px;
@@ -21,7 +39,7 @@
   }
 }
 
-.input-item__input[type="radio"]:checked + .input-item__title {
+.field__input[type="radio"]:checked + .field__title {
     &::after {
       content: '';
       position: absolute;
@@ -34,8 +52,12 @@
     }
 }
 
-.input-item__input[type="checkbox"] + .input-item__title {
+.field__input[type="checkbox"] + .field__title {
   position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  max-width: max-content;
   &::before {
     content: '';
     width: 56px;
@@ -45,7 +67,7 @@
   }
 }
 
-.input-item__input[type="checkbox"]:checked + .input-item__title {
+.field__input[type="checkbox"]:checked + .field__title {
     &::after {
       content: '';
       position: absolute;
@@ -58,11 +80,16 @@
     }
 }
 
-.input-item__input-wrapper {
-  display: flex;
+.field__input-wrapper {
+  margin: 0;
+  padding: 0;
 }
 
-.input-item--contacts .input-item__input-wrapper {
+.field--contacts .field__input-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 58px;
+  flex-grow: 1;
+
   &::after {
     content: '';
     height: auto;
@@ -71,7 +98,8 @@
   }
 }
 
-.input-item__input {
+.field__input {
+  max-width: 100%;
   box-sizing: border-box;
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
@@ -88,12 +116,14 @@
     color: $title-text;
   }
 
-  // &--text {
-  //   padding: 18px 22px 14px;
-  //   min-height: 58px;
-  // }
+  &--text {
+    // padding: 18px 22px 14px;
+    min-width: 150px;
+    min-height: 58px;
+  }
 
-  // &--textarea {
-  //   padding: 13px 22px 29px;
-  // }
+  &--textarea {
+    width: 100%;
+    // padding: 13px 22px 29px;
+  }
 }

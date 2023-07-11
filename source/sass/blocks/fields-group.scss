@@ -1,0 +1,65 @@
+.fields-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: none;
+  row-gap: 20px;
+
+  &--contacts {
+    row-gap: 14px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--full-adaptive {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 30px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--contacts {
+      display: flex;
+      column-gap: 80px;
+    }
+
+    &--full-adaptive {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-right: 0;
+      margin-left: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+.fields-group__title {
+  margin: 0 0 20px;
+  max-width: 310px;
+  text-align: center;
+  font-size: 18px;
+
+  &--textarea {
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--tablet-desktop-left {
+      text-align: left;
+    }
+
+    &--tablet-left {
+      text-align: left;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--tablet-left {
+      text-align: center;
+    }
+  }
+}
+
+.fields-group__input-item {
+  margin: 0;
+  padding: 0;
+}

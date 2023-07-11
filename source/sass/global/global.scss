@@ -4,6 +4,17 @@ img {
   height: auto;
 }
 
+.fit-grid > * { min-width: 0; }
+
+.fit-grid img,
+.fit-grid video,
+.fit-grid audio,
+.fit-grid canvas,
+.fit-grid input,
+.fit-grid select,
+.fit-grid button,
+.fit-grid progress { max-width: 100%; }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
