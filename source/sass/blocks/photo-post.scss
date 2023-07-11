@@ -1,11 +1,12 @@
 .photo-post {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  gap: 10px;
 }
 
 .photo-post__title {
   margin: 0;
+  margin-bottom: 10px;
   padding: 0;
   font-size: 14px;
   line-height: 24px;
@@ -13,9 +14,17 @@
 
 .photo-post__photo {
   margin: 0;
-  margin-bottom: 10px;
   padding: 0;
+  width: 100%;
   order: -1;
+
+  &--sunset-road {
+    background-color: $sunset-road;
+  }
+
+  &--local-plant {
+    background-color: $local-plant;
+  }
 }
 
 .photo-post__author {

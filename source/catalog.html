@@ -2,155 +2,174 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: {{Sedona}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Sedona</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-
-    <header class="page-header">
-      <nav class="main-nav">
-        <div class="mobile-menu">
-          <ul class="mobile-menu__list">
-            <li class="mobile-menu__item mobile-menu__item--current">
-              <a class="mobile-menu__link button" href="index.html">Главная</a>
+    <div class="page__wrapper">
+      <header class="page-header">
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link button" href="#">Фото и видео</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Фото и видео</a>
             </li>
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link button" href="form.html">Форма Отзыва</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Форма Отзыва</a>
             </li>
-            <li class="mobile-menu__item">
-              <a class="mobile-menu__link button" href="https://htmlacademy.ru/">html academy</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/">html academy</a>
             </li>
           </ul>
-          <button class="mobile-menu__toggle mobile-menu__toggle--opened">
+          <button class="main-nav__toggle main-nav__toggle--opened">
             <span class="visually-hidden">Закрыть меню</span>
           </button>
-        </div>
-        <p class="main-nav__logo logo-button">
-          <a class="logo-button__link">
-            <img class="logo-button__img" src="img/logo/logotype-mobile.png" width="102" height="84" alt="Логотип City of Sedona">
-          </a>
-        </p>
-      </nav>
-      <section class="page-header__slogan slogan slogan--welcome">
-        <div class="slogan__wrapper">
-          <p class="slogan__lettering slogan__lettering--sedona">
-            <img src="img/slogan/sedona--mobile.png" width="282" height="49" alt="Sedona">
+          <p class="main-nav__logo logo-button">
+            <a class="logo-button__link" href="index.html">
+              <img class="logo-button__img" src="img/logo/logotype-mobile.png" width="102" height="84" alt="Логотип City of Sedona">
+            </a>
           </p>
-        </div>
-      </section>
-    </header>
-
-    <main class="page-main">
-      <h1 class="page-main__title title">
-        Фото и видео
-      </h1>
-
-      <section class="page-main__gallery gallery">
-        <article class="gallery__lead lead">
-          <h2 class="lead__title title visually-hidden">
-            Галерея фотографий
-          </h2>
-          <p class="lead__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-        </article>
-        <ul class="gallery__list">
-          <li class="gallery__item photo-post">
-            <h3 class="photo-post__title title">Неродные просторы</h3>
-            <p class="photo-post__photo photo">
-              <img class="photo__image img" src="img/gallery/spaces-mobile.jpg" width="280" height="280" alt="Дорога в долине в закатном свете">
+        </nav>
+        <section class="page-header__slogan slogan slogan--welcome">
+          <div class="slogan__wrapper">
+            <p class="slogan__lettering slogan__lettering--welcome">
+              <img src="img/slogan/welcome--mobile.png" width="116" height="28" alt="Welcome">
             </p>
-            <p class="photo-post__author author">Автор фото: <span class="author-name">Борис</span></p>
-            <p class="photo-post__likes likes-counter">1350</p>
-          </li>
-          <li class="gallery__item photo-post">
-            <h3 class="photo-post__title title">Местная растительность</h3>
-            <p class="photo-post__photo photo">
-              <img class="photo__image img" src="img/gallery/plants-mobile.jpg" width="280" height="280" alt="">
+            <p class="slogan__lettering slogan__lettering--gorgeous">
+              <img src="img/slogan/to-the-gorgeous--mobile.png" width="158" height="19" alt="to the gorgeous">
             </p>
-            <p class="photo-post__author author">Автор фото: <span class="author-name">Сергей</span></p>
-            <p class="photo-post__likes likes-counter">143</p>
-          </li>
-          <li class="gallery__item photo-post">
-            <h3 class="photo-post__title title">Дорога на север</h3>
-            <p class="photo-post__photo photo">
-              <img class="photo__image img" src="img/gallery/road-mobile.jpg" width="280" height="280" alt="">
+            <p class="slogan__lettering slogan__lettering--sedona">
+              <img src="img/slogan/sedona--mobile.png" width="282" height="49" alt="Sedona">
             </p>
-            <p class="photo-post__author author">Автор фото: <span class="author-name">Петр</span></p>
-            <p class="photo-post__likes likes-counter">96</p>
-          </li>
-          <li class="gallery__item photo-post">
-            <h3 class="photo-post__title title">Мост дьявола</h3>
-            <p class="photo-post__photo photo">
-              <img class="photo__image img" src="img/gallery/bridge-mobile.jpg" width="280" height="280" alt="280">
+            <p class="slogan__lettering slogan__lettering--because">
+              <img src="img/slogan/because-the-grand-canyon-sucks--mobile.png" width="181" height="49" alt="Because the Grand Canyon sucks!">
             </p>
-            <p class="photo-post__author author">Автор фото: <span class="author-name">Антон</span></p>
-            <p class="photo-post__likes likes-counter">254</p>
-          </li>
-        </ul>
-      </section>
-
-      <section class="page-main__video-gallery video-gallery">
-        <div class="video-gallery__lead lead">
-            <h2 class="lead__title title">
-              Все еще сомневаетесь?
+          </div>
+        </section>
+      </header>
+      <main class="page-main">
+        <section class="page-main__galleries">
+          <div class="page-main__lead page-lead">
+            <h1 class="page-lead__title title">
+              Фото и видео
+            </h1>
+            <p class="page-lead__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          </div>
+          <section class="page-main__gallery gallery">
+            <h2 class="galllery__title title visually-hidden">
+              Галерея фотографий
             </h2>
-            <p class="lead__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        </div>
-        <div class="video-gallery__video-wrapper">
-          <!-- <video class="video-gallery__video video visually-hidden" width="320" height="200" controls></video> -->
-          <img src="img/gallery/video-mobile.jpg.jpg" class="video-gallery__video video img" width="320" height="200">
-          <div class="video-gallery__video-controls video-controls">
-            <!-- <input class="video-controls__timeline visually-hidden" type="range" min="0" name="timeline"> -->
-            <div class="video-controls__timeline"></div>
-            <button class="video-controls__button video-controls__button--replay" type="button">
-              <span>Произвести сначала</span>
-            </button>
-            <button class="video-controls__button video-controls__button--subtitles" type="button">
-              <span>Субтитры</span>
-            </button>
-            <button class="video-controls__button video-controls__button--fullscreen" type="button">
-              <span>Полноэкранный режим</span>
-            </button>
-          </div>
-        </div>
-      </section>
-    </main>
+            <ul class="gallery__list">
+              <li class="gallery__item gallery__item--wide photo-post">
+                <div class="photo-post__description">
+                  <h3 class="photo-post__title title">Неродные просторы</h3>
+                  <p class="photo-post__author author">Автор фото: <span class="author-name">Борис</span></p>
+                  <p class="photo-post__likes likes-counter">1350</p>
+                </div>
+                <p class="photo-post__photo photo-post__photo--sunset-road photo">
+                  <img class="photo__image img" src="img/gallery/spaces-mobile.jpg" width="280" height="280" alt="Дорога в долине в закатном свете">
+                </p>
+              </li>
+              <li class="gallery__item photo-post">
+                <div class="photo-post__description">
+                  <h3 class="photo-post__title title">Местная растительность</h3>
+                  <p class="photo-post__author author">Автор фото: <span class="author-name">Сергей</span></p>
+                  <p class="photo-post__likes likes-counter">143</p>
+                </div>
+                <p class="photo-post__photo photo-post__photo--local-plant photo">
+                  <img class="photo__image img" src="img/gallery/plants-mobile.jpg" width="280" height="280" alt="">
+                </p>
+              </li>
+              <li class="gallery__item photo-post">
+                <div class="photo-post__description">
+                  <h3 class="photo-post__title title">Дорога на север</h3>
+                  <p class="photo-post__author author">Автор фото: <span class="author-name">Петр</span></p>
+                  <p class="photo-post__likes likes-counter">96</p>
+                </div>
+                <p class="photo-post__photo photo-post__photo--north-road photo">
+                  <img class="photo__image img" src="img/gallery/road-mobile.jpg" width="280" height="280" alt="">
+                </p>
+              </li>
+              <li class="gallery__item photo-post">
+                <div class="photo-post__description">
+                  <h3 class="photo-post__title title">Мост дьявола</h3>
+                  <p class="photo-post__author author">Автор фото: <span class="author-name">Антон</span></p>
+                  <p class="photo-post__likes likes-counter">254</p>
+                </div>
+                <p class="photo-post__photo photo-post__photo--bridge photo">
+                  <img class="photo__image img" src="img/gallery/bridge-mobile.jpg" width="280" height="280" alt="280">
+                </p>
+              </li>
+            </ul>
+          </section>
+          <section class="page-main__video-gallery video-gallery">
+            <div class="video-gallery__lead lead">
+              <h2 class="lead__title title visually-hidden">
+                Галерея видео
+              </h2>
+              <div class="slogan">
+                <p class="slogan__text">Все еще сомневаетесь?</p>
+              </div>
+              <p class="lead__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+            </div>
+            <div class="video-gallery__video-wrapper">
+              <!-- <video class="video-gallery__video video visually-hidden" width="320" height="200" controls></video> -->
+              <img src="img/gallery/video-mobile.jpg.jpg" class="video-gallery__video video img" width="320" height="200">
+              <div class="video-gallery__video-controls video-controls">
+                <!-- <input class="video-controls__timeline visually-hidden" type="range" min="0" name="timeline"> -->
+                <div class="video-controls__timeline"></div>
+                <button class="video-controls__button video-controls__button--replay" type="button">
+                  <span>Произвести сначала</span>
+                </button>
+                <button class="video-controls__button video-controls__button--subtitles" type="button">
+                  <span>Субтитры</span>
+                </button>
+                <button class="video-controls__button video-controls__button--fullscreen" type="button">
+                  <span>Полноэкранный режим</span>
+                </button>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
 
-    <footer class="page__footer page-footer">
-      <div class="page-footer__wrapper">
-        <p class="page-footer__hashtag">#visitsedona</p>
-        <ul class="page-footer__socials socials-list">
-          <li class="socials-list__item">
-            <a class="socials-list__link">
-              <span class="visually-hidden">twitter</span>
-              <svg width="18" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.3.167c1.7-.5 3.1.2 3.7 1.1.7-.2 1.4-.5 2.1-.7 0 .8-.5 1.5-.9 1.7.7.2 1.3-.5 1.3-.5-.2 1-1 1.7-1.6 2-.2 6.6-3.3 11-10.4 10.8H5c-.4 0-4.3-.4-5-1.8 2.3.2 4-.4 4.8-1.1-1-.3-2.8-.5-3.1-2.9.4.1.6.2 1.3.1-1.2-.8-2.6-1.5-2.5-3.7.3.3 1.1.5 1.4.5-.7-.2-2-3.3-.9-4.8 1.9 1.8 3.8 3.5 7.4 3.7.1-2.3 1.1-3.8 2.9-4.4Z" fill="#fff"/></svg>
-            </a>
-          </li>
-          <li class="socials-list__item">
-            <a class="socials-list__link">
-              <span class="visually-hidden">facebook</span>
-              <svg width="9" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3 3.4h2.4V0H5.8C2.7.2 1.5 2.4 1.9 6.1H0v3.5h2v9.3h3.8V9.6h2.9V6.1H5.8c0-1 0-2.4.5-2.7Z" fill="#fff"/></svg>
-            </a>
-          </li>
-          <li class="socials-list__item">
-            <a class="socials-list__link">
-              <span class="visually-hidden">YouTube</span>
-              <svg width="20" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.1 0H2.8C1.3 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.8 14h14.3c1.6 0 2.8-1.3 2.8-2.8V2.8C20 1.3 18.7 0 17.1 0ZM7 10.4V3.6L13.8 7 7 10.4Z" fill="#fff"/></svg>
-            </a>
-          </li>
-        </ul>
-        <div class="page-footer__copy copy">
-          Разработано
-          <div class="copy__logo">
-            <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
-            </svg>
+      <footer class="page__footer page-footer">
+        <div class="page-footer__wrapper">
+          <p class="page-footer__hashtag">#visitsedona</p>
+          <ul class="page-footer__socials socials-list">
+            <li class="socials-list__item">
+              <a class="socials-list__link">
+                <span class="visually-hidden">twitter</span>
+                <svg width="18" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.3.167c1.7-.5 3.1.2 3.7 1.1.7-.2 1.4-.5 2.1-.7 0 .8-.5 1.5-.9 1.7.7.2 1.3-.5 1.3-.5-.2 1-1 1.7-1.6 2-.2 6.6-3.3 11-10.4 10.8H5c-.4 0-4.3-.4-5-1.8 2.3.2 4-.4 4.8-1.1-1-.3-2.8-.5-3.1-2.9.4.1.6.2 1.3.1-1.2-.8-2.6-1.5-2.5-3.7.3.3 1.1.5 1.4.5-.7-.2-2-3.3-.9-4.8 1.9 1.8 3.8 3.5 7.4 3.7.1-2.3 1.1-3.8 2.9-4.4Z" fill="#fff"/></svg>
+              </a>
+            </li>
+            <li class="socials-list__item">
+              <a class="socials-list__link">
+                <span class="visually-hidden">facebook</span>
+                <svg width="9" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.3 3.4h2.4V0H5.8C2.7.2 1.5 2.4 1.9 6.1H0v3.5h2v9.3h3.8V9.6h2.9V6.1H5.8c0-1 0-2.4.5-2.7Z" fill="#fff"/></svg>
+              </a>
+            </li>
+            <li class="socials-list__item">
+              <a class="socials-list__link">
+                <span class="visually-hidden">YouTube</span>
+                <svg width="20" height="14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.1 0H2.8C1.3 0 0 1.3 0 2.8v8.3C0 12.7 1.3 14 2.8 14h14.3c1.6 0 2.8-1.3 2.8-2.8V2.8C20 1.3 18.7 0 17.1 0ZM7 10.4V3.6L13.8 7 7 10.4Z" fill="#fff"/></svg>
+              </a>
+            </li>
+          </ul>
+          <div class="page-footer__copy copy">
+            Разработано
+            <div class="copy__logo">
+              <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+              </svg>
+            </div>
           </div>
         </div>
-        <p class="page-footer__copy course-copy">Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a class="course-copy__button" href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-      </div>
-    </footer>
+        <p class="page-footer__copy page-footer__copy--course course-copy">Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a class="course-copy__button" href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+      </footer>
+    </div>
   </body>
 </html>
