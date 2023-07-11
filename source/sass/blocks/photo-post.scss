@@ -1,7 +1,14 @@
 .photo-post {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 24px 0 15px;
+
+  @media (min-width: $tablet-width) {
+    gap: 0;
+    padding: 0;
+  }
 }
 
 .photo-post__title {
@@ -10,6 +17,14 @@
   padding: 0;
   font-size: 14px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $special-text;
+  }
 }
 
 .photo-post__photo {
@@ -25,6 +40,38 @@
   &--local-plant {
     background-color: $local-plant;
   }
+
+  &--north-road {
+    background-color: $north-road;
+  }
+
+  &--bridge {
+    background-color: $bridge;
+  }
+}
+
+.photo-post__description {
+  width: 100%;
+  box-sizing: border-box;
+  color: $title-text;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 65px;
+    padding: 20px 20px 15px;
+    background-color: $extra-light;
+
+    &--darker {
+      background-color: $semi-light;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 0;
+    color: $special-text;
+    background-color: $black-opacity;
+  }
 }
 
 .photo-post__author {
@@ -33,12 +80,18 @@
 }
 
 .photo-post__likes {
+  grid-row: 1 / 5;
+  grid-column: 2 / -1;
+  align-self: center;
   margin: 0;
   margin-top: 13px;
   padding: 0;
-  padding-left: 37px;
+  padding-left: 32px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
-  color: $title-text;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
