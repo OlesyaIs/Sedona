@@ -21,14 +21,8 @@
 }
 
 .advantages__item {
-
   @media (min-width: $tablet-width) {
     &--full {
-      grid-row: span 2;
-      grid-column: span 3;
-    }
-
-    &--semi-full {
       grid-column: span 3;
     }
   }
