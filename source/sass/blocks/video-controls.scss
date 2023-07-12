@@ -1,9 +1,47 @@
 .video-controls {
-  position: relative;
-  background-color: $mobile-controls-background;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 42px;
+  box-sizing: border-box;
+  color: $control-button;
+  background-color: $timeline-bg;
+
+  &--mobile {
+    column-gap: 0;
+    justify-content: space-between;
+    width: 100%;
+    color: $mobile-control-button;
+    background-color: $mobile-controls-bg;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
+.video-controls__timeline {
+  flex-grow: 1;
+}
+
+.video-controls__buttons-wrapper {
+  display: flex;
+  gap: 31px;
+}
+
+// background-color: $mobile-controls-background;
+
 .video-controls__button {
+  color: $control-button;
   background-color: transparent;
   border: none;
+}
+
+.video-controls:not(.video-controls--mobile) .video-controls__button {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.video-controls--mobile .video-controls__button {
+  color: $mobile-control-button;
 }

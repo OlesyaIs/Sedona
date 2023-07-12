@@ -106,7 +106,7 @@
             </ul>
           </section>
           <section class="page-main__video-gallery video-gallery">
-            <div class="video-gallery__lead lead">
+            <section class="video-gallery__lead lead">
               <h2 class="lead__title title visually-hidden">
                 Галерея видео
               </h2>
@@ -114,24 +114,44 @@
                 <p class="slogan__text">Все еще сомневаетесь?</p>
               </div>
               <p class="lead__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-            </div>
-            <div class="video-gallery__video-wrapper">
-              <!-- <video class="video-gallery__video video visually-hidden" width="320" height="200" controls></video> -->
-              <img src="img/gallery/video-mobile.jpg.jpg" class="video-gallery__video video img" width="320" height="200">
-              <div class="video-gallery__video-controls video-controls">
-                <!-- <input class="video-controls__timeline visually-hidden" type="range" min="0" name="timeline"> -->
-                <div class="video-controls__timeline"></div>
-                <button class="video-controls__button video-controls__button--replay" type="button">
-                  <span>Произвести сначала</span>
-                </button>
-                <button class="video-controls__button video-controls__button--subtitles" type="button">
-                  <span>Субтитры</span>
-                </button>
-                <button class="video-controls__button video-controls__button--fullscreen" type="button">
-                  <span>Полноэкранный режим</span>
-                </button>
+            </section>
+            <section class="video-gallery__video-section">
+              <div class="video-gallery__video-wrapper">
+                <!-- <video class="video-gallery__video video visually-hidden" width="320" height="200" controls></video> -->
+                <img src="img/gallery/video-mobile.jpg.jpg" class="video-gallery__video video img" width="320" height="200">
+                <div class="video-gallery__video-controls-wrapper">
+                  <div class="video-gallery__video-controls video-controls">
+                    <button class="video-controls__button video-controls__button--replay" type="button">
+                      <span>Произвести сначала</span>
+                    </button>
+                    <input class="video-controls__timeline" type="range" min="0" name="timeline">
+                    <div class="video-controls__button-wrapper">
+                      <button class="video-controls__button video-controls__button--subtitles" type="button">
+                        <span>Субтитры</span>
+                      </button>
+                      <button class="video-controls__button video-controls__button--fullscreen" type="button">
+                        <span>Полноэкранный режим</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
+              <div class="video-gallery__mobile-video-controls-wrapper">
+                <div class="video-gallery__video-controls--mobile video-controls video-controls--mobile">
+                  <button class="video-controls__button video-controls__button--replay" type="button">
+                    <span>Произвести сначала</span>
+                  </button>
+                  <div class="video-controls__buttons-wrapper">
+                    <button class="video-controls__button video-controls__button--subtitles" type="button">
+                      <span>Субтитры</span>
+                    </button>
+                    <button class="video-controls__button video-controls__button--fullscreen" type="button">
+                      <span>Полноэкранный режим</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </section>
           </section>
         </section>
       </main>
