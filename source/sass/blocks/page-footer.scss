@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 36px 160px;
+    padding: 36px 120px;
   }
 }
 
@@ -15,10 +15,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 33.5px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -37,8 +38,10 @@
 
 .page-footer__copy {
   margin: 0;
+  margin-top: 6px;
   padding: 0;
   &--course {
     text-align: center;
+    margin-top: 34px;
   }
 }

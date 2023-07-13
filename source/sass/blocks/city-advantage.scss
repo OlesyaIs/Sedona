@@ -1,5 +1,13 @@
 .city-advantage {
   padding-left: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding: 158px 36px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 158px 55px 80px;
+  }
 }
 
 .city-advantage__description {

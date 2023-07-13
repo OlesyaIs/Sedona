@@ -33,9 +33,12 @@
 }
 
 .main-nav__item {
+  padding: 10px 20px 5px;
+  min-height: 55px;
+  box-sizing: border-box;
   background-color: $button;
-
   @media (min-width: $tablet-width) {
+    padding: 10px 9px;
     width: calc(20% - 1px);
     &:nth-of-type(2),
     &:nth-of-type(6) {
@@ -47,11 +50,9 @@
 
 .main-nav__link {
   display: block;
-  min-height: 55px;
-  margin: 0 20px;
-  padding: 10px 0 5px;
+  margin: 0;
   box-sizing: border-box;
-
+  height: 100%;
   color: $button-text;
   text-transform: uppercase;
   text-decoration: none;
@@ -60,8 +61,6 @@
   @include content-center;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    padding: 10px 9px;
     color: $title-text;
   }
 }

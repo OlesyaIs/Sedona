@@ -11,9 +11,11 @@ $white: #ffffff;
 $extra-light: #f2f2f2;
 $pretty-light: #eee;
 $light: #e5e5e5;
+$semi-light: #eaeaea;
 $dark: #d5d5d5;
 $extra-dark: #333333;
 $extra-dark-opacity: rgba(51, 51, 51, 0.3);
+$black-opacity: rgba(0, 0, 0, 0.3);
 $black: #000000;
 
 // Text's colors
@@ -69,11 +71,11 @@ $copy-logo-active: rgba(0, 0, 0, 0.3);
 
 // Video controls' colors
 $timeline: rgba(255, 255, 255, 0.2);
-$timeline-bg: rgba(102, 102, 102, 0.6);
+$timeline-bg: rgba(0, 0, 0, 0.6);
 $timeline-mark: $white;
 
+$mobile-controls-bg: #f2f2f2;
 $mobile-control-button: #5C6870;
-$mobile-controls-background: #f2f2f2;
 $mobile-control-button-hover: #333333;
 $mobile-control-button-active: rgba(51, 51, 51, 0.3);
 
@@ -88,3 +90,10 @@ $photo-city: #b5c3b6;
 $photo-bridge: #a56a56;
 $map: #f2f3eb;
 $video: #D3AA94;
+
+// Gallery
+
+$sunset-road: #f4be78;
+$local-plant: #ca8b56;
+$north-road: #3e4e2f;
+$bridge: #a56a56;

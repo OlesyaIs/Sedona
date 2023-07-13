@@ -4,10 +4,52 @@
   align-items: center;
 }
 
+.video-gallery__lead {
+  margin: 0;
+  padding: 0 20px 33px;
+  max-width: 445px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 65px;
+  }
+}
+
+.video-gallery__lead .slogan {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.video-gallery__video-section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.video-gallery__video-wrapper {
+  position: relative;
+  width: 100%;
+}
+
 .video-gallery__video {
   margin: 0 auto;
   min-width: 320px;
   min-height: 200px;
   background-image: url(../img/gallery/video-mobile.jpg.jpg);
   background-color: $video;
+}
+
+.video-gallery__video-controls-wrapper {
+  position: absolute;
+  bottom: 0;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.video-gallery__mobile-video-controls-wrapper {
+  padding: 0 20px;
 }
