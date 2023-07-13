@@ -1,17 +1,18 @@
 .city-advantages {
   background-color: $white;
-  grid-column: 1/ -1;
 }
 
 .city-advantages__list {
   display: flex;
   flex-direction: column;
+  gap: 26px;
   margin: 0;
-  padding: 0;
+  padding: 35px 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
   }
 }

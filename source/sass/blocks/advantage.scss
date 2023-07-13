@@ -24,6 +24,18 @@
     color: $special-text;
     background-color: $basic;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 42px 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 42px 43px;
+
+    &--big {
+      padding: 47px 52px 57px;
+    }
+  }
 }
 
 .advantage__title {
@@ -50,4 +62,8 @@
 .advantage__photo {
   margin: 0;
   padding: 0;
+}
+
+.advantage__city-advantages {
+  grid-column: 1 / -1;
 }
