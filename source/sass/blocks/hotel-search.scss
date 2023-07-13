@@ -1,4 +1,6 @@
 .hotel-search {
+  box-sizing: border-box;
+  text-transform: uppercase;
   background-color: $white;
 }
 
@@ -14,8 +16,8 @@
   margin: 0;
   padding: 0;
 
-  font-size: 26px;
-  line-height: 21px;
+  font-size: 21px;
+  line-height: 26px;
 }
 
 .hotel-search__description {

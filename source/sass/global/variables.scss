@@ -60,8 +60,16 @@ $close-button-active: rgba(255, 255, 255, 0.3);
 // Form buttons' colors
 
 $contacts-icon-bg: #e6e6e6;
-$radio: $extra-light;
-$radio-checked: $extra-dark;
+$input: $extra-light;
+$input-hover: $light;
+$input-active: $white;
+$input-border: $light;
+
+$mark-field: $extra-light;
+$mark-field-hover: $light;
+$mark-field-active: $dark;
+$mark: $extra-dark;
+$mark-active: $extra-dark-opacity;
 
 // Copy logo's colors
 

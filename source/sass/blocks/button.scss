@@ -7,4 +7,19 @@
   text-decoration: none;
   background-color: $button;
   border: none;
+
+  &:hover {
+    color: $button-text-hover;
+    background-color: $button-hover;
+  }
+
+  &:active {
+    color: $button-text-active;
+    background-color: $button-active;
+  }
+
+  &:disabled {
+    color: $button-text-disabled;
+    background-color: $button-disabled;
+  }
 }

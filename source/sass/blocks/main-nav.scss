@@ -32,11 +32,14 @@
   }
 }
 
+.main-nav--close .main-nav__list {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
 .main-nav__item {
-  padding: 10px 20px 5px;
-  min-height: 55px;
   box-sizing: border-box;
-  background-color: $button;
   @media (min-width: $tablet-width) {
     padding: 10px 9px;
     width: calc(20% - 1px);
@@ -51,17 +54,57 @@
 .main-nav__link {
   display: block;
   margin: 0;
+  padding: 10px 20px 5px;
+  min-height: 55px;
   box-sizing: border-box;
   height: 100%;
   color: $button-text;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
+  background-color: $button;
+
+  @media (max-width: $mobile-width-only) {
+    &:hover {
+      color: $button-text-hover;
+      background-color: $button-hover;
+    }
+
+    &:active {
+      color: $button-text-active;
+      background-color: $button-active;
+    }
+  }
 
   @include content-center;
 
   @media (min-width: $tablet-width) {
-    color: $title-text;
+    color: $main-menu;
+    background-color: transparent;
+
+    &:hover {
+      color: $main-menu-hover;
+    }
+
+    &:active {
+      color: $main-menu-active;
+    }
+  }
+}
+
+.main-nav__item--current .main-nav__link {
+  color: $button-disabled;
+
+  @media (min-width: $tablet-width) {
+    color: $main-menu-current;
+
+    &:hover {
+      color: $main-menu-current-hover;
+    }
+
+    &:active {
+      color: $main-menu-current-active;
+    }
   }
 }
 
@@ -72,9 +115,33 @@
   background-color: transparent;
   border: none;
 
+  &::before {
+    content: "";
+    display: block;
+    height: 22px;
+  }
+
+  &:hover::before {
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-nav--open .main-nav__toggle::before {
+  width: 22px;
+  background-image: url(../img/icons/button-opened.svg);
+}
+
+.main-nav--close .main-nav__toggle::before {
+  width: 23px;
+  background-image: url(../img/icons/button-closed.svg);
 }
 
 

@@ -5,5 +5,19 @@
 }
 
 .copy__logo {
+  margin: 0;
+  padding: 0;
   @include content-center;
+}
+
+.copy__logo path {
+  fill: $copy-logo;
+}
+
+.copy__logo:hover path {
+  fill: $copy-logo-hover;
+}
+
+.copy__logo:active path {
+  fill: $copy-logo-active;
 }
