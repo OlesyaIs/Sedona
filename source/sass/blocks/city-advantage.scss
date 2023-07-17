@@ -4,6 +4,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 158px 36px 60px;
+    text-align: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,6 +30,8 @@
     position: absolute;
     bottom: -5px;
     background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
   }
 
   &--home::before {
@@ -50,6 +53,34 @@
     height: 35px;
     left: -52px;
     background-image: url(../img/icons/icon-burger--mobile.svg);
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+
+    &::before {
+      width: 100%;
+      bottom: 0;
+      left: 0;
+    }
+
+    &--home::before {
+      height: 72px;
+      top: -98px;
+      background-image: url(../img/icons/icon-house--mobile.svg);
+    }
+
+    &--souvenirs::before {
+      height: 68px;
+      top: -94px;
+      background-image: url(../img/icons/icon-gift--mobile.svg);
+    }
+
+    &--meal::before {
+      height: 75px;
+      top: -101px;
+      background-image: url(../img/icons/icon-burger--mobile.svg);
+    }
   }
 }
 

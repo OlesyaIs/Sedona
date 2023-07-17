@@ -47,22 +47,22 @@
   }
 }
 
-.main-nav--close .main-nav__list {
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
-}
-
 .main-nav__item {
+  min-height: 56px;
   box-sizing: border-box;
   @media (min-width: $tablet-width) {
-    padding: 10px 9px;
     width: calc(20% - 1px);
     &:nth-of-type(2),
     &:nth-of-type(6) {
       margin-right: auto;
     }
     background-color: transparent;
+  }
+}
+
+.main-nav--close:not(.main-nav--nojs) .main-nav__item {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }
 
@@ -166,6 +166,10 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
 }
 
 .main-nav--open .main-nav__toggle::before {

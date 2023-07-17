@@ -1,5 +1,6 @@
 .hotel-search {
   box-sizing: border-box;
+  line-height: 24px;
   text-transform: uppercase;
   background-color: $white;
 }
@@ -8,8 +9,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 18px;
+  gap: 27px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    gap: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 42px;
+  }
 }
 
 .hotel-search__slogan {
@@ -18,6 +27,10 @@
 
   font-size: 21px;
   line-height: 26px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .hotel-search__description {
@@ -29,10 +42,10 @@
   margin: 0;
   margin-top: 9px;
   padding: 0;
+  width: 100%;
 }
 
 .hotel-search__button {
-  width: 280px;
   height: 58px;
   @include content-center;
 
