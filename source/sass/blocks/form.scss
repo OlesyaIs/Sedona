@@ -9,11 +9,23 @@
 }
 
 .form__group {
-  margin: 0;
-  padding: 20px 0 25px;
+  position: relative;
+  margin: 20px 0 25px;
+  padding: 0;
 
   &--wide {
     grid-column: 1/-1;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: '';
+      position: absolute;
+      top: -19px;
+      width: 100%;
+      height: 1px;
+      background-color: $light;
+    }
   }
 
   @media (min-width: $tablet-width) {
