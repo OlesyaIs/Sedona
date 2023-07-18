@@ -10,7 +10,7 @@
   <body class="page__body">
     <div class="page__wrapper">
       <header class="page-header">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--open">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link" href="#">Главная</a>
@@ -25,7 +25,7 @@
               <a class="main-nav__link" href="https://htmlacademy.ru/">html academy</a>
             </li>
           </ul>
-          <button class="main-nav__toggle main-nav__toggle--opened">
+          <button class="main-nav__toggle">
             <span class="visually-hidden">Закрыть меню</span>
           </button>
           <p class="main-nav__logo logo-button">
@@ -58,11 +58,13 @@
         </h1>
         <section class="page-main__advantages advantages">
           <div class="advantages__lead page-lead">
-            <h2 class="page-lead__title title visually-hidden">Преимущества Седоны</h2>
-            <div class="slogan">
-              <p class="slogan__text">Седона — небольшой городок в аризоне, заслуживающий большего!</p>
+            <div class="page-lead__wrapper">
+              <h2 class="page-lead__title title visually-hidden">Преимущества Седоны</h2>
+              <div class="page-lead__slogan slogan">
+                <p class="slogan__text">Седона — небольшой городок в аризоне, заслуживающий большего!</p>
+              </div>
+              <p class="page-lead__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
             </div>
-            <p class="page-lead__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </div>
           <ol class="advantages__list">
             <li class="advantages__item advantages__item--full advantage advantage--big">
@@ -73,15 +75,15 @@
                 <p class="advantage__number">— №1 —</p>
                 <p class="advantage__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
-              <p class="advantage__photo photo photo">
-                <img class="photo__image photo__image--city" src="img/advantages/city.jpg" width="520" height="260" alt="Кафе в городе на фоне гор">
+              <p class="advantage__photo photo--city">
+                <img class="photo__image" src="img/advantages/city.jpg" width="520" height="260" alt="Кафе в городе на фоне гор">
               </p>
               <div class="advantage__city-advantages city-advantages">
                 <h4 class="city-advantages__title title visually-hidden">Преимущества посещения полноценного города</h4>
                 <ul class="city-advantages__list">
                   <li class="city-advantages__item city-advantage city-advantage--home">
                     <div class="city-advantage__description">
-                      <h5 class="city-advantage__title title">
+                      <h5 class="city-advantage__title city-advantage__title--home title">
                         Жилье
                       </h5>
                       <p class="city-advantage__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -89,7 +91,7 @@
                   </li>
                   <li class="city-advantages__item city-advantage city-advantage--souvenirs">
                     <div class="city-advantage__description">
-                      <h5 class="city-advantage__title title">
+                      <h5 class="city-advantage__title city-advantage__title--souvenirs title">
                         Сувениры
                       </h5>
                       <p class="city-advantage__text">Не только китайского, но и местного производства!</p>
@@ -97,7 +99,7 @@
                   </li>
                   <li class="city-advantages__item city-advantage city-advantage--meal">
                     <div class="city-advantage__description">
-                      <h5 class="city-advantage__title title">
+                      <h5 class="city-advantage__title city-advantage__title--meal title">
                         Еда
                       </h5>
                       <p class="city-advantage__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
@@ -114,8 +116,8 @@
                 <p class="advantage__number">— №2 —</p>
                 <p class="advantage__text">Да, по нему можно пройти! если вы осмелитесь, конечно</p>
               </div>
-              <p class="advantage__photo photo photo">
-                <img class="photo__image photo__image--bridge" src="img/advantages/bridge.jpg" width="520" height="260" alt="Кафе в городе на фоне гор">
+              <p class="advantage__photo photo--bridge">
+                <img class="photo__image" src="img/advantages/bridge.jpg" width="520" height="260" alt="Кафе в городе на фоне гор">
               </p>
             </li>
             <li class="advantages__item advantage">
@@ -150,7 +152,7 @@
         <section class="page-main__hotel-search hotel-search">
           <div class="hotel-search__wrapper">
             <h2 class="hotel-search__title title visually-hidden">Поиск гостиниц</h2>
-            <p class="hotel-search__slogan">Заинтересовались?</p>
+            <p class="hotel-search__slogan slogan">Заинтересовались?</p>
             <p class="hotel-search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <p class="hotel-search__button-wrapper">
               <a class="button hotel-search__button" href="#">Найти гостиницу</a>
@@ -187,11 +189,11 @@
           </ul>
           <div class="page-footer__copy copy">
             Разработано
-            <div class="copy__logo">
+            <a class="copy__logo">
               <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
               </svg>
-            </div>
+            </a>
           </div>
         </div>
         <p class="page-footer__copy page-footer__copy--course course-copy">Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a class="course-copy__button" href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>

@@ -33,6 +33,10 @@ $main-menu-current: #766357;
 $main-menu-current-hover: #604e43;
 $main-menu-current-active: rgba(118, 99, 87, 0.3);
 
+$main-menu-light-shadow: rgba(255, 255, 255, 0.2);
+$main-menu-dark-shadow: rgba(1, 1, 1, 0.2);
+$main-menu-gradient: rgba(0, 0, 0, 0.00);
+
 // Buttons' colors
 
 $button: $basic;
@@ -60,8 +64,16 @@ $close-button-active: rgba(255, 255, 255, 0.3);
 // Form buttons' colors
 
 $contacts-icon-bg: #e6e6e6;
-$radio: $extra-light;
-$radio-checked: $extra-dark;
+$input: $extra-light;
+$input-hover: $light;
+$input-active: $white;
+$input-border: $light;
+
+$mark-field: $extra-light;
+$mark-field-hover: $light;
+$mark-field-active: $dark;
+$mark: $extra-dark;
+$mark-active: $extra-dark-opacity;
 
 // Copy logo's colors
 
@@ -70,6 +82,7 @@ $copy-logo-hover: $basic;
 $copy-logo-active: rgba(0, 0, 0, 0.3);
 
 // Video controls' colors
+
 $timeline: rgba(255, 255, 255, 0.2);
 $timeline-bg: rgba(0, 0, 0, 0.6);
 $timeline-mark: $white;
@@ -97,3 +110,7 @@ $sunset-road: #f4be78;
 $local-plant: #ca8b56;
 $north-road: #3e4e2f;
 $bridge: #a56a56;
+
+// Decorative
+
+$advantage-strip: #d6d6d6;

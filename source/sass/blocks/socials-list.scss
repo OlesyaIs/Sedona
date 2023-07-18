@@ -12,5 +12,31 @@
   color: $special-text;
   text-decoration: none;
   background-color: $button;
+
+  path {
+    fill: $button-text;
+  }
+
   @include content-center;
+
+  &:hover {
+    background-color: $button-hover;
+    path {
+      fill: $button-text-hover;
+    }
+  }
+
+  &:active {
+    background-color: $button-active;
+    path {
+      fill: $button-text-active;
+    }
+  }
+
+  &:disabled {
+    background-color: $button-disabled;
+    path {
+      fill: $button-text-disabled;
+    }
+  }
 }

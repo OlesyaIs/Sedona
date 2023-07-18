@@ -1,5 +1,6 @@
 .city-advantages {
   background-color: $white;
+  text-transform: uppercase;
 }
 
 .city-advantages__list {
@@ -14,5 +15,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0;
+    padding: 0;
   }
 }

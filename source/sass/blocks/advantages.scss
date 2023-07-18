@@ -1,9 +1,10 @@
 .advantages {
+  text-transform: uppercase;
   background-color: $white;
 }
 
-.advantages .slogan__text {
-  font-size: 18px;
+.advantages__lead {
+  width: 100%;
 }
 
 .advantages__list {

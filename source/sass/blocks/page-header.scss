@@ -1,3 +1,11 @@
 .page-header {
   text-transform: uppercase;
 }
+
+.page-header__slogan {
+  padding: 90px 20px 85px;
+
+  @media (min-width: $tablet-width) {
+    padding: 78px 20px 90px;
+  }
+}
