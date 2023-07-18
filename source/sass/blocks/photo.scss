@@ -1,7 +1,4 @@
-.photo__image {
-  margin-left: auto;
-  margin-right: auto;
-
+.photo {
   &--city {
     background-color: $photo-city;
   }
@@ -9,4 +6,9 @@
   &--bridge {
     background-color: $photo-bridge;
   }
+}
+
+.photo__image {
+  margin-left: auto;
+  margin-right: auto;
 }
