@@ -68,76 +68,86 @@
             </div>
           </div>
           <form class="form-section__form form form--reviews" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="form__group form__group--small fields-group fields-group--name">
-              <legend class="fields-group__title fields-group__title--name fields-group__title--tablet-desktop-left title">Представьтесь:</legend>
-              <div class="fields-group__field field field--name">
-                <label class="field__title" for="name">Имя*:</label>
-                <input class="field__input field__input--text" type="text" placeholder="Петр" name="name" id="name" autofocus required>
-              </div>
-              <div class="fields-group__field field field--name">
-                <label class="field__title" for="surname">Фамилия*:</label>
-                <input class="field__input field__input--text" type="text" placeholder="Иванов" name="surname" id="surname" required>
-              </div>
-              <div class="fields-group__field field field--name">
-                <label class="field__title" for="second-name">Отчество:</label>
-                <input class="field__input field__input--text" type="text" placeholder="Александрович" name="second-name" id="second-name">
-              </div>
-            </fieldset>
-            <fieldset class="form__group form__group--wide fields-group fields-group--contacts">
-              <legend class="fields-group__title fields-group__title--contacts title">Контактная информация:</legend>
-              <div class="fields-group__field field field--contacts">
-                <label class="field__title" for="phone">Контактный телефон*:</label>
-                <p class="field__input-wrapper">
-                  <input class="field__input field__input--text field__input--phone" type="tel" placeholder="Введите телефон" name="phone" id="phone" required>
-                </p>
-              </div>
-              <div class="fields-group__field field field--contacts">
-                <label class="field__title">Электронная почта*:</label>
-                <p class="field__input-wrapper">
-                  <input class="field__input field__input--text field__input--email" type="email" placeholder="Введите e-mail" name="email" id="email" required>
-                </p>
-              </div>
-            </fieldset>
-            <fieldset class="form__group form__group--first fields-group fields-group--radio">
-              <legend class="fields-group__title fields-group__title--radio fields-group__title--tablet-left title">Ваше общее впечатление:</legend>
-              <div class="fields-group__field field field--radio">
-                <input class="field__input visually-hidden" type="radio" name="impression" id="positive-impression" value="+" checked>
-                <label class="field__title" for="positive-impression">Скорее положительное</label>
-              </div>
-              <div class="fields-group__field field field--radio">
-                <input class="field__input visually-hidden" type="radio" name="impression" id="negative-impression" value="-">
-                <label class="field__title" for="negative-impression">Скорее отрицательное</label>
-              </div>
-              <div class="fields-group__field field field--radio">
-                <input class="field__input visually-hidden" type="radio" name="impression" id="no-impression" value="0">
-                <label class="field__title" for="no-impression">Затрудняюсь ответить</label>
-              </div>
-            </fieldset>
-            <fieldset class="form__group form__group--wide form__group--wide-adaptive fields-group fields-group--checkbox fields-group--full-adaptive">
-              <legend class="fields-group__title fields-group__title--checkbox title">Посещенные достопримечательности:</legend>
-              <div class="fields-group__field field field--checkbox">
-                <input class="field__input visually-hidden" type="checkbox" name="devil's-bridge" id="devil's-bridge" checked>
-                <label class="field__title" for="devil's-bridge">Мост Дьявола</label>
-              </div>
-              <div class="fields-group__field field field--checkbox">
-                <input class="field__input visually-hidden" type="checkbox" name="bell-mountain" id="bell-mountain" checked>
-                <label class="field__title" for="bell-mountain">Гора-Колокол</label>
-              </div>
-              <div class="fields-group__field field field--checkbox">
-                <input class="field__input visually-hidden" type="checkbox" name="slide-park" id="slide-park" checked>
-                <label class="field__title" for="slide-park">Слайд-парк</label>
-              </div>
-              <div class="fields-group__field field field--checkbox">
-                <input class="field__input visually-hidden" type="checkbox" name="red-rocks" id="red-rocks">
-                <label class="field__title" for="red-rocks">Красные скалы</label>
-              </div>
-            </fieldset>
-            <fieldset class="form__group form__group--wide fields-group fields-group--textarea">
-              <legend class="fields-group__title fields-group__title--textarea title">Опишите свои эмоции:</legend>
-              <div class="fields-group__field field">
-                <textarea class="field__input field__input--textarea" placeholder="Опишите подробно все свои восторги" name="emotions" id="emotions" rows="4"></textarea>
-              </div>
-            </fieldset>
+            <div class="form__group form__group--small fields-group fields-group--name">
+              <fieldset class="fields-group__wrapper">
+                <legend class="fields-group__title fields-group__title--name fields-group__title--tablet-desktop-left title">Представьтесь:</legend>
+                <div class="fields-group__field field field--name">
+                  <label class="field__title" for="name">Имя*:</label>
+                  <input class="field__input field__input--text" type="text" placeholder="Петр" name="name" id="name" required>
+                </div>
+                <div class="fields-group__field field field--name">
+                  <label class="field__title" for="surname">Фамилия*:</label>
+                  <input class="field__input field__input--text" type="text" placeholder="Иванов" name="surname" id="surname" required>
+                </div>
+                <div class="fields-group__field field field--name">
+                  <label class="field__title" for="second-name">Отчество:</label>
+                  <input class="field__input field__input--text" type="text" placeholder="Александрович" name="second-name" id="second-name">
+                </div>
+              </fieldset>
+            </div>
+            <div class="form__group form__group--wide fields-group fields-group--contacts">
+              <fieldset class="fields-group__wrapper">
+                <legend class="fields-group__title fields-group__title--contacts title">Контактная информация:</legend>
+                <div class="fields-group__field field field--contacts">
+                  <label class="field__title" for="phone">Контактный телефон*:</label>
+                  <p class="field__input-wrapper">
+                    <input class="field__input field__input--text field__input--phone" type="tel" placeholder="Введите телефон" name="phone" id="phone" required>
+                  </p>
+                </div>
+                <div class="fields-group__field field field--contacts">
+                  <label class="field__title">Электронная почта*:</label>
+                  <p class="field__input-wrapper">
+                    <input class="field__input field__input--text field__input--email" type="email" placeholder="Введите e-mail" name="email" id="email" required>
+                  </p>
+                </div>
+              </fieldset>
+            </div>
+            <div class="form__group form__group--first fields-group fields-group--radio">
+              <fieldset class="fields-group__wrapper">
+                <legend class="fields-group__title fields-group__title--radio fields-group__title--tablet-left title">Ваше общее впечатление:</legend>
+                <div class="fields-group__field field field--radio">
+                  <input class="field__input visually-hidden" type="radio" name="impression" id="positive-impression" value="+" checked>
+                  <label class="field__title" for="positive-impression">Скорее положительное</label>
+                </div>
+                <div class="fields-group__field field field--radio">
+                  <input class="field__input visually-hidden" type="radio" name="impression" id="negative-impression" value="-">
+                  <label class="field__title" for="negative-impression">Скорее отрицательное</label>
+                </div>
+                <div class="fields-group__field field field--radio">
+                  <input class="field__input visually-hidden" type="radio" name="impression" id="no-impression" value="0">
+                  <label class="field__title" for="no-impression">Затрудняюсь ответить</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="form__group form__group--wide form__group--wide-adaptive fields-group fields-group--checkbox fields-group--full-adaptive">
+              <fieldset class="fields-group__wrapper">
+                <legend class="fields-group__title fields-group__title--checkbox title">Посещенные достопримечательности:</legend>
+                <div class="fields-group__field field field--checkbox">
+                  <input class="field__input visually-hidden" type="checkbox" name="devil's-bridge" id="devil's-bridge" checked>
+                  <label class="field__title" for="devil's-bridge">Мост Дьявола</label>
+                </div>
+                <div class="fields-group__field field field--checkbox">
+                  <input class="field__input visually-hidden" type="checkbox" name="bell-mountain" id="bell-mountain" checked>
+                  <label class="field__title" for="bell-mountain">Гора-Колокол</label>
+                </div>
+                <div class="fields-group__field field field--checkbox">
+                  <input class="field__input visually-hidden" type="checkbox" name="slide-park" id="slide-park" checked>
+                  <label class="field__title" for="slide-park">Слайд-парк</label>
+                </div>
+                <div class="fields-group__field field field--checkbox">
+                  <input class="field__input visually-hidden" type="checkbox" name="red-rocks" id="red-rocks">
+                  <label class="field__title" for="red-rocks">Красные скалы</label>
+                </div>
+              </fieldset>
+            </div>
+            <div class="form__group form__group--wide fields-group fields-group--textarea">
+              <fieldset class="fields-group__wrapper">
+                <legend class="fields-group__title fields-group__title--textarea title">Опишите свои эмоции:</legend>
+                <div class="fields-group__field field">
+                  <textarea class="field__input field__input--textarea" placeholder="Опишите подробно все свои восторги" name="emotions" id="emotions" rows="4"></textarea>
+                </div>
+              </fieldset>
+            </div>
             <button class="form__button button" type="submit">Отправить отзыв</button>
             <p class="form__footnote footnote">* — обязательные поля</p>
           </form>
