@@ -1,7 +1,6 @@
 .form {
   display: grid;
   grid-template-columns: 1fr;
-  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
@@ -40,17 +39,19 @@
     &--wide-adaptive {
       margin-right: auto;
       margin-left: auto;
-      padding-left: 30px;
-      width: 490px;
+      width: 470px;
     }
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
-    width: 100%;
 
     &--small {
       padding-left: 80px;
+    }
+
+    &--wide-adaptive {
+      width: 100%;
     }
   }
 }
