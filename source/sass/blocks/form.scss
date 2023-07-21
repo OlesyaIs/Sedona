@@ -35,12 +35,6 @@
     &--small {
       padding-left: 60px;
     }
-
-    &--wide-adaptive {
-      margin-right: auto;
-      margin-left: auto;
-      width: 470px;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -48,10 +42,6 @@
 
     &--small {
       padding-left: 80px;
-    }
-
-    &--wide-adaptive {
-      width: 100%;
     }
   }
 }
