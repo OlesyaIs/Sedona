@@ -4,27 +4,20 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
+    row-gap: 52px;
   }
 }
 
 .form__group {
   position: relative;
   margin: 0;
-  padding: 20px 0 25px;
 
   &--wide {
     grid-column: 1/-1;
   }
 
-  @media (max-width: $mobile-width-only) {
-    &::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 1px;
-      background-color: $light;
-    }
+  &:last-of-type {
+    margin-bottom: 26px;
   }
 
   @media (min-width: $tablet-width) {
@@ -32,16 +25,36 @@
       order: -1;
     }
 
+    &:not(.form__group--wide) {
+      margin-bottom: 21px;
+    }
+
     &--small {
-      padding-left: 60px;
+      margin-left: 60px;
+    }
+
+    &--full-adaptive {
+      margin-bottom: 24px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 6px;
     }
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
 
+    &:not(.form__group--wide) {
+      margin-bottom: 19px;
+    }
+
     &--small {
-      padding-left: 80px;
+      margin-left: 80px;
+    }
+
+    &--full-adaptive {
+      margin-bottom: 22px;
     }
   }
 }
@@ -58,6 +71,7 @@
 .form__footnote {
   margin: 0;
   padding: 0;
+  align-self: center;
   text-align: right;
   @media (max-width: $mobile-width-only) {
     display: none;

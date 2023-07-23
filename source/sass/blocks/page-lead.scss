@@ -27,32 +27,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2em;
+  gap: 26px;
 }
 
 .page-lead__title {
   margin: 0;
   padding: 0;
-  font-size: 18px;
+  font-size: 1em;
   line-height: 26px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 21px;
-  }
 }
 
 .page-lead__slogan {
   margin: 0;
   padding: 0;
-  font-size: 18px;
+  font-size: 1em;
   line-height: 26px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 21px;
-  }
 }
 
 .page-lead__text {
+  font-size: 14px;
   margin: 0;
   padding: 0;
   line-height: 24px;
