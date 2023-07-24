@@ -1,19 +1,23 @@
 .form {
   display: grid;
   grid-template-columns: 1fr;
-  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
+    row-gap: 52px;
   }
 }
 
 .form__group {
+  position: relative;
   margin: 0;
-  padding: 20px 0 25px;
 
   &--wide {
     grid-column: 1/-1;
+  }
+
+  &:last-of-type {
+    margin-bottom: 26px;
   }
 
   @media (min-width: $tablet-width) {
@@ -21,24 +25,47 @@
       order: -1;
     }
 
-    &--small {
-      padding-left: 60px;
+    &:not(.form__group--wide) {
+      margin-bottom: 21px;
     }
 
-    &--wide-adaptive {
-      margin-right: auto;
-      margin-left: auto;
-      padding-left: 30px;
-      width: 490px;
+    &--small:nth-of-type(odd)::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 1px;
+      height: 292;
+      background-color: $form-column;
+    }
+
+    &--xsmall {
+      margin-left: 60px;
+    }
+
+    &--full-adaptive {
+      margin-bottom: 24px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 6px;
     }
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
-    width: 100%;
+
+    &:not(.form__group--wide) {
+      margin-bottom: 19px;
+    }
 
     &--small {
-      padding-left: 80px;
+      margin-left: 80px;
+    }
+
+    &--full-adaptive {
+      margin-bottom: 22px;
     }
   }
 }
@@ -55,6 +82,7 @@
 .form__footnote {
   margin: 0;
   padding: 0;
+  align-self: center;
   text-align: right;
   @media (max-width: $mobile-width-only) {
     display: none;

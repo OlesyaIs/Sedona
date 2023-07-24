@@ -3,6 +3,18 @@
 }
 
 .course-copy__button {
-  color: $basic;
+  color: $button;
   text-decoration: none;
+
+  &:hover {
+    color: $button-hover;
+  }
+
+  &:active {
+    color: $button-active;
+  }
+
+  &:disabled {
+    color: $button-disabled;
+  }
 }

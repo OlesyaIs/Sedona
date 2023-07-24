@@ -60,7 +60,7 @@
   }
 }
 
-.main-nav--close:not(.main-nav--nojs) .main-nav__item {
+.main-nav--closed:not(.main-nav--nojs) .main-nav__item {
   @media (max-width: $mobile-width-only) {
     display: none;
   }
@@ -172,12 +172,12 @@
   display: none;
 }
 
-.main-nav--open .main-nav__toggle::before {
+.main-nav--opened .main-nav__toggle::before {
   width: 22px;
   background-image: url(../img/icons/button-opened.svg);
 }
 
-.main-nav--close .main-nav__toggle::before {
+.main-nav--closed .main-nav__toggle::before {
   width: 23px;
   background-image: url(../img/icons/button-closed.svg);
 }

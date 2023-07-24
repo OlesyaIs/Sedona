@@ -27,3 +27,9 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.non-desktop {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
