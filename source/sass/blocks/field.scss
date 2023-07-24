@@ -119,7 +119,8 @@
   }
 }
 
-.field__input[type="radio"]:hover + .field__title {
+.field__input[type="radio"]:hover + .field__title,
+.field__input[type="radio"]:focus + .field__title {
   &::before {
     background-color: $mark-field-hover;
   }
@@ -128,6 +129,10 @@
 .field__input[type="radio"]:active + .field__title {
   &::before {
     background-color: $mark-field-active;
+  }
+
+  &::after {
+    opacity: 0.3;
   }
 }
 
@@ -159,6 +164,13 @@
   }
 }
 
+.field__input[type="checkbox"]:hover + .field__title,
+.field__input[type="checkbox"]:focus + .field__title {
+  &::before {
+    background-color: $mark-field-hover;
+  }
+}
+
 .field__input[type="checkbox"]:checked + .field__title {
     &::after {
       content: '';
@@ -172,3 +184,12 @@
     }
 }
 
+.field__input[type="checkbox"]:active + .field__title {
+  &::before {
+    background-color: $mark-field-active;
+  }
+
+  &::after {
+    opacity: 0.3;
+  }
+}

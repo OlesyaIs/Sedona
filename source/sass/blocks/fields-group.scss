@@ -30,7 +30,7 @@
       top: 0;
       width: 100%;
       height: 1px;
-      background-color: $light;
+      background-color: $form-strip;
     }
   }
 
@@ -52,7 +52,7 @@
 .fields-group--wide .fields-group__wrapper,
 .fields-group--full-adaptive  .fields-group__wrapper{
   @media (min-width: $tablet-width) {
-    border-top: 1px solid $light;
+    border-top: 1px solid $form-strip;
   }
 }
 

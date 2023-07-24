@@ -29,7 +29,18 @@
       margin-bottom: 21px;
     }
 
-    &--small {
+    &--small:nth-of-type(odd)::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 1px;
+      height: 292;
+      background-color: $form-column;
+    }
+
+    &--xsmall {
       margin-left: 60px;
     }
 
