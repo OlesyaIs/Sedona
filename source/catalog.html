@@ -9,7 +9,7 @@
   <body class="page__body">
     <div class="page__wrapper">
       <header class="page-header">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--opened">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link" href="index.html">Главная</a>
@@ -51,61 +51,71 @@
         </section>
       </header>
       <main class="page-main">
-        <section class="page-main__galleries">
-          <div class="page-main__lead page-lead">
-            <h1 class="page-lead__title title">
-              Фото и видео
-            </h1>
-            <p class="page-lead__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <section class="page-main__galleries galleries">
+          <div class="galleries__lead page-lead">
+            <div class="page-lead__wrapper">
+              <h1 class="page-lead__title title">
+                Фото и видео
+              </h1>
+              <p class="page-lead__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+            </div class="page-lead__wrapper">
           </div>
-          <section class="page-main__gallery gallery">
+          <section class="galleries__gallery gallery">
             <h2 class="galllery__title title visually-hidden">
               Галерея фотографий
             </h2>
             <ul class="gallery__list">
-              <li class="gallery__item gallery__item--wide photo-post">
-                <div class="photo-post__description">
-                  <h3 class="photo-post__title title">Неродные просторы</h3>
-                  <p class="photo-post__author author">Автор фото: <span class="author-name">Борис</span></p>
-                  <p class="photo-post__likes likes-counter">1350</p>
+              <li class="gallery__item gallery__item--wide">
+                <div class="gallery__item-wrapper photo-post">
+                  <div class="photo-post__description">
+                    <h3 class="photo-post__title title">Неродные просторы</h3>
+                    <p class="photo-post__author author">Автор фото: <span class="author-name">Борис</span></p>
+                    <p class="photo-post__likes likes-counter">1350</p>
+                  </div>
+                  <p class="photo-post__photo photo-post__photo--sunset-road photo">
+                    <img class="photo__image img" src="img/gallery/spaces-mobile.jpg" width="280" height="280" alt="Дорога в долине в закатном свете">
+                  </p>
                 </div>
-                <p class="photo-post__photo photo-post__photo--sunset-road photo">
-                  <img class="photo__image img" src="img/gallery/spaces-mobile.jpg" width="280" height="280" alt="Дорога в долине в закатном свете">
-                </p>
               </li>
-              <li class="gallery__item photo-post">
-                <div class="photo-post__description">
-                  <h3 class="photo-post__title title">Местная растительность</h3>
-                  <p class="photo-post__author author">Автор фото: <span class="author-name">Сергей</span></p>
-                  <p class="photo-post__likes likes-counter">143</p>
+              <li class="gallery__item">
+                <div class="gallery__item-wrapper photo-post">
+                  <div class="photo-post__description">
+                    <h3 class="photo-post__title title">Местная растительность</h3>
+                    <p class="photo-post__author author">Автор фото: <span class="author-name">Сергей</span></p>
+                    <p class="photo-post__likes likes-counter">143</p>
+                  </div>
+                  <p class="photo-post__photo photo-post__photo--local-plant photo">
+                    <img class="photo__image img" src="img/gallery/plants-mobile.jpg" width="280" height="280" alt="">
+                  </p>
                 </div>
-                <p class="photo-post__photo photo-post__photo--local-plant photo">
-                  <img class="photo__image img" src="img/gallery/plants-mobile.jpg" width="280" height="280" alt="">
-                </p>
               </li>
-              <li class="gallery__item photo-post">
-                <div class="photo-post__description photo-post__description--darker">
-                  <h3 class="photo-post__title title">Дорога на север</h3>
-                  <p class="photo-post__author author">Автор фото: <span class="author-name">Петр</span></p>
-                  <p class="photo-post__likes likes-counter">96</p>
+              <li class="gallery__item">
+                <div class="gallery__item-wrapper photo-post">
+                  <div class="photo-post__description photo-post__description--darker">
+                    <h3 class="photo-post__title title">Дорога на север</h3>
+                    <p class="photo-post__author author">Автор фото: <span class="author-name">Петр</span></p>
+                    <p class="photo-post__likes likes-counter">96</p>
+                  </div>
+                  <p class="photo-post__photo photo-post__photo--north-road photo">
+                    <img class="photo__image img" src="img/gallery/road-mobile.jpg" width="280" height="280" alt="">
+                  </p>
                 </div>
-                <p class="photo-post__photo photo-post__photo--north-road photo">
-                  <img class="photo__image img" src="img/gallery/road-mobile.jpg" width="280" height="280" alt="">
-                </p>
               </li>
-              <li class="gallery__item photo-post">
-                <div class="photo-post__description">
-                  <h3 class="photo-post__title title">Мост дьявола</h3>
-                  <p class="photo-post__author author">Автор фото: <span class="author-name">Антон</span></p>
-                  <p class="photo-post__likes likes-counter">254</p>
+              <li class="gallery__item">
+                <div class="gallery__item-wrapper photo-post">
+                  <div class="photo-post__description">
+                    <h3 class="photo-post__title title">Мост дьявола</h3>
+                    <p class="photo-post__author author">Автор фото: <span class="author-name">Антон</span></p>
+                    <p class="photo-post__likes likes-counter">254</p>
+                  </div>
+                  <p class="photo-post__photo photo-post__photo--bridge photo">
+                    <img class="photo__image img" src="img/gallery/bridge-mobile.jpg" width="280" height="280" alt="280">
+                  </p>
                 </div>
-                <p class="photo-post__photo photo-post__photo--bridge photo">
-                  <img class="photo__image img" src="img/gallery/bridge-mobile.jpg" width="280" height="280" alt="280">
-                </p>
               </li>
             </ul>
           </section>
-          <section class="page-main__video-gallery video-gallery">
+          <section class="galleries__video-gallery video-gallery">
             <section class="video-gallery__lead lead">
               <h2 class="lead__title title visually-hidden">
                 Галерея видео
@@ -115,38 +125,37 @@
               </div>
               <p class="lead__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
             </section>
-            <section class="video-gallery__video-section">
-              <div class="video-gallery__video-wrapper">
-                <!-- <video class="video-gallery__video video visually-hidden" width="320" height="200" controls></video> -->
-                <img src="img/gallery/video-mobile.jpg.jpg" class="video-gallery__video video img" width="320" height="200">
-                <div class="video-gallery__video-controls-wrapper">
-                  <div class="video-gallery__video-controls video-controls">
+            <section class="video-gallery__video-section video-section">
+              <div class="video-section__wrapper">
+                <!-- <video class="video-section__video video visually-hidden" width="320" height="200" controls></video> -->
+                <div class="video-section__video-controls video-section__video-controls--timeline video-controls">
+                  <div class="video-controls__wrapper video-controls__wrapper--timeline">
                     <button class="video-controls__button video-controls__button--replay" type="button">
-                      <span>Произвести сначала</span>
+                      <span class="visually-hidden">Произвести сначала</span>
                     </button>
-                    <input class="video-controls__timeline" type="range" min="0" name="timeline">
-                    <div class="video-controls__button-wrapper">
+                    <div  class="video-controls__timeline"></div>
+                    <div class="video-controls__buttons-wrapper">
                       <button class="video-controls__button video-controls__button--subtitles" type="button">
-                        <span>Субтитры</span>
+                        <span class="visually-hidden">Субтитры</span>
                       </button>
                       <button class="video-controls__button video-controls__button--fullscreen" type="button">
-                        <span>Полноэкранный режим</span>
+                        <span class="visually-hidden">Полноэкранный режим</span>
                       </button>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="video-gallery__mobile-video-controls-wrapper">
-                <div class="video-gallery__video-controls--mobile video-controls video-controls--mobile">
+              <div class="video-section__video-controls video-controls">
+                <div class="video-controls__wrapper video-controls__wrapper--mobile">
                   <button class="video-controls__button video-controls__button--replay" type="button">
-                    <span>Произвести сначала</span>
+                    <span class="visually-hidden">Произвести сначала</span>
                   </button>
                   <div class="video-controls__buttons-wrapper">
                     <button class="video-controls__button video-controls__button--subtitles" type="button">
-                      <span>Субтитры</span>
+                      <span class="visually-hidden">Субтитры</span>
                     </button>
                     <button class="video-controls__button video-controls__button--fullscreen" type="button">
-                      <span>Полноэкранный режим</span>
+                      <span class="visually-hidden">Полноэкранный режим</span>
                     </button>
                   </div>
                 </div>
