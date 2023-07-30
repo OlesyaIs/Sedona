@@ -30,23 +30,18 @@
           </button>
           <p class="main-nav__logo logo-button">
             <a class="logo-button__link">
-              <img class="logo-button__img" src="img/logo/logotype-mobile.png" width="102" height="84" alt="Логотип City of Sedona">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo/logotype-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo/logotype-tablet.svg">
+                <img class="logo-button__img" src="img/logo/logotype-mobile.svg" width="102" height="84" alt="Логотип City of Sedona">
+              </picture>
             </a>
           </p>
         </nav>
         <section class="page-header__slogan slogan slogan--welcome">
           <div class="slogan__wrapper">
-            <p class="slogan__lettering slogan__lettering--welcome">
-              <img src="img/slogan/welcome--mobile.png" width="116" height="28" alt="Welcome">
-            </p>
-            <p class="slogan__lettering slogan__lettering--gorgeous">
-              <img src="img/slogan/to-the-gorgeous--mobile.png" width="158" height="19" alt="to the gorgeous">
-            </p>
-            <p class="slogan__lettering slogan__lettering--sedona">
-              <img src="img/slogan/sedona--mobile.png" width="282" height="49" alt="Sedona">
-            </p>
-            <p class="slogan__lettering slogan__lettering--because">
-              <img src="img/slogan/because-the-grand-canyon-sucks--mobile.png" width="181" height="49" alt="Because the Grand Canyon sucks!">
+            <p class="slogan__lettering">
+              <img class="slogan__image img" src="img/slogan/welcome-slogan-text.svg" width="280" height="214" alt="Welcome to the gorgeous Sedona. Because The Grand Canyon sucks.">
             </p>
           </div>
         </section>
