@@ -19,7 +19,37 @@
 }
 
 .gallery__item {
+  position: relative;
+
   &--wide {
     grid-column: 1/-1;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $horizontal-strip;
+    }
+
+    &:last-of-type::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $horizontal-strip;
+    }
+  }
+}
+
+.gallery__item-wrapper {
+  padding: 22px 20px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
   }
 }
