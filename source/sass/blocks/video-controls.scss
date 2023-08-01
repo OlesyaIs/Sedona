@@ -1,15 +1,22 @@
 .video-controls {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 42px;
+  align-items: center;
   box-sizing: border-box;
+  padding: 21px;
   color: $control-button;
   background-color: $timeline-bg;
+
+  @media (min-width: $tablet-width) {
+    padding: 36px 35px;
+  }
 
   &--mobile {
     column-gap: 0;
     justify-content: space-between;
+    padding: 23px;
     width: 100%;
+
     color: $mobile-control-button;
     background-color: $mobile-controls-bg;
 
@@ -20,20 +27,75 @@
 }
 
 .video-controls__timeline {
+  position: relative;
   flex-grow: 1;
+  height: 3px;
+  background-color: $timeline;
+
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 37px;
+    width: 13px;
+    height: 13px;
+    background-color: $white;
+    border-radius: 50%;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 42px;
+    &::before {
+      left: 113px;
+    }
+  }
 }
 
-.video-controls__buttons-wrapper {
+.video-controls__buttons-linking-wrapper {
   display: flex;
   gap: 31px;
+  align-items: center;
 }
-
-// background-color: $mobile-controls-background;
 
 .video-controls__button {
   color: $control-button;
   background-color: transparent;
   border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--replay {
+    width: 16px;
+    height: 20px;
+    background-image: url(../img/icons/replay-white.svg);
+  }
+
+  &--subtitles {
+    width: 32px;
+    height: 20px;
+    background-image: url(../img/icons/subtitles-white.svg);
+  }
+
+  &--fullscreen {
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/icons/fullscreen-white.svg);
+  }
+}
+
+.video-controls--mobile .video-controls__button {
+  &--replay {
+    background-image: url(../img/icons/replay-gray.svg);
+  }
+
+  &--subtitles {
+    background-image: url(../img/icons/subtitles-gray.svg);
+  }
+
+  &--fullscreen {
+    background-image: url(../img/icons/fullscreen-gray.svg);
+  }
 }
 
 .video-controls:not(.video-controls--mobile) .video-controls__button {

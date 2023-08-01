@@ -4,6 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Sedona</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="img/favicons/favicon32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="img/favicons/favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -11,10 +18,10 @@
       <header class="page-header">
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
+            <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link" href="#">Фото и видео</a>
             </li>
             <li class="main-nav__item">
@@ -29,83 +36,104 @@
           </button>
           <p class="main-nav__logo logo-button">
             <a class="logo-button__link" href="index.html">
-              <img class="logo-button__img" src="img/logo/logotype-mobile.png" width="102" height="84" alt="Логотип City of Sedona">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo/logotype-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo/logotype-tablet.svg">
+                <img class="logo-button__img img" src="img/logo/logotype-mobile.svg" width="102" height="84" alt="Логотип City of Sedona">
+              </picture>
             </a>
           </p>
         </nav>
-        <section class="page-header__slogan slogan slogan--welcome">
+        <section class="page-header__slogan page-header__slogan--short header-slogan header-slogan--short">
           <div class="slogan__wrapper">
-            <p class="slogan__lettering slogan__lettering--welcome">
-              <img src="img/slogan/welcome--mobile.png" width="116" height="28" alt="Welcome">
-            </p>
-            <p class="slogan__lettering slogan__lettering--gorgeous">
-              <img src="img/slogan/to-the-gorgeous--mobile.png" width="158" height="19" alt="to the gorgeous">
-            </p>
-            <p class="slogan__lettering slogan__lettering--sedona">
-              <img src="img/slogan/sedona--mobile.png" width="282" height="49" alt="Sedona">
-            </p>
-            <p class="slogan__lettering slogan__lettering--because">
-              <img src="img/slogan/because-the-grand-canyon-sucks--mobile.png" width="181" height="49" alt="Because the Grand Canyon sucks!">
+            <p class="slogan__lettering">
+              <img class="slogan__image img" src="img/slogan/SEDONA.svg" width="229" height="39" alt="Sedona">
             </p>
           </div>
         </section>
       </header>
       <main class="page-main">
-        <section class="page-main__galleries">
-          <div class="page-main__lead page-lead">
-            <h1 class="page-lead__title title">
-              Фото и видео
-            </h1>
-            <p class="page-lead__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <section class="page-main__galleries galleries">
+          <div class="galleries__lead page-lead">
+            <div class="page-lead__wrapper">
+              <h1 class="page-lead__title title">
+                Фото и видео
+              </h1>
+              <p class="page-lead__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+            </div>
           </div>
-          <section class="page-main__gallery gallery">
+          <section class="galleries__gallery gallery">
             <h2 class="galllery__title title visually-hidden">
               Галерея фотографий
             </h2>
             <ul class="gallery__list">
               <li class="gallery__item gallery__item--wide photo-post">
-                <div class="photo-post__description">
-                  <h3 class="photo-post__title title">Неродные просторы</h3>
-                  <p class="photo-post__author author">Автор фото: <span class="author-name">Борис</span></p>
-                  <p class="photo-post__likes likes-counter">1350</p>
+                <div class="photo-post__wrapper">
+                  <div class="photo-post__description">
+                    <h3 class="photo-post__title title">Неродные просторы</h3>
+                    <p class="photo-post__author author">Автор фото: <span class="author-name">Борис</span></p>
+                    <p class="photo-post__likes likes-counter">1350</p>
+                  </div>
+                  <p class="photo-post__photo photo-post__photo--sunset-road photo">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/gallery/sunset-road-desktop.jpg 1x, img/gallery/sunset-road-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/gallery/sunset-road-tablet.jpg 1x, img/gallery/sunset-road-tablet@2x.jpg 2x">
+                      <img class="photo__image img" src="img/gallery/sunset-road-mobile.jpg" srcset="img/gallery/sunset-road-mobile@2x.jpg 2x" alt="Дорога в долине в закатном свете">
+                    </picture>
+                  </p>
                 </div>
-                <p class="photo-post__photo photo-post__photo--sunset-road photo">
-                  <img class="photo__image img" src="img/gallery/spaces-mobile.jpg" width="280" height="280" alt="Дорога в долине в закатном свете">
-                </p>
               </li>
               <li class="gallery__item photo-post">
-                <div class="photo-post__description">
-                  <h3 class="photo-post__title title">Местная растительность</h3>
-                  <p class="photo-post__author author">Автор фото: <span class="author-name">Сергей</span></p>
-                  <p class="photo-post__likes likes-counter">143</p>
+                <div class="photo-post__wrapper">
+                  <div class="photo-post__description">
+                    <h3 class="photo-post__title title">Местная растительность</h3>
+                    <p class="photo-post__author author">Автор фото: <span class="author-name">Сергей</span></p>
+                    <p class="photo-post__likes likes-counter">143</p>
+                  </div>
+                  <p class="photo-post__photo photo-post__photo--local-plant photo">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/gallery/plants-desktop.jpg 1x, img/gallery/plants-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/gallery/plants-tablet.jpg 1x, img/gallery/plants-tablet@2x.jpg 2x">
+                      <img class="photo__image img" src="img/gallery/plants-mobile.jpg" srcset="img/gallery/plants-mobile@2x.jpg 2x" alt="Растения в пустыне">
+                    </picture>
+                  </p>
                 </div>
-                <p class="photo-post__photo photo-post__photo--local-plant photo">
-                  <img class="photo__image img" src="img/gallery/plants-mobile.jpg" width="280" height="280" alt="">
-                </p>
               </li>
               <li class="gallery__item photo-post">
-                <div class="photo-post__description photo-post__description--darker">
-                  <h3 class="photo-post__title title">Дорога на север</h3>
-                  <p class="photo-post__author author">Автор фото: <span class="author-name">Петр</span></p>
-                  <p class="photo-post__likes likes-counter">96</p>
+                <div class="photo-post__wrapper">
+                  <div class="photo-post__description photo-post__description--darker">
+                    <h3 class="photo-post__title title">Дорога на север</h3>
+                    <p class="photo-post__author author">Автор фото: <span class="author-name">Петр</span></p>
+                    <p class="photo-post__likes likes-counter">96</p>
+                  </div>
+                  <p class="photo-post__photo photo-post__photo--north-road photo">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/gallery/forest-road-desktop.jpg 1x, img/gallery/forest-road-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/gallery/forest-road-tablet.jpg 1x, img/gallery/forest-road-tablet@2x.jpg 2x">
+                      <img class="photo__image img" src="img/gallery/forest-road-mobile.jpg" srcset="img/gallery/forest-road-mobile@2x.jpg 2x" alt="Дорога в лесу">
+                    </picture>
+                  </p>
                 </div>
-                <p class="photo-post__photo photo-post__photo--north-road photo">
-                  <img class="photo__image img" src="img/gallery/road-mobile.jpg" width="280" height="280" alt="">
-                </p>
               </li>
               <li class="gallery__item photo-post">
-                <div class="photo-post__description">
-                  <h3 class="photo-post__title title">Мост дьявола</h3>
-                  <p class="photo-post__author author">Автор фото: <span class="author-name">Антон</span></p>
-                  <p class="photo-post__likes likes-counter">254</p>
+                <div class="photo-post__wrapper">
+                  <div class="photo-post__description">
+                    <h3 class="photo-post__title title">Мост дьявола</h3>
+                    <p class="photo-post__author author">Автор фото: <span class="author-name">Антон</span></p>
+                    <p class="photo-post__likes likes-counter">254</p>
+                  </div>
+                  <p class="photo-post__photo photo-post__photo--bridge photo">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="img/gallery/bridge-desktop.jpg 1x, img/gallery/bridge-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)" srcset="img/gallery/bridge-tablet.jpg 1x, img/gallery/bridge-tablet@2x.jpg 2x">
+                      <img class="photo__image img" src="img/gallery/bridge-mobile.jpg" srcset="img/gallery/bridge-mobile@2x.jpg 2x" alt="Мост Дьявола, перекинутый через каньон">
+                    </picture>
+                  </p>
                 </div>
-                <p class="photo-post__photo photo-post__photo--bridge photo">
-                  <img class="photo__image img" src="img/gallery/bridge-mobile.jpg" width="280" height="280" alt="280">
-                </p>
               </li>
             </ul>
           </section>
-          <section class="page-main__video-gallery video-gallery">
+          <section class="galleries__video-gallery video-gallery">
             <section class="video-gallery__lead lead">
               <h2 class="lead__title title visually-hidden">
                 Галерея видео
@@ -118,19 +146,23 @@
             <section class="video-gallery__video-section">
               <div class="video-gallery__video-wrapper">
                 <!-- <video class="video-gallery__video video visually-hidden" width="320" height="200" controls></video> -->
-                <img src="img/gallery/video-mobile.jpg.jpg" class="video-gallery__video video img" width="320" height="200">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/video-gallery/video-desktop.jpg 1x, img/video-gallery/video-desktop@2.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/video-gallery/video-tablet.jpg 1x, img/video-gallery/video-tablet@2.jpg 2x">
+                  <img class="video-gallery__video video" src="img/video-gallery/video-mobile.jpg" srcset="img/video-gallery/video-mobile@2x.jpg 2x">
+                </picture>
                 <div class="video-gallery__video-controls-wrapper">
                   <div class="video-gallery__video-controls video-controls">
                     <button class="video-controls__button video-controls__button--replay" type="button">
-                      <span>Произвести сначала</span>
+                      <span class="visually-hidden">Произвести сначала</span>
                     </button>
-                    <input class="video-controls__timeline" type="range" min="0" name="timeline">
-                    <div class="video-controls__button-wrapper">
+                    <p class="video-controls__timeline"></p>
+                    <div class="video-controls__buttons-linking-wrapper">
                       <button class="video-controls__button video-controls__button--subtitles" type="button">
-                        <span>Субтитры</span>
+                        <span class="visually-hidden">Субтитры</span>
                       </button>
                       <button class="video-controls__button video-controls__button--fullscreen" type="button">
-                        <span>Полноэкранный режим</span>
+                        <span class="visually-hidden">Полноэкранный режим</span>
                       </button>
                     </div>
                   </div>
@@ -139,14 +171,14 @@
               <div class="video-gallery__mobile-video-controls-wrapper">
                 <div class="video-gallery__video-controls--mobile video-controls video-controls--mobile">
                   <button class="video-controls__button video-controls__button--replay" type="button">
-                    <span>Произвести сначала</span>
+                    <span class="visually-hidden">Произвести сначала</span>
                   </button>
-                  <div class="video-controls__buttons-wrapper">
+                  <div class="video-controls__buttons-linking-wrapper">
                     <button class="video-controls__button video-controls__button--subtitles" type="button">
-                      <span>Субтитры</span>
+                      <span class="visually-hidden">Субтитры</span>
                     </button>
                     <button class="video-controls__button video-controls__button--fullscreen" type="button">
-                      <span>Полноэкранный режим</span>
+                      <span class="visually-hidden">Полноэкранный режим</span>
                     </button>
                   </div>
                 </div>

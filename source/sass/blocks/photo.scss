@@ -1,19 +1,23 @@
 .photo__image {
   margin-left: auto;
   margin-right: auto;
-  height: 260px;
-  width: auto;
+  width: 100%;
+  height: auto;
   object-fit: cover;
 
-  &--city {
-      background-color: $photo-city;
-    }
+  &--sunset-road {
+    background-color: $sunset-road;
+  }
 
-    &--bridge {
-      background-color: $photo-bridge;
-    }
+  &--plants {
+    background-color: $local-plant;
+  }
 
-  @media (min-width: $tablet-width) {
-    height: 256px;
+  &--forest-road {
+    background-color: $north-road;
+  }
+
+  &--bridge {
+    background-color: $bridge;
   }
 }
