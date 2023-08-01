@@ -1,19 +1,15 @@
-.video-controls__wrapper {
+.video-controls {
   display: flex;
   flex-wrap: wrap;
   column-gap: 42px;
-  align-items: center;
-  padding: 21px;
-  width: 100%;
-  // min-height: 45px;
   box-sizing: border-box;
   color: $control-button;
-  background-color: $controls-bg;
+  background-color: $timeline-bg;
 
   &--mobile {
     column-gap: 0;
     justify-content: space-between;
-    padding: 23px;
+    width: 100%;
     color: $mobile-control-button;
     background-color: $mobile-controls-bg;
 
@@ -24,22 +20,7 @@
 }
 
 .video-controls__timeline {
-  position: relative;
-  width: 238px;
-  height: 3px;
   flex-grow: 1;
-  background-color: $timeline;
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: -3px;
-    left: 37px;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background-color: $timeline-mark;
-  }
 }
 
 .video-controls__buttons-wrapper {
@@ -47,50 +28,20 @@
   gap: 31px;
 }
 
+// background-color: $mobile-controls-background;
+
 .video-controls__button {
-  height: 20px;
   color: $control-button;
   background-color: transparent;
   border: none;
-  background-repeat: no-repeat;
-
-  &--replay {
-    width: 16px;
-    background-image: url(../img/icons/video-controls/replay.svg);
-  }
-
-  &--subtitles {
-    width: 32px;
-    background-image: url(../img/icons/video-controls/subtitles.svg);
-  }
-
-  &--fullscreen {
-    width: 20px;
-    background-image: url(../img/icons/video-controls/fullscreen.svg);
-  }
 }
 
-.video-controls__wrapper--timeline .video-controls__button {
+.video-controls:not(.video-controls--mobile) .video-controls__button {
   @media (max-width: $mobile-width-only) {
     display: none;
   }
 }
 
-.video-controls__wrapper--mobile .video-controls__button {
+.video-controls--mobile .video-controls__button {
   color: $mobile-control-button;
-
-  &--replay {
-    width: 16px;
-    background-image: url(../img/icons/video-controls/replay--dark.svg);
-  }
-
-  &--subtitles {
-    width: 32px;
-    background-image: url(../img/icons/video-controls/subtitles--dark.svg);
-  }
-
-  &--fullscreen {
-    width: 20px;
-    background-image: url(../img/icons/video-controls/fullscreen--dark.svg);
-  }
 }
