@@ -41,6 +41,11 @@
   padding: 0;
   list-style: none;
 
+  @media (max-width: $mobile-width-only) {
+    margin: 0 auto;
+    max-width: 520px;
+  }
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

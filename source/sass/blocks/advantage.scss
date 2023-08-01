@@ -92,6 +92,7 @@
 
   @media (min-width: $tablet-width) {
     grid-column: span 2;
+    background-color: $basic;
 
     &--first {
       grid-column: 1/3;
