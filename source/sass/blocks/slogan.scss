@@ -4,25 +4,8 @@
   font-weight: 700;
   color: $title-text;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: center;
   background-size: cover;
-
-  &--welcome {
-    background-image: url(../img/backgrounds/page-slogan-mobile.jpg);
-    background-color: $page-slogan;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url(../img/backgrounds/page-slogan-mobile@2x.jpg);
-    }
-
-    @media (min-width: $tablet-width) {
-      background-image: url(../img/backgrounds/page-slogan.jpg);
-
-      @media (min-resolution: 2dppx) {
-        background-image: url(../img/backgrounds/page-slogan@2x.jpg);
-      }
-    }
-  }
 }
 
 .slogan__wrapper {
@@ -38,11 +21,8 @@
 }
 
 .slogan__image {
-  width: 280px;
-
-  @media (min-width: $tablet-width) {
-    width: 460px;
-  }
+  max-width: 100%;
+  height: auto;
 }
 
 .slogan__text {

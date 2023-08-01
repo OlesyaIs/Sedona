@@ -4,6 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: {{Sedona}}</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="img/favicons/favicon32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="img/favicons/favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -30,23 +37,17 @@
           </button>
           <p class="main-nav__logo logo-button">
             <a class="logo-button__link" href="index.html">
-              <img class="logo-button__img" src="img/logo/logotype-mobile.png" width="102" height="84" alt="Логотип City of Sedona">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logo/logotype-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo/logotype-tablet.svg">
+                <img class="logo-button__img" src="img/logo/logotype-mobile.svg" width="102" height="84" alt="Логотип City of Sedona">
+              </picture>
             </a>
-          </p>
         </nav>
-        <section class="page-header__slogan slogan slogan--welcome">
+        <section class="page-header__slogan page-header__slogan--short header-slogan header-slogan--short">
           <div class="slogan__wrapper">
-            <p class="slogan__lettering slogan__lettering--welcome">
-              <img src="img/slogan/welcome--mobile.png" width="116" height="28" alt="Welcome">
-            </p>
-            <p class="slogan__lettering slogan__lettering--gorgeous">
-              <img src="img/slogan/to-the-gorgeous--mobile.png" width="158" height="19" alt="to the gorgeous">
-            </p>
-            <p class="slogan__lettering slogan__lettering--sedona">
-              <img src="img/slogan/sedona--mobile.png" width="282" height="49" alt="Sedona">
-            </p>
-            <p class="slogan__lettering slogan__lettering--because">
-              <img src="img/slogan/because-the-grand-canyon-sucks--mobile.png" width="181" height="49" alt="Because the Grand Canyon sucks!">
+            <p class="slogan__lettering">
+              <img class="slogan__image img" src="img/slogan/SEDONA.svg" width="229" height="39" alt="Sedona">
             </p>
           </div>
         </section>
@@ -68,9 +69,9 @@
             </div>
           </div>
           <form class="form-section__form form form--reviews" action="https://echo.htmlacademy.ru" method="get">
-            <div class="form__group form__group--xsmall fields-group fields-group--name">
+            <div class="form__group form__group--xsmall fields-group fields-group--xsmall fields-group--name">
               <fieldset class="fields-group__wrapper">
-                <legend class="fields-group__title fields-group__title--name fields-group__title--tablet-desktop-left title">Представьтесь:</legend>
+                <legend class="fields-group__title fields-group__title--name title">Представьтесь:</legend>
                 <div class="fields-group__field field field--name">
                   <label class="field__title" for="name">Имя*:</label>
                   <input class="field__input field__input--text" type="text" placeholder="Петр" name="name" id="name" required>
@@ -104,7 +105,7 @@
             </div>
             <div class="form__group form__group--small form__group--first fields-group fields-group--radio">
               <fieldset class="fields-group__wrapper">
-                <legend class="fields-group__title fields-group__title--radio fields-group__title--tablet-left title">Ваше общее впечатление:</legend>
+                <legend class="fields-group__title fields-group__title--radio title">Ваше общее впечатление:</legend>
                 <div class="fields-group__field field field--radio">
                   <input class="field__input visually-hidden" type="radio" name="impression" id="positive-impression" value="+" checked>
                   <label class="field__title" for="positive-impression">Скорее положительное</label>

@@ -6,6 +6,25 @@
   padding: 90px 20px 85px;
 
   @media (min-width: $tablet-width) {
-    padding: 78px 20px 90px;
+    padding: 78px 60px 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 78px 120px 90px;
+  }
+
+  &--short {
+    padding: 52px 45px 67px;
+
+    @media (min-width: $tablet-width) {
+      padding: 95px 60px 117px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 101px 120px 120px;
+    }
   }
 }
+
+
+
