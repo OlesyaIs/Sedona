@@ -146,19 +146,23 @@
             <section class="video-gallery__video-section">
               <div class="video-gallery__video-wrapper">
                 <!-- <video class="video-gallery__video video visually-hidden" width="320" height="200" controls></video> -->
-                <img src="img/gallery/video-mobile.jpg.jpg" class="video-gallery__video video img" width="320" height="200">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/video-gallery/video-desktop.jpg 1x, img/video-gallery/video-desktop@2.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/video-gallery/video-tablet.jpg 1x, img/video-gallery/video-tablet@2.jpg 2x">
+                  <img class="video-gallery__video video" src="img/video-gallery/video-mobile.jpg" srcset="img/video-gallery/video-mobile@2x.jpg 2x">
+                </picture>
                 <div class="video-gallery__video-controls-wrapper">
                   <div class="video-gallery__video-controls video-controls">
                     <button class="video-controls__button video-controls__button--replay" type="button">
-                      <span>Произвести сначала</span>
+                      <span class="visually-hidden">Произвести сначала</span>
                     </button>
-                    <input class="video-controls__timeline" type="range" min="0" name="timeline">
-                    <div class="video-controls__button-wrapper">
+                    <p class="video-controls__timeline"></p>
+                    <div class="video-controls__buttons-linking-wrapper">
                       <button class="video-controls__button video-controls__button--subtitles" type="button">
-                        <span>Субтитры</span>
+                        <span class="visually-hidden">Субтитры</span>
                       </button>
                       <button class="video-controls__button video-controls__button--fullscreen" type="button">
-                        <span>Полноэкранный режим</span>
+                        <span class="visually-hidden">Полноэкранный режим</span>
                       </button>
                     </div>
                   </div>
@@ -167,14 +171,14 @@
               <div class="video-gallery__mobile-video-controls-wrapper">
                 <div class="video-gallery__video-controls--mobile video-controls video-controls--mobile">
                   <button class="video-controls__button video-controls__button--replay" type="button">
-                    <span>Произвести сначала</span>
+                    <span class="visually-hidden">Произвести сначала</span>
                   </button>
-                  <div class="video-controls__buttons-wrapper">
+                  <div class="video-controls__buttons-linking-wrapper">
                     <button class="video-controls__button video-controls__button--subtitles" type="button">
-                      <span>Субтитры</span>
+                      <span class="visually-hidden">Субтитры</span>
                     </button>
                     <button class="video-controls__button video-controls__button--fullscreen" type="button">
-                      <span>Полноэкранный режим</span>
+                      <span class="visually-hidden">Полноэкранный режим</span>
                     </button>
                   </div>
                 </div>
