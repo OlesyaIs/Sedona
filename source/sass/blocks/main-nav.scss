@@ -187,17 +187,13 @@
   margin: 0;
   padding: 0;
   position: absolute;
-  left: calc(50% - 51px);
+  left: calc(50% - 93px);
 
   @media (max-width: $mobile-width-only) {
-    bottom: -28px;
+    bottom: -40px;
   }
 
   @media (min-width: $tablet-width) {
     top: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: calc(50% - 93px);
   }
 }
