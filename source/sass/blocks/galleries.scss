@@ -2,6 +2,14 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+
+  @media (min-width: $tablet-width) {
+    gap: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 62px;
+  }
 }
 
 .galleries__lead {
