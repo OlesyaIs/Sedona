@@ -83,8 +83,8 @@ $copy-logo-active: rgba(0, 0, 0, 0.3);
 
 // Video controls' colors
 
-$controls-bg: rgba(0, 0, 0, 0.6);
 $timeline: rgba(255, 255, 255, 0.2);
+$timeline-bg: rgba(0, 0, 0, 0.6);
 $timeline-mark: $white;
 
 $mobile-controls-bg: #f2f2f2;
@@ -115,5 +115,5 @@ $bridge: #a56a56;
 
 $page-shadow: rgba(0, 1, 1, 0.20);
 $advantage-strip: #d6d6d6;
-$horizontal-strip: $light;
-$vertical-strip: #d8d8d8;
+$form-strip: $light;
+$form-column: #d8d8d8;
