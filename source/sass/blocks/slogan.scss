@@ -4,13 +4,8 @@
   font-weight: 700;
   color: $title-text;
   background-repeat: no-repeat;
-  background-position: 50%;
+  background-position: center;
   background-size: cover;
-
-  &--welcome {
-    background-image: url(../img/back-mobile.jpg);
-    background-color: $page-slogan;
-  }
 }
 
 .slogan__wrapper {
@@ -24,17 +19,9 @@
   margin: 0;
   padding: 0;
 
-  &--welcome {
-    margin-bottom: 6px;
-  }
-
-  &--gorgeous {
-    margin-bottom: 31px;
-  }
-
-  &--sedona {
-    margin-bottom: 34px;
-  }
+.slogan__image {
+  max-width: 100%;
+  height: auto;
 }
 
 .slogan__text {

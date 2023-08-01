@@ -4,6 +4,8 @@
     grid-template-columns: auto 1fr;
     align-items: center;
     gap: 15px;
+
+    min-width: 10px;
   }
 
   &--contact {
@@ -28,7 +30,6 @@
 .field--contact .field__input-wrapper {
   display: grid;
   grid-template-columns: 1fr 58px;
-  flex-grow: 1;
 
   &::after {
     content: '';
@@ -40,7 +41,7 @@
 
 .field__input {
   max-width: 100%;
-  min-width: 10%;
+  min-width: 0px;
   box-sizing: border-box;
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
