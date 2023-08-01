@@ -11,11 +11,4 @@
 .photo__image {
   margin-left: auto;
   margin-right: auto;
-  height: 260px;
-  width: auto;
-  object-fit: cover;
-
-  @media (min-width: $tablet-width) {
-    height: 256px;
-  }
 }
