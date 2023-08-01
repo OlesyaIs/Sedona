@@ -1,0 +1,37 @@
+.galleries {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.galleries__lead {
+  margin: 0;
+  padding: 24px 20px 12px;
+  font-size: 18px;
+
+  @media (min-width: $tablet-width) {
+    gap: 53px;
+    padding: 59px 60px;
+    font-size: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 62px;
+    padding: 101px 120px 66px;
+    font-size: 30px;
+  }
+}
+
+.galleries__gallery {
+  margin: 0 auto;
+  padding: 0;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+   }
+
+  @media (min-width: $desktop-width) {
+   width: 1200px;
+  }
+}
