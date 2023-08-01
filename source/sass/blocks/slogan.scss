@@ -8,20 +8,8 @@
   background-size: cover;
 
   &--welcome {
-    background-image: url(../img/backgrounds/page-slogan-mobile.jpg);
+    background-image: url(../img/back-mobile.jpg);
     background-color: $page-slogan;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url(../img/backgrounds/page-slogan-mobile@2x.jpg);
-    }
-
-    @media (min-width: $tablet-width) {
-      background-image: url(../img/backgrounds/page-slogan.jpg);
-
-      @media (min-resolution: 2dppx) {
-        background-image: url(../img/backgrounds/page-slogan@2x.jpg);
-      }
-    }
   }
 }
 
@@ -35,13 +23,17 @@
 .slogan__lettering {
   margin: 0;
   padding: 0;
-}
 
-.slogan__image {
-  width: 280px;
+  &--welcome {
+    margin-bottom: 6px;
+  }
 
-  @media (min-width: $tablet-width) {
-    width: 460px;
+  &--gorgeous {
+    margin-bottom: 31px;
+  }
+
+  &--sedona {
+    margin-bottom: 34px;
   }
 }
 
