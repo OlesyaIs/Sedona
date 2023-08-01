@@ -1,14 +1,3 @@
-.logo-button {
-  width: 186px;
-  height: 96px;
-
-  @media (min-width: $desktop-width) {
-    background-image: url(../img/decorative-elements/logo-triangle.svg);
-    background-size: auto;
-    background-position: 50% 0;
-  }
-}
-
 .logo-button__link {
   display: flex;
   justify-content: center;
@@ -18,5 +7,10 @@
 .logo-button__img {
   width: 102px;
   height: 84px;
+
+  @media (min-width: $desktop-width) {
+    width: 186px;
+    height: 96px;
+  }
 }
 
