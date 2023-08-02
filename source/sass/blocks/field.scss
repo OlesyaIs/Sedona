@@ -36,6 +36,18 @@
     height: auto;
     width: 58px;
     background-color: $contacts-icon-bg;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--phone::after {
+    background-image: url(../img/icons/phone.svg);
+    background-size: 18px;
+  }
+
+  &--email::after {
+    background-image: url(../img/icons/mail.svg);
+    background-size: 16px 12px;
   }
 }
 
@@ -95,6 +107,8 @@
       outline: none;
     }
   }
+
+
 }
 
 .field--contact .field__input {

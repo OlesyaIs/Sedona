@@ -1,20 +1,23 @@
+.photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .photo__image {
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
   height: auto;
-  object-fit: cover;
 
   &--sunset-road {
     background-color: $sunset-road;
   }
 
   &--plants {
-    background-color: $local-plant;
+    background-color: $plants;
   }
 
   &--forest-road {
-    background-color: $north-road;
+    background-color: $forest-road;
   }
 
   &--bridge {
