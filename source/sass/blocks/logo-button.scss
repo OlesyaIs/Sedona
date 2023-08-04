@@ -5,12 +5,22 @@
 }
 
 .logo-button__img {
-  width: 102px;
-  height: 84px;
+  width: 186px;
+  height: 96px;
+}
 
-  @media (min-width: $desktop-width) {
-    width: 186px;
-    height: 96px;
+.logo-sedona__clouds {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 
+.logo-sedona__background {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}

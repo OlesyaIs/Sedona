@@ -1,0 +1,31 @@
+.toggle {
+  padding: 0;
+
+  &--opened {
+    color: $white;
+  }
+
+  &--closed {
+    color: $basic;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.toggle__icon--closed {
+  display: none;
+}
+
+.toggle--closed .toggle__icon--opened {
+  display: none;
+}
+
+.toggle--closed .toggle__icon--closed {
+  display: block;
+}
