@@ -9,34 +9,24 @@
   box-sizing: border-box;
   min-width: 46px;
   min-height: 48px;
-  color: $special-text;
+  color: $button-text;
   text-decoration: none;
   background-color: $button;
-
-  path {
-    fill: $button-text;
-  }
 
   @include content-center;
 
   &:hover {
     background-color: $button-hover;
-    path {
-      fill: $button-text-hover;
-    }
+    cursor: pointer;
   }
 
   &:active {
+    color: $button-text-active;
     background-color: $button-active;
-    path {
-      fill: $button-text-active;
-    }
   }
 
   &:disabled {
+    color: $button-text-disabled;
     background-color: $button-disabled;
-    path {
-      fill: $button-text-disabled;
-    }
   }
 }
