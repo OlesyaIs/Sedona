@@ -19,13 +19,13 @@
 
   @media (min-width: $tablet-width) {
     gap: 53px;
-    padding: 59px 60px;
+    padding: 59px 60px 6px;
     font-size: 30px;
   }
 
   @media (min-width: $desktop-width) {
     gap: 62px;
-    padding: 101px 120px 66px;
+    padding: 101px 120px 4px;
     font-size: 30px;
   }
 }

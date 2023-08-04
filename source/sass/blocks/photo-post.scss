@@ -86,35 +86,17 @@
 }
 
 .photo-post__likes {
-  position: relative;
   grid-row: 1 / 5;
   grid-column: 2 / -1;
   align-self: center;
   margin: 13px 0 0;
-  padding: 0 0 0 32px;
+  padding: 0;
 
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
 
-  &::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 23px;
-    height: 21px;
-    background-image: url(../img/icons/like-icon.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
   @media (min-width: $tablet-width) {
     margin-top: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    &::before {
-      background-image: url(../img/icons/like-icon-white.svg);
-    }
   }
 }

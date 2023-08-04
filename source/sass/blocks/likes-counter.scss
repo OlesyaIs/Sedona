@@ -1,0 +1,12 @@
+.likes-counter {
+  display: flex;
+}
+
+.likes-counter__icon {
+  margin-right: 15px;
+  opacity: 0.3;
+
+  @media (min-width: $desktop-width) {
+    opacity: 1;
+  }
+}
