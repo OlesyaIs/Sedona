@@ -47,20 +47,20 @@
   }
 }
 
-.slogan__wrapper {
+.header-slogan__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
 }
 
-.slogan__lettering {
+.header-slogan__lettering {
   margin: 0;
   padding: 0;
 }
 
-.slogan__image {
-  width: 280px;
+.header-slogan__image {
+  width: 100%;
   height: auto;
 
   @media (min-width: $tablet-width) {
@@ -68,7 +68,7 @@
   }
 }
 
-.header-slogan--short .slogan__image {
+.header-slogan--short .header-slogan__image {
   width: 229px;
 
   @media (min-width: $tablet-width) {
@@ -76,7 +76,7 @@
   }
 }
 
-.slogan__text {
+.header-slogan__text {
   margin: 0;
   padding: 0;
 }

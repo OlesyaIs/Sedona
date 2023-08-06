@@ -48,7 +48,6 @@
 }
 
 .main-nav__item {
-  min-height: 56px;
   box-sizing: border-box;
   @media (min-width: $tablet-width) {
     width: calc(20% - 1px);
