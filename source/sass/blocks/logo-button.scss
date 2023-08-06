@@ -9,6 +9,14 @@
   height: 96px;
 }
 
+.logo-sedona__background {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
 .logo-sedona__clouds {
   display: none;
 
@@ -17,7 +25,7 @@
   }
 }
 
-.logo-sedona__background {
+.logo-sedona__basic-with-bridge {
   display: none;
 
   @media (min-width: $desktop-width) {
