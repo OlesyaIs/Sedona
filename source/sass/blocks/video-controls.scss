@@ -62,6 +62,18 @@
   color: $control-button;
   background-color: transparent;
   border: none;
+
+  &:hover {
+    color: $control-button-hover;
+  }
+
+  &:focus {
+    color: $control-button-hover;
+  }
+
+  &:active {
+    color: $control-button-active;
+  }
 }
 
 .video-controls:not(.video-controls--mobile) .video-controls__button {
@@ -72,4 +84,16 @@
 
 .video-controls--mobile .video-controls__button {
   color: $mobile-control-button;
+
+  &:hover {
+    color: $mobile-control-button-hover;
+  }
+
+  &:focus {
+    color: $mobile-control-button-hover;
+  }
+
+  &:active {
+    color: $mobile-control-button-active;
+  }
 }
