@@ -36,7 +36,7 @@
   &::before {
     content: '';
     position: absolute;
-    top: -3px;
+    top: -5px;
     left: 37px;
     width: 13px;
     height: 13px;
@@ -62,40 +62,6 @@
   color: $control-button;
   background-color: transparent;
   border: none;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  &--replay {
-    width: 16px;
-    height: 20px;
-    background-image: url(../img/icons/replay-white.svg);
-  }
-
-  &--subtitles {
-    width: 32px;
-    height: 20px;
-    background-image: url(../img/icons/subtitles-white.svg);
-  }
-
-  &--fullscreen {
-    width: 20px;
-    height: 20px;
-    background-image: url(../img/icons/fullscreen-white.svg);
-  }
-}
-
-.video-controls--mobile .video-controls__button {
-  &--replay {
-    background-image: url(../img/icons/replay-gray.svg);
-  }
-
-  &--subtitles {
-    background-image: url(../img/icons/subtitles-gray.svg);
-  }
-
-  &--fullscreen {
-    background-image: url(../img/icons/fullscreen-gray.svg);
-  }
 }
 
 .video-controls:not(.video-controls--mobile) .video-controls__button {
