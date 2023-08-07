@@ -15,10 +15,6 @@
   @media (min-width: $tablet-width) {
     gap: 35px;
   }
-
-  @media (min-width: $desktop-width) {
-    gap: 42px;
-  }
 }
 
 .hotel-search__slogan {
@@ -46,6 +42,10 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 5px;
   }
 }
 
