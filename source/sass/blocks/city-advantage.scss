@@ -15,7 +15,7 @@
 .city-advantage__description {
   display: flex;
   flex-direction: column;
-  gap: 0.72em;
+  gap: 1.16em;
 }
 
 .city-advantage__title {
@@ -28,7 +28,7 @@
   &::before {
     content: '';
     position: absolute;
-    bottom: -5px;
+    // bottom: 0;
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: contain;
@@ -37,7 +37,8 @@
   &--home::before {
     width: 39px;
     height: 37px;
-    left: -48px;
+    left: -49px;
+    bottom: -2px;
     background-image: url(../img/icons/icon-house--mobile.svg);
   }
 
@@ -45,6 +46,7 @@
     width: 32px;
     height: 38px;
     left: -45px;
+    bottom: -1px;
     background-image: url(../img/icons/icon-gift--mobile.svg);
   }
 
@@ -52,6 +54,7 @@
     width: 40px;
     height: 35px;
     left: -52px;
+    bottom: -4px;
     background-image: url(../img/icons/icon-burger--mobile.svg);
   }
 
