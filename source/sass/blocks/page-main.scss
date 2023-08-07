@@ -19,8 +19,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-top: 58px;
-    padding-bottom: 58px;
+    padding: 58px 0;
   }
 
   @media (min-width: $desktop-width) {

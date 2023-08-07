@@ -40,6 +40,11 @@
   margin: 0;
   margin-top: 6px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
   &--course {
     text-align: center;
     margin-top: 34px;

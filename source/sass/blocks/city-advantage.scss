@@ -3,12 +3,16 @@
   padding-right: 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 158px 36px 60px;
+    padding: 157px 30px 60px;
     text-align: center;
+
+    &--souvenirs {
+      order: 1;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 158px 55px 80px;
+    padding: 157px 55px 80px;
   }
 }
 
@@ -16,6 +20,10 @@
   display: flex;
   flex-direction: column;
   gap: 1.16em;
+
+  @media (min-width: $tablet-width) {
+    gap: 1.7em;
+  }
 }
 
 .city-advantage__title {
@@ -28,7 +36,6 @@
   &::before {
     content: '';
     position: absolute;
-    // bottom: 0;
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: contain;
@@ -74,14 +81,14 @@
     }
 
     &--souvenirs::before {
-      height: 68px;
-      top: -94px;
+      height: 75px;
+      top: -101px;
       background-image: url(../img/icons/icon-gift--mobile.svg);
     }
 
     &--meal::before {
-      height: 75px;
-      top: -101px;
+      height: 68px;
+      top: -94px;
       background-image: url(../img/icons/icon-burger--mobile.svg);
     }
   }
