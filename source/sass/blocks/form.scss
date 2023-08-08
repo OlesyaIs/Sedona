@@ -2,9 +2,14 @@
   display: grid;
   grid-template-columns: 1fr;
 
+  @media (max-width: $mobile-width-only) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    row-gap: 52px;
+    row-gap: 50px;
   }
 }
 
@@ -31,28 +36,41 @@
     grid-column: 1/-1;
   }
 
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -20px;
+      width: calc(100% + 40px);
+      height: 1px;
+      background-color: $form-strip;
+    }
+  }
+
   @media (min-width: $tablet-width) {
+    padding: 0;
+
     &--first {
       order: -1;
     }
 
     &:not(.form__group--wide) {
-      margin-bottom: 21px;
+      margin-bottom: 20px;
     }
 
     &--small:nth-of-type(odd)::after {
       content: '';
       position: absolute;
-      top: 0;
+      top: 2px;
       bottom: 0;
       right: 0;
       width: 1px;
-      height: 292;
       background-color: $form-column;
     }
 
     &--xsmall {
-      margin-left: 60px;
+      margin-left: 58px;
     }
 
     &--full-adaptive {
@@ -67,10 +85,6 @@
   @media (min-width: $desktop-width) {
     padding-left: 0;
 
-    &:not(.form__group--wide) {
-      margin-bottom: 19px;
-    }
-
     &--small {
       margin-left: 80px;
     }
@@ -81,26 +95,29 @@
   }
 }
 
-.form__button-wrapper {
-  margin: 18px 0 0;
-  padding: 0 20px;
-}
-
 .form__button {
-  padding-top: 18px;
-  padding-bottom: 14px;
+  margin: 18px 0 0;
+  padding: 18px 0 14px;
   min-width: 280px;
   min-height: 58px;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .form__footnote {
   margin: 0;
   padding: 0;
   align-self: center;
+
   text-align: right;
+  text-transform: uppercase
+  ;
   @media (max-width: $mobile-width-only) {
     display: none;
   }

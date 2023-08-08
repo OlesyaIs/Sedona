@@ -15,6 +15,10 @@
     column-gap: 16px;
     flex-grow: 1;
 
+    @media (min-width: $tablet-width) {
+      row-gap: 9px;
+    }
+
     @media (min-width: $desktop-width) {
       flex-direction: row;
       align-items: center;
@@ -110,11 +114,14 @@
   }
 
   &--textarea {
+    margin: 0;
+    padding: 10px 17px;
+    display: block;
     width: 100%;
-    min-height: 160px;
+    height: 160px;
+    box-sizing: border-box;
     background-color: $input;
     border: 4px solid $input;
-    padding: 10px 17px;
 
     &:hover {
       background-color: $input-hover;
@@ -126,6 +133,10 @@
       background-color: $input-active;
       border-color: $input-border;
       outline: none;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 14px 17px;
     }
   }
 
@@ -157,6 +168,10 @@
     height: 56px;
     background-color: $mark-field;
     border-radius: 50%;
+  }
+
+  @media (min-width: $tablet-width) {
+    column-gap: 20px;
   }
 }
 
