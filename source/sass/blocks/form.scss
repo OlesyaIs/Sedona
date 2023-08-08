@@ -9,7 +9,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    row-gap: 50px;
+    row-gap: 51px;
   }
 }
 
@@ -78,6 +78,7 @@
     }
 
     &:last-of-type {
+      margin-top: -6px;
       margin-bottom: 6px;
     }
   }
@@ -96,7 +97,7 @@
 }
 
 .form__button {
-  margin: 18px 0 0;
+  margin: 24px 0 0;
   padding: 18px 0 14px;
   min-width: 280px;
   min-height: 58px;
@@ -112,6 +113,7 @@
 
 .form__footnote {
   margin: 0;
+  margin-top: 9px;
   padding: 0;
   align-self: center;
 

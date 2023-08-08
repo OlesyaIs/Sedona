@@ -30,3 +30,8 @@
     background-color: $button-disabled;
   }
 }
+
+
+.socials-list__item:nth-of-type(2) .socials-list__link{
+  min-width: 47px;
+}
