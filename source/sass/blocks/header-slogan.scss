@@ -3,48 +3,6 @@
   flex-direction: column;
   font-weight: 700;
   color: $title-text;
-  background-repeat: no-repeat;
-  background-position: bottom 0% right 50%;
-  background-size: cover;
-
-  background-image: url(../img/backgrounds/page-slogan-mobile.jpg);
-  background-color: $page-slogan;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url(../img/backgrounds/page-slogan-mobile@2x.jpg);
-  }
-
-  @media (min-width: $tablet-width) {
-    background-image: url(../img/backgrounds/page-slogan.jpg);
-
-    @media (min-resolution: 2dppx) {
-      background-image: url(../img/backgrounds/page-slogan@2x.jpg);
-    }
-  }
-
-  &--short {
-    background-image: url(../img/backgrounds/page-slogan-mobile--short.jpg);
-
-    @media (min-resolution: 2dppx) {
-      background-image: url(../img/backgrounds/page-slogan-mobile--short@2x.jpg);
-    }
-
-    @media (min-width: $tablet-width) {
-      background-image: url(../img/backgrounds/page-slogan-tablet--short.jpg);
-
-      @media (min-resolution: 2dppx) {
-        background-image: url(../img/backgrounds/page-slogan-tablet--short@2x.jpg);
-      }
-    }
-
-    @media (min-width: $desktop-width) {
-      background-image: url(../img/backgrounds/page-slogan.jpg);
-
-      @media (min-resolution: 2dppx) {
-        background-image: url(../img/backgrounds/page-slogan@2x.jpg);
-      }
-    }
-  }
 }
 
 .header-slogan__wrapper {

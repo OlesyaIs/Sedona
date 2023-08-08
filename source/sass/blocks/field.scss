@@ -2,7 +2,7 @@
   &--name {
     display: grid;
     grid-template-columns: auto 1fr;
-    align-items: center;
+    align-items: baseline;
     gap: 15px;
 
     min-width: 10px;
@@ -71,6 +71,26 @@
   }
 
   &--text {
+    padding: 14px 16px 10px;
+    min-height: 58px;
+    background-color: $input;
+    border: 4px solid $input;
+
+    &:hover {
+      background-color: $input-hover;
+      border-color: $input-hover;
+    }
+
+    &:active,
+    &:focus {
+      background-color: $input-active;
+      border-color: $input-border;
+      outline: none;
+    }
+  }
+
+  &--contact {
+    flex-grow: 1;
     padding: 14px 18px 10px;
     min-height: 58px;
     background-color: $input;
@@ -91,9 +111,10 @@
 
   &--textarea {
     width: 100%;
+    min-height: 160px;
     background-color: $input;
     border: 4px solid $input;
-    padding: 14px 17px 20px;
+    padding: 10px 17px;
 
     &:hover {
       background-color: $input-hover;
@@ -111,20 +132,25 @@
 
 }
 
-.field--contact .field__input {
-  flex-grow: 1;
-}
-
 .field__title {
   line-height: 26px;
+}
+
+.field--contact .field__title {
+  padding-left: 22px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: inherit;
+  }
 }
 
 .field__input[type="radio"] + .field__title {
   position: relative;
   display: flex;
   align-items: center;
-  column-gap: 20px;
+  column-gap: 22px;
   max-width: max-content;
+
   &::before {
     content: '';
     width: 56px;
@@ -156,9 +182,9 @@
       content: '';
       position: absolute;
       top: center;
-      left: 16px;
-      width: 24px;
-      height: 24px;
+      left: 17px;
+      width: 22px;
+      height: 22px;
       background-color: $mark;
       border-radius: 50%;
     }
@@ -168,8 +194,9 @@
   position: relative;
   display: flex;
   align-items: center;
-  column-gap: 20px;
+  column-gap: 22px;
   max-width: max-content;
+
   &::before {
     content: '';
     width: 56px;
@@ -191,11 +218,12 @@
       content: '';
       position: absolute;
       top: center;
-      left: 16px;
-      width: 24px;
-      height: 24px;
-      background-color: $mark;
-      border-radius: 50%;
+      left: 0;
+      width: 56px;
+      height: 56px;
+      background-image: url(../img/icons/tick.svg);
+      background-repeat: no-repeat;
+      background-position: center;
     }
 }
 

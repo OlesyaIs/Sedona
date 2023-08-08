@@ -11,13 +11,24 @@
 .form__group {
   position: relative;
   margin: 0;
+  padding: 21px 0 27px;
+
+  &--name {
+    padding-bottom: 24px;
+  }
+
+  &--contacts {
+    padding-top: 22px;
+    padding-bottom: 28px;
+  }
+
+  &--checkbox {
+    padding-top: 16px;
+    padding-bottom: 25px;
+  }
 
   &--wide {
     grid-column: 1/-1;
-  }
-
-  &:last-of-type {
-    margin-bottom: 26px;
   }
 
   @media (min-width: $tablet-width) {
@@ -70,13 +81,19 @@
   }
 }
 
+.form__button-wrapper {
+  margin: 18px 0 0;
+  padding: 0 20px;
+}
+
 .form__button {
-  margin: 0;
   padding-top: 18px;
   padding-bottom: 14px;
   min-width: 280px;
   min-height: 58px;
-  align-self: center;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
 .form__footnote {

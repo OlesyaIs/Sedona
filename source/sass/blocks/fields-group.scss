@@ -1,24 +1,18 @@
 .fields-group {
-  padding-top: 20px;
-  padding-bottom: 25px;
-
   &--name {
     text-transform: uppercase;
   }
 
   &--contacts {
-    padding-bottom: 28px;
     text-transform: uppercase;
   }
 
   &--radio {
-    padding-bottom: 31px;
     font-size: 18px;
     font-weight: 700;
   }
 
   &--checkbox {
-    padding-bottom: 30px;
     font-size: 18px;
     font-weight: 700;
   }
@@ -42,18 +36,12 @@
 
 .fields-group__wrapper {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr;
-  border: none;
   row-gap: 20px;
-}
-
-.fields-group--wide .fields-group__wrapper,
-.fields-group--full-adaptive  .fields-group__wrapper{
-  @media (min-width: $tablet-width) {
-    border-top: 1px solid $form-strip;
-  }
+  border: none;
 }
 
 .fields-group--contacts .fields-group__wrapper {
@@ -64,6 +52,22 @@
     column-gap: 80px;
   }
 }
+
+.fields-group--radio .fields-group__wrapper {
+  row-gap: 13px;
+}
+
+.fields-group--checkbox .fields-group__wrapper {
+  row-gap: 24px;
+}
+
+.fields-group--wide .fields-group__wrapper,
+.fields-group--full-adaptive  .fields-group__wrapper{
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid $form-strip;
+  }
+}
+
 
 .fields-group--full-adaptive .fields-group__wrapper {
   width: 100%;
@@ -92,6 +96,7 @@
   box-sizing: border-box;
   text-align: center;
   font-size: 18px;
+  line-height: 26px;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
@@ -103,7 +108,7 @@
   }
 }
 
-.fields-group--xsmall .fields-group__title{
+.fields-group--name .fields-group__title {
 
   @media (min-width: $tablet-width) {
     margin-bottom: 55px;
@@ -112,6 +117,14 @@
   @media (min-width: $desktop-width) {
     margin-left: 0;
   }
+}
+
+.fields-group--contacts .fields-group__title {
+  margin-bottom: 19px;
+}
+
+.fields-group--radio .fields-group__title {
+  margin-bottom: 21px;
 }
 
 .fields-group--wide .fields-group__title {
