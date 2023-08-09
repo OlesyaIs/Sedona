@@ -178,6 +178,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 21px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 71px;
+  }
 }
 
 .fields-group--radio .fields-group__title {
@@ -185,6 +189,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 80px;
   }
 }
 

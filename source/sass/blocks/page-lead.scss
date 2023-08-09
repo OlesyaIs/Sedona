@@ -33,6 +33,10 @@
   @media (min-width: $tablet-width) {
     gap: 32px;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 35px;
+  }
 }
 
 .page-lead--advanced .page-lead__wrapper {

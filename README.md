@@ -1,6 +1,6 @@
-# Личный проект «{{Sedona_module2}}» 
+# Личный проект «Sedona» 
 
-* Студент: [{{Olesia Isichenko}}]({{isichenko.ok@gmail.com}}).
+* Студент: [Olesia Isichenko](isichenko.ok@gmail.com).
 
 ---
 
