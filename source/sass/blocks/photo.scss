@@ -1,12 +1,13 @@
 .photo {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: stretch;
 }
 
-.photo-wrapper {
-  width: 100%;
-  height: 100%;
+.photo__wrapper {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .photo__image {

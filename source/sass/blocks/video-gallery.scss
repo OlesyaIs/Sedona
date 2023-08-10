@@ -5,13 +5,15 @@
 }
 
 .video-gallery__lead {
-  margin: 0;
-  padding: 8px 27px 33px;
+  margin: 0 0 13px;
+  padding: 8px 27px 20px;
   gap: 2em;
   max-width: 445px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 65px;
+    margin-bottom: 44px;
+    padding-bottom: 40px;
+    gap: 2.4em;
   }
 }
 
@@ -19,6 +21,10 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .video-gallery__video-section {
