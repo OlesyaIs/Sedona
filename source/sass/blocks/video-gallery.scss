@@ -6,7 +6,8 @@
 
 .video-gallery__lead {
   margin: 0;
-  padding: 0 20px 33px;
+  padding: 8px 27px 33px;
+  gap: 2em;
   max-width: 445px;
 
   @media (min-width: $tablet-width) {

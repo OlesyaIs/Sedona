@@ -29,6 +29,8 @@
 .video-controls__timeline {
   position: relative;
   flex-grow: 1;
+  margin: 0;
+  padding: 0;
   height: 3px;
   background-color: $timeline;
 
@@ -36,10 +38,10 @@
   &::before {
     content: '';
     position: absolute;
-    top: -5px;
+    top: -3px;
     left: 37px;
-    width: 13px;
-    height: 13px;
+    width: 9px;
+    height: 9px;
     background-color: $white;
     border-radius: 50%;
   }
@@ -59,6 +61,8 @@
 }
 
 .video-controls__button {
+  margin: 0;
+  padding: 0;
   color: $control-button;
   background-color: transparent;
   border: none;
@@ -74,6 +78,10 @@
   &:active {
     color: $control-button-active;
   }
+}
+
+.video-controls__button-icon {
+  display: block;
 }
 
 .video-controls:not(.video-controls--mobile) .video-controls__button {

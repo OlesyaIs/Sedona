@@ -1,7 +1,7 @@
 .galleries {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 26px;
 
   @media (min-width: $tablet-width) {
     gap: 53px;
@@ -14,7 +14,7 @@
 
 .galleries__lead {
   margin: 0;
-  padding: 24px 20px 12px;
+  padding: 25px 20px 12px;
   font-size: 18px;
 
   @media (min-width: $tablet-width) {

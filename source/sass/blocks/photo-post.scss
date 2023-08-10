@@ -25,8 +25,8 @@
 .photo-post__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 24px 20px 15px;
+  gap: 11px;
+  padding: 23px 20px 21px;
 
   @media (min-width: $tablet-width) {
     gap: 0;
@@ -36,7 +36,7 @@
 
 .photo-post__title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
   padding: 0;
   font-size: 14px;
   line-height: 24px;
@@ -89,11 +89,11 @@
   grid-row: 1 / 5;
   grid-column: 2 / -1;
   align-self: center;
-  margin: 13px 0 0;
+  margin: 11px 0 0;
   padding: 0;
 
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1em;
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
