@@ -1,5 +1,6 @@
 .copy {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 13px;
 }
@@ -7,17 +8,15 @@
 .copy__logo {
   margin: 0;
   padding: 0;
+  color: $copy-logo;
   @include content-center;
 }
 
-.copy__logo path {
-  fill: $copy-logo;
+.copy__logo:hover {
+  color: $copy-logo-hover;
+  cursor: pointer;
 }
 
-.copy__logo:hover path {
-  fill: $copy-logo-hover;
-}
-
-.copy__logo:active path {
-  fill: $copy-logo-active;
+.copy__logo:active {
+  color: $copy-logo-active;
 }

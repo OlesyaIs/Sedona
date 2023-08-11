@@ -2,46 +2,75 @@
   display: grid;
   grid-template-columns: 1fr;
 
+  @media (max-width: $mobile-width-only) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
-    row-gap: 52px;
+    row-gap: 51px;
   }
 }
 
 .form__group {
   position: relative;
   margin: 0;
+  padding: 21px 0 27px;
+
+  &--name {
+    padding-bottom: 24px;
+  }
+
+  &--contacts {
+    padding-top: 22px;
+    padding-bottom: 28px;
+  }
+
+  &--checkbox {
+    padding-top: 16px;
+    padding-bottom: 25px;
+  }
 
   &--wide {
     grid-column: 1/-1;
   }
 
-  &:last-of-type {
-    margin-bottom: 26px;
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -20px;
+      width: calc(100% + 40px);
+      height: 1px;
+      background-color: $form-strip;
+    }
   }
 
   @media (min-width: $tablet-width) {
+    padding: 0;
+
     &--first {
       order: -1;
     }
 
     &:not(.form__group--wide) {
-      margin-bottom: 21px;
+      margin-bottom: 20px;
     }
 
     &--small:nth-of-type(odd)::after {
       content: '';
       position: absolute;
-      top: 0;
+      top: 2px;
       bottom: 0;
       right: 0;
       width: 1px;
-      height: 292;
       background-color: $form-column;
     }
 
     &--xsmall {
-      margin-left: 60px;
+      margin-left: 58px;
     }
 
     &--full-adaptive {
@@ -49,6 +78,7 @@
     }
 
     &:last-of-type {
+      margin-top: -6px;
       margin-bottom: 6px;
     }
   }
@@ -56,11 +86,7 @@
   @media (min-width: $desktop-width) {
     padding-left: 0;
 
-    &:not(.form__group--wide) {
-      margin-bottom: 19px;
-    }
-
-    &--small {
+    &--xsmall {
       margin-left: 80px;
     }
 
@@ -71,19 +97,29 @@
 }
 
 .form__button {
-  margin: 0;
-  padding-top: 18px;
-  padding-bottom: 14px;
+  margin: 24px 0 0;
+  padding: 18px 0 14px;
   min-width: 280px;
   min-height: 58px;
-  align-self: center;
+
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .form__footnote {
   margin: 0;
+  margin-top: 9px;
   padding: 0;
   align-self: center;
+
   text-align: right;
+  text-transform: uppercase
+  ;
   @media (max-width: $mobile-width-only) {
     display: none;
   }

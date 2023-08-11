@@ -1,5 +1,8 @@
 .photo-post {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 
   @media (max-width: $mobile-width-only) {
     &::before {
@@ -25,8 +28,10 @@
 .photo-post__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 24px 20px 15px;
+  justify-content: flex-end;
+  gap: 11px;
+  margin: 0;
+  padding: 23px 20px 21px;
 
   @media (min-width: $tablet-width) {
     gap: 0;
@@ -34,26 +39,16 @@
   }
 }
 
-.photo-post__title {
+.photo-post__photo-wrapper {
   margin: 0;
-  margin-bottom: 10px;
   padding: 0;
-  font-size: 14px;
-  line-height: 24px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    color: $special-text;
-  }
+  order: -1;
+  background-color: $extra-light;
 }
 
 .photo-post__photo {
   margin: 0 auto;
   padding: 0;
-  order: -1;
 }
 
 .photo-post__description {
@@ -64,11 +59,23 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 65px;
-    padding: 20px 20px 15px;
+    padding: 16px 20px;
     background-color: $extra-light;
 
     &--darker {
       background-color: $semi-light;
+    }
+  }
+
+  .photo-post__title {
+    margin: 0;
+    margin-bottom: 3px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 24px;
+
+    @media (min-width: $desktop-width) {
+      color: $special-text;
     }
   }
 
@@ -86,35 +93,22 @@
 }
 
 .photo-post__likes {
-  position: relative;
   grid-row: 1 / 5;
   grid-column: 2 / -1;
   align-self: center;
-  margin: 13px 0 0;
-  padding: 0 0 0 32px;
+  margin: 11px 0 0;
+  padding: 0;
+  max-width: 84px;
 
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1em;
   font-weight: 700;
-
-  &::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 23px;
-    height: 21px;
-    background-image: url(../img/icons/like-icon.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
   }
 
   @media (min-width: $desktop-width) {
-    &::before {
-      background-image: url(../img/icons/like-icon-white.svg);
-    }
+    line-height: 1.05em;
   }
 }

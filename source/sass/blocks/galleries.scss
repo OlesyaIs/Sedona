@@ -1,31 +1,30 @@
 .galleries {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 26px;
 
   @media (min-width: $tablet-width) {
-    gap: 53px;
+    gap: 45px;
   }
 
   @media (min-width: $desktop-width) {
-    gap: 62px;
+    gap: 54px;
   }
 }
 
 .galleries__lead {
   margin: 0;
-  padding: 24px 20px 12px;
+  padding: 25px 20px 12px;
   font-size: 18px;
 
   @media (min-width: $tablet-width) {
-    gap: 53px;
-    padding: 59px 60px;
+    padding: 60px 60px 37px;
     font-size: 30px;
   }
 
   @media (min-width: $desktop-width) {
     gap: 62px;
-    padding: 101px 120px 66px;
+    padding: 101px 120px 25px;
     font-size: 30px;
   }
 }
@@ -37,10 +36,10 @@
 
   @media (min-width: $tablet-width) {
     width: 648px;
-   }
+  }
 
   @media (min-width: $desktop-width) {
-   width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -50,9 +49,9 @@
 
   @media (min-width: $tablet-width) {
     width: 648px;
-   }
+  }
 
   @media (min-width: $desktop-width) {
-   width: 800px;
+    width: 800px;
   }
 }

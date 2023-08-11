@@ -3,64 +3,22 @@
   flex-direction: column;
   font-weight: 700;
   color: $title-text;
-  background-repeat: no-repeat;
-  background-position: bottom 0% right 50%;
-  background-size: cover;
-
-  background-image: url(../img/backgrounds/page-slogan-mobile.jpg);
-  background-color: $page-slogan;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url(../img/backgrounds/page-slogan-mobile@2x.jpg);
-  }
-
-  @media (min-width: $tablet-width) {
-    background-image: url(../img/backgrounds/page-slogan.jpg);
-
-    @media (min-resolution: 2dppx) {
-      background-image: url(../img/backgrounds/page-slogan@2x.jpg);
-    }
-  }
-
-  &--short {
-    background-image: url(../img/backgrounds/page-slogan-mobile--short.jpg);
-
-    @media (min-resolution: 2dppx) {
-      background-image: url(../img/backgrounds/page-slogan-mobile--short@2x.jpg);
-    }
-
-    @media (min-width: $tablet-width) {
-      background-image: url(../img/backgrounds/page-slogan-tablet--short.jpg);
-
-      @media (min-resolution: 2dppx) {
-        background-image: url(../img/backgrounds/page-slogan-tablet--short@2x.jpg);
-      }
-    }
-
-    @media (min-width: $desktop-width) {
-      background-image: url(../img/backgrounds/page-slogan.jpg);
-
-      @media (min-resolution: 2dppx) {
-        background-image: url(../img/backgrounds/page-slogan@2x.jpg);
-      }
-    }
-  }
 }
 
-.slogan__wrapper {
+.header-slogan__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
 }
 
-.slogan__lettering {
+.header-slogan__lettering {
   margin: 0;
   padding: 0;
 }
 
-.slogan__image {
-  width: 280px;
+.header-slogan__image {
+  width: 100%;
   height: auto;
 
   @media (min-width: $tablet-width) {
@@ -68,15 +26,19 @@
   }
 }
 
-.header-slogan--short .slogan__image {
+.header-slogan--short .header-slogan__image {
   width: 229px;
 
   @media (min-width: $tablet-width) {
     width: 456px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 460px;
+  }
 }
 
-.slogan__text {
-  margin: 0;
+.header-slogan__text {
+  margin: 0 auto;
   padding: 0;
 }

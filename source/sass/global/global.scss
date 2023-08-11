@@ -33,3 +33,19 @@ img {
     display: none;
   }
 }
+
+.word-wrapper {
+  display: none;
+
+  &--tablet-only {
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-max) {
+      display: inline;
+    }
+  }
+
+  &--tablet-desktop {
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
+  }
+}
