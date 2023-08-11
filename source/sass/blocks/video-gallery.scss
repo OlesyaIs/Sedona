@@ -15,6 +15,11 @@
     padding-bottom: 40px;
     gap: 2.4em;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 37px;
+    gap: 2.35em;
+  }
 }
 
 .video-gallery__lead .slogan {

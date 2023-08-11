@@ -32,6 +32,10 @@
   @media (min-width: $tablet-width) {
     width: 456px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 460px;
+  }
 }
 
 .header-slogan__text {

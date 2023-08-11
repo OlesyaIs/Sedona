@@ -4,8 +4,12 @@
 }
 
 .likes-counter__icon {
-  margin-right: 10px;
+  margin-right: 14px;
   opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 10px;
+  }
 
   @media (min-width: $desktop-width) {
     opacity: 1;

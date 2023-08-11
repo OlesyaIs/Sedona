@@ -95,4 +95,8 @@
   @media (min-width: $tablet-width) {
     margin-top: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    line-height: 1.05em;
+  }
 }
