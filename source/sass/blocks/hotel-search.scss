@@ -50,7 +50,7 @@
 }
 
 .hotel-search__button {
-  height: 58px;
+  min-height: 58px;
   @include content-center;
 
   font-size: 21px;

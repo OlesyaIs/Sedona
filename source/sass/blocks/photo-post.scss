@@ -1,5 +1,8 @@
 .photo-post {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 
   @media (max-width: $mobile-width-only) {
     &::before {
@@ -25,7 +28,9 @@
 .photo-post__wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   gap: 11px;
+  margin: 0;
   padding: 23px 20px 21px;
 
   @media (min-width: $tablet-width) {
@@ -34,10 +39,16 @@
   }
 }
 
+.photo-post__photo-wrapper {
+  margin: 0;
+  padding: 0;
+  order: -1;
+  background-color: $extra-light;
+}
+
 .photo-post__photo {
   margin: 0 auto;
   padding: 0;
-  order: -1;
 }
 
 .photo-post__description {
@@ -87,6 +98,7 @@
   align-self: center;
   margin: 11px 0 0;
   padding: 0;
+  max-width: 84px;
 
   font-size: 14px;
   line-height: 1em;

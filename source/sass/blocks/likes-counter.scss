@@ -4,6 +4,7 @@
 }
 
 .likes-counter__icon {
+  flex-shrink: 0;
   margin-right: 14px;
   opacity: 0.3;
 
@@ -14,4 +15,9 @@
   @media (min-width: $desktop-width) {
     opacity: 1;
   }
+}
+
+.likes-counter__likes-amount {
+  flex-shrink: 1;
+  word-break: break-all;
 }

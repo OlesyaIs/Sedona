@@ -16,6 +16,7 @@
   flex-direction: column;
   align-items: center;
   row-gap: 33.5px;
+  column-gap: 20px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -26,14 +27,21 @@
 .page-footer__hashtag {
   margin: 0;
   padding: 0;
+
+  text-align: center;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
 }
 
 .page-footer__socials {
   margin: 0;
   padding: 0;
+  min-width: 151px;
 }
 
 .page-footer__copy {

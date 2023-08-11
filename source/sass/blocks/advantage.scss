@@ -87,20 +87,32 @@
   padding: 0;
 }
 
-.advantage__photo {
+.advantage__photo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   padding: 0;
-  height: 260px;
+  height: 100%;
 
   @media (min-width: $tablet-width) {
     grid-column: span 2;
-    height: 100%;
     background-color: $basic;
 
     &--first {
       grid-column: 1/3;
       grid-row: 1;
     }
+  }
+}
+
+.advantage__photo {
+  margin: 0;
+  padding: 0;
+  height: 260px;
+
+  @media (min-width: $tablet-width) {
+    height: 256px;
   }
 }
 

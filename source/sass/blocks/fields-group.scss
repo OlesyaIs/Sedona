@@ -42,6 +42,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 80px;
   }
 }
@@ -74,7 +75,8 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 43px;
     margin-right: 0;
     margin-left: 0;
     padding-left: 0;
@@ -212,8 +214,7 @@
   }
 }
 
-.fields-group__input-item {
+.fields-group__field {
   margin: 0;
   padding: 0;
 }
-
