@@ -76,7 +76,7 @@
               <a class="main-nav__link" href="form.html">Форма Отзыва</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">html academy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">html academy</a>
             </li>
           </ul>
           <button class="main-nav__toggle toggle toggle--opened">
@@ -130,6 +130,8 @@
               <div class="advantage__photo-wrapper">
                 <p class="advantage__photo photo">
                   <picture class="photo__wrapper">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages/photo-city-desktop.webp 1x, img/advantages/photo-city-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/advantages/photo-city-tablet.webp 1x, img/advantages/photo-city-tablet@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="img/advantages/photo-city-desktop.jpg 1x, img/advantages/photo-city-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/advantages/photo-city-tablet.jpg 1x, img/advantages/photo-city-tablet@2x.jpg 2x">
                     <img class="photo__image photo__image--city img" src="img/advantages/photo-city.jpg" srcset="img/advantages/photo-city@2x.jpg 2x" width="520" height="260" alt="Кафе в городе на фоне гор">
@@ -177,6 +179,8 @@
               <div class="advantage__photo-wrapper advantage__photo-wrapper--first">
                 <p class="advantage__photo photo">
                   <picture class="photo__wrapper">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages/photo-bridge-desktop.webp 1x, img/advantages/photo-bridge-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/advantages/photo-bridge-tablet.webp 1x, img/advantages/photo-bridge-tablet@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="img/advantages/photo-bridge-desktop.jpg 1x, img/advantages/photo-bridge-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/advantages/photo-bridge-tablet.jpg 1x, img/advantages/photo-bridge-tablet@2x.jpg 2x">
                     <img class="photo__image photo__image--bridge img" src="img/advantages/photo-bridge.jpg" srcset="img/advantages/photo-bridge@2X.jpg 2x" width="320" height="260" alt="Мост дьявола в каньоне">
@@ -257,14 +261,14 @@
           </ul>
           <div class="page-footer__copy copy">
             Разработано
-            <a class="copy__logo" aria-label="Сайт HTML Academy">
+            <a class="copy__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy" target="_blank">
               <svg width="27" height="35" role="img" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#copy-logo" fill="currentColor"></use>
               </svg>
             </a>
           </div>
         </div>
-        <p class="page-footer__copy page-footer__copy--course course-copy">Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a class="course-copy__button" href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+        <p class="page-footer__copy page-footer__copy--course course-copy">Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a class="course-copy__button" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
       </footer>
     </div>
   </body>

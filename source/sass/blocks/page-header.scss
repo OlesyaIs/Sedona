@@ -4,23 +4,36 @@
 
 .page-header__slogan {
   padding: 90px 19px 85px;
-  background-image: url(../img/backgrounds/page-slogan-mobile.jpg);
+  background-image: url("../img/backgrounds/page-slogan-mobile.jpg"); //fallback
+  background-image: image-set(
+    url("../img/backgrounds/page-slogan-mobile.jpg") type(image/jpeg),
+    url("../img/backgrounds/page-slogan-mobile.webp") type(image/webp));
   background-color: $page-slogan;
   background-repeat: no-repeat;
   background-size: auto 389px;
   background-position: bottom 0% right 50%;
 
+  // Method with media querries was used for pictures fo retina screens
   @media (min-resolution: 2dppx) {
-    background-image: url(../img/backgrounds/page-slogan-mobile@2x.jpg);
+    background-image: url("../img/backgrounds/page-slogan-mobile@2x.jpg");
+    background-image: image-set(
+      url("../img/backgrounds/page-slogan-mobile@2x.jpg") type(image/jpeg),
+      url("../img/backgrounds/page-slogan-mobile@2x.webp") type(image/webp));
   }
 
   @media (min-width: $tablet-width) {
     padding: 78px 60px 91px;
     background-size: 1200px auto;
-    background-image: url(../img/backgrounds/page-slogan.jpg);
+    background-image: url("../img/backgrounds/page-slogan.jpg");
+    background-image: image-set(
+      url("../img/backgrounds/page-slogan.jpg") type(image/jpeg),
+      url("../img/backgrounds/page-slogan.webp") type(image/webp));
 
     @media (min-resolution: 2dppx) {
-      background-image: url(../img/backgrounds/page-slogan@2x.jpg);
+      background-image: url("../img/backgrounds/page-slogan@2x.jpg");
+      background-image: image-set(
+        url("../img/backgrounds/page-slogan@2x.jpg")  type(image/jpeg),
+        url("../img/backgrounds/page-slogan@2x.webp")  type(image/webp));
     }
   }
 
@@ -28,32 +41,46 @@
     padding: 78px 120px 90px;
   }
 
+  // Method with image-set() was used for pictures for retina screens
   &--short {
     padding: 52px 45px 67px;
-    background-image: url(../img/backgrounds/page-slogan-mobile--short.jpg);
+    background-image: url("../img/backgrounds/page-slogan-mobile--short.jpg");
+    // For Chrome and Safari (type() is not supported, prefix -webkit will be added by autoprefixer)
+    background-image: image-set(
+      url("../img/backgrounds/page-slogan-mobile--short@2x.jpg") 2x,
+      url("../img/backgrounds/page-slogan-mobile--short.jpg") 1x);
+    background-image: image-set(
+      url("../img/backgrounds/page-slogan-mobile--short@2x.jpg") 2x,
+      url("../img/backgrounds/page-slogan-mobile--short.jpg") 1x,
+      url("../img/backgrounds/page-slogan-mobile--short@2x.webp") type(image/webp) 2x,
+      url("../img/backgrounds/page-slogan-mobile--short.webp") type(image/webp) 1x);
     background-size: auto 214px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url(../img/backgrounds/page-slogan-mobile--short@2x.jpg);
-    }
 
     @media (min-width: $tablet-width) {
       padding: 95px 60px 117px;
-      background-image: url(../img/backgrounds/page-slogan-tablet--short.jpg);
+      background-image: url("../img/backgrounds/page-slogan-tablet--short.jpg");
+      background-image: image-set(
+        url("../img/backgrounds/page-slogan-tablet--short@2x.jpg") 2x,
+        url("../img/backgrounds/page-slogan-tablet--short.jpg") 1x);
+      background-image: image-set(
+        url("../img/backgrounds/page-slogan-tablet--short@2x.jpg") type(image/jpeg) 2x,
+        url("../img/backgrounds/page-slogan-tablet--short.jpg") type(image/jpeg) 1x,
+        url("../img/backgrounds/page-slogan-tablet--short@2x.webp") type(image/webp) 2x,
+        url("../img/backgrounds/page-slogan-tablet--short.webp") type(image/webp) 1x);
       background-size: 1200px auto;
-
-      @media (min-resolution: 2dppx) {
-        background-image: url(../img/backgrounds/page-slogan-tablet--short@2x.jpg);
-      }
     }
 
     @media (min-width: $desktop-width) {
       padding: 101px 120px 120px;
-      background-image: url(../img/backgrounds/page-slogan.jpg);
-
-      @media (min-resolution: 2dppx) {
-        background-image: url(../img/backgrounds/page-slogan@2x.jpg);
-      }
+      background-image: url("../img/backgrounds/page-slogan.jpg");
+      background-image: image-set(
+        url("../img/backgrounds/page-slogan@2x.jpg") 2x,
+        url("../img/backgrounds/page-slogan.jpg") 1x);
+      background-image: image-set(
+        url("../img/backgrounds/page-slogan@2x.jpg") type(image/jpeg) 2x,
+        url("../img/backgrounds/page-slogan.jpg") type(image/jpeg) 1x,
+          url("../img/backgrounds/page-slogan@2x.webp") type(image/webp) 2x,
+        url("../img/backgrounds/page-slogan.webp") type(image/webp) 1x);
     }
   }
 }

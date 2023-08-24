@@ -56,12 +56,12 @@
   }
 
   &--phone::after {
-    background-image: url(../img/icons/phone.svg);
+    background-image: url(../img/phone.svg);
     background-size: 18px;
   }
 
   &--email::after {
-    background-image: url(../img/icons/mail.svg);
+    background-image: url(../img/mail.svg);
     background-size: 16px 12px;
   }
 }
@@ -252,7 +252,7 @@
       left: 0;
       width: 56px;
       height: 56px;
-      background-image: url(../img/icons/tick.svg);
+      background-image: url(../img/tick.svg);
       background-repeat: no-repeat;
       background-position: center;
     }
