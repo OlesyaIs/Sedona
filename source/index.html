@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Sedona</title>
+    <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="img/favicons/favicon32.png" sizes="32x32" type="image/png">
@@ -134,7 +136,7 @@
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/advantages/photo-city-tablet.webp 1x, img/advantages/photo-city-tablet@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="img/advantages/photo-city-desktop.jpg 1x, img/advantages/photo-city-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/advantages/photo-city-tablet.jpg 1x, img/advantages/photo-city-tablet@2x.jpg 2x">
-                    <img class="photo__image photo__image--city img" src="img/advantages/photo-city.jpg" srcset="img/advantages/photo-city@2x.jpg 2x" width="520" height="260" alt="Кафе в городе на фоне гор">
+                    <img class="photo__image photo__image--city img" src="img/advantages/photo-city.jpg" srcset="img/advantages/photo-city@2x.jpg 2x" width="520" height="260" alt="Кафе в городе на фоне гор" loading="lazy">
                   </picture>
                 </p>
               </div>
@@ -183,7 +185,7 @@
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/advantages/photo-bridge-tablet.webp 1x, img/advantages/photo-bridge-tablet@2x.webp 2x">
                     <source media="(min-width: 1200px)" srcset="img/advantages/photo-bridge-desktop.jpg 1x, img/advantages/photo-bridge-desktop@2x.jpg 2x">
                     <source media="(min-width: 768px)" srcset="img/advantages/photo-bridge-tablet.jpg 1x, img/advantages/photo-bridge-tablet@2x.jpg 2x">
-                    <img class="photo__image photo__image--bridge img" src="img/advantages/photo-bridge.jpg" srcset="img/advantages/photo-bridge@2X.jpg 2x" width="320" height="260" alt="Мост дьявола в каньоне">
+                    <img class="photo__image photo__image--bridge img" src="img/advantages/photo-bridge.jpg" srcset="img/advantages/photo-bridge@2X.jpg 2x" width="320" height="260" alt="Мост дьявола в каньоне" loading="lazy">
                   </picture>
                 </p>
               </div>
@@ -229,7 +231,7 @@
         </section>
         <section class="page-main__map map">
           <h2 class="title visually-hidden">Где находится Седона</h2>
-          <iframe class="map__insertion" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d659883.4387209404!2d-112.38877774228844!3d34.98378835494907!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1690805364840!5m2!1sru!2sru" width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe class="map__insertion" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d659883.4387209404!2d-112.38877774228844!3d34.98378835494907!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1690805364840!5m2!1sru!2sru" width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" loading="lazy"></iframe>
         </section>
       </main>
 

@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Sedona</title>
     <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff" crossorigin>
     <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
@@ -18,10 +18,7 @@
 
   <body class="page__body">
     <svg style="display: none">
-      <symbol
-        viewBox="0 0 187 97"
-        xmlns="http://www.w3.org/2000/svg"
-        id="logo-sedona">
+      <symbol viewBox="0 0 187 97" xmlns="http://www.w3.org/2000/svg" id="logo-sedona">
           <g class="logo-sedona__background">
             <path d="M186.6 0H0l80.5 90.5c7.1 7.9 18.6 7.9 25.7 0L186.6 0Z" fill="#81B3D3"/>
           </g>
@@ -63,18 +60,19 @@
           </g>
       </symbol>
     </svg>
+
     <div class="page__wrapper">
       <header class="page-header">
         <nav class="main-nav main-nav--opened">
           <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
+            <li class="main-nav__item main-nav__item--current">
+              <a class="main-nav__link" href="#">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="catalog.html">Фото и видео</a>
             </li>
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link" href="#">Форма Отзыва</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Форма Отзыва</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">html academy</a>
@@ -89,20 +87,17 @@
             </svg>
           </button>
           <p class="main-nav__logo logo-button">
-            <a class="logo-button__link" href="index.html" aria-label="Логотип City of Sedona">
-              <svg  class="logo-button__img" width="186" height="96" role="img" aria-hidden="true" focusable="false">
+            <a class="logo-button__link" aria-label="Логотип City of Sedona">
+              <svg class="logo-button__img" width="186" height="96" role="img" aria-hidden="true" focusable="false">
                 <use xlink:href="#logo-sedona"></use>
               </svg>
             </a>
           </p>
         </nav>
-        <section class="page-header__slogan page-header__slogan--short header-slogan header-slogan--short">
+        <section class="page-header__slogan header-slogan">
           <div class="header-slogan__wrapper">
             <p class="header-slogan__lettering">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/slogan/SEDONA-desktop.svg">
-                <img class="header-slogan__image img" src="img/slogan/SEDONA.svg" width="229" height="39" alt="Sedona">
-              </picture>
+              <img class="header-slogan__image img" src="img/slogan/welcome-slogan-text.svg" width="282" height="214" alt="Welcome to the gorgeous Sedona. Because The Grand Canyon sucks.">
             </p>
           </div>
         </section>
@@ -110,105 +105,133 @@
 
       <main class="page-main">
         <h1 class="page-main__title title visually-hidden">
-          Форма для отправки отзывов о городе Седона
+          Седона - сайт для туристов
         </h1>
-        <section class="page-main__form-section form-section">
-          <div class="form-section__lead page-lead">
+        <section class="page-main__advantages advantages">
+          <div class="advantages__lead page-lead page-lead--advanced">
             <div class="page-lead__wrapper">
-              <h2 class="page-lead__title title">
-                Оставьте свой отзыв
-              </h2>
-              <p class="page-lead__text">
-                Помогите нашим отелям стать лучше! оставьте отзыв о них, <br class="word-wrapper word-wrapper--tablet-desktop">а также о посещенных вами достопримечательностях
-              </p>
+              <h2 class="page-lead__title title visually-hidden">Преимущества Седоны</h2>
+              <div class="page-lead__slogan slogan">
+                <p class="slogan__text">Седона — небольшой городок в аризоне, <br>заслуживающий большего!</p>
+              </div>
+              <p class="page-lead__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
             </div>
           </div>
-          <form class="form-section__form form form--reviews" action="https://echo.htmlacademy.ru" method="get">
-            <div class="form__group form__group--name form__group--xsmall fields-group fields-group--name">
-              <fieldset class="fields-group__wrapper">
-                <legend class="fields-group__title fields-group__title--name title">Представьтесь:</legend>
-                <div class="fields-group__field field field--name">
-                  <label class="field__title" for="name">Имя*:</label>
-                  <input class="field__input field__input--text" type="text" placeholder="Петр" name="name" id="name" required>
-                </div>
-                <div class="fields-group__field field field--name">
-                  <label class="field__title" for="surname">Фамилия*:</label>
-                  <input class="field__input field__input--text" type="text" placeholder="Иванов" name="surname" id="surname" required>
-                </div>
-                <div class="fields-group__field field field--name">
-                  <label class="field__title" for="second-name">Отчество:</label>
-                  <input class="field__input field__input--text" type="text" placeholder="Александрович" name="second-name" id="second-name">
-                </div>
-              </fieldset>
-            </div>
-            <div class="form__group form__group--contacts form__group--wide fields-group fields-group--adaptive fields-group--contacts">
-              <fieldset class="fields-group__wrapper">
-                <legend class="fields-group__title fields-group__title--contacts title"><span class="fields-group__title-wrapper">Контактная информация:</span></legend>
-                <div class="fields-group__field field field--contact">
-                  <label class="field__title" for="phone"><span class="non-desktop">Контактный</span> телефон*:</label>
-                  <p class="field__input-wrapper field__input-wrapper--phone">
-                    <input class="field__input field__input--contact" type="tel" placeholder="Введите телефон" name="phone" id="phone" required>
-                  </p>
-                </div>
-                <div class="fields-group__field field field--contact">
-                  <label class="field__title">Электронная почта*:</label>
-                  <p class="field__input-wrapper field__input-wrapper--email">
-                    <input class="field__input field__input--contact" type="email" placeholder="Введите e-mail" name="email" id="email" required>
-                  </p>
-                </div>
-              </fieldset>
-            </div>
-            <div class="form__group form__group--small form__group--first fields-group fields-group--radio">
-              <fieldset class="fields-group__wrapper">
-                <legend class="fields-group__title fields-group__title--radio title">Ваше общее впечатление:</legend>
-                <div class="fields-group__field field field--radio">
-                  <input class="field__input visually-hidden" type="radio" name="impression" id="positive-impression" value="+" checked>
-                  <label class="field__title" for="positive-impression">Скорее положительное</label>
-                </div>
-                <div class="fields-group__field field field--radio">
-                  <input class="field__input visually-hidden" type="radio" name="impression" id="negative-impression" value="-">
-                  <label class="field__title" for="negative-impression">Скорее отрицательное</label>
-                </div>
-                <div class="fields-group__field field field--radio">
-                  <input class="field__input visually-hidden" type="radio" name="impression" id="no-impression" value="0">
-                  <label class="field__title" for="no-impression">Затрудняюсь ответить</label>
-                </div>
-              </fieldset>
-            </div>
-            <div class="form__group form__group--checkbox form__group--wide form__group--full-adaptive fields-group fields-group--checkbox fields-group--full-adaptive">
-              <fieldset class="fields-group__wrapper">
-                <legend class="fields-group__title fields-group__title--checkbox title"><span class="fields-group__title-wrapper">Посещенные достопримечательности:</span></legend>
-                <div class="fields-group__field field field--checkbox">
-                  <input class="field__input visually-hidden" type="checkbox" name="devil's-bridge" id="devil's-bridge" checked>
-                  <label class="field__title" for="devil's-bridge">Мост Дьявола</label>
-                </div>
-                <div class="fields-group__field field field--checkbox">
-                  <input class="field__input visually-hidden" type="checkbox" name="bell-mountain" id="bell-mountain" checked>
-                  <label class="field__title" for="bell-mountain">Гора-Колокол</label>
-                </div>
-                <div class="fields-group__field field field--checkbox">
-                  <input class="field__input visually-hidden" type="checkbox" name="slide-park" id="slide-park" checked>
-                  <label class="field__title" for="slide-park">Слайд-парк</label>
-                </div>
-                <div class="fields-group__field field field--checkbox">
-                  <input class="field__input visually-hidden" type="checkbox" name="red-rocks" id="red-rocks">
-                  <label class="field__title" for="red-rocks">Красные скалы</label>
-                </div>
-              </fieldset>
-            </div>
-            <div class="form__group form__group--wide fields-group fields-group--adaptive fields-group--textarea">
-              <fieldset class="fields-group__wrapper">
-                <legend class="fields-group__title title"><span class="fields-group__title-wrapper">Опишите свои эмоции:</span></legend>
-                <div class="fields-group__field field">
-                  <textarea class="field__input field__input--textarea" placeholder="Опишите подробно все свои восторги" name="emotions" id="emotions" rows="5"></textarea>
-                </div>
-              </fieldset>
-            </div>
-            <button class="form__button button" type="submit">Отправить отзыв</button>
-            <p class="form__footnote footnote">* — обязательные поля</p>
-          </form>
+          <ol class="advantages__list">
+            <li class="advantages__item advantages__item--full advantage advantage--big">
+              <div class="advantage__description advantage__description--big">
+                <h3 class="advantage__title title">
+                  Настоящий <br class="word-wrapper word-wrapper--tablet-desktop">городок
+                </h3>
+                <p class="advantage__number">— №1 —</p>
+                <p class="advantage__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              </div>
+              <div class="advantage__photo-wrapper">
+                <p class="advantage__photo photo">
+                  <picture class="photo__wrapper">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages/photo-city-desktop.webp, img/advantages/photo-city-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/advantages/photo-city-tablet.webp, img/advantages/photo-city-tablet@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/advantages/photo-city-desktop.jpg, img/advantages/photo-city-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/advantages/photo-city-tablet.jpg, img/advantages/photo-city-tablet@2x.jpg 2x">
+                    <img class="photo__image photo__image--city img" src="img/advantages/photo-city.jpg" srcset="img/advantages/photo-city@2x.jpg 2x" width="520" height="260" alt="Кафе в городе на фоне гор" loading="lazy">
+                  </picture>
+                </p>
+              </div>
+              <div class="advantage__city-advantages city-advantages">
+                <h4 class="city-advantages__title title visually-hidden">Преимущества посещения полноценного города</h4>
+                <ul class="city-advantages__list">
+                  <li class="city-advantages__item city-advantage city-advantage--home">
+                    <div class="city-advantage__description">
+                      <h5 class="city-advantage__title city-advantage__title--home title">
+                        Жилье
+                      </h5>
+                      <p class="city-advantage__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                    </div>
+                  </li>
+                  <li class="city-advantages__item city-advantage city-advantage--souvenirs">
+                    <div class="city-advantage__description">
+                      <h5 class="city-advantage__title city-advantage__title--souvenirs title">
+                        Сувениры
+                      </h5>
+                      <p class="city-advantage__text">Не только китайского, <br class="word-wrapper word-wrapper--tablet-desktop">но и местного производства!</p>
+                    </div>
+                  </li>
+                  <li class="city-advantages__item city-advantage city-advantage--meal">
+                    <div class="city-advantage__description">
+                      <h5 class="city-advantage__title city-advantage__title--meal title">
+                        Еда
+                      </h5>
+                      <p class="city-advantage__text">Всегда заказывайте фирменный бургер, <br class="word-wrapper word-wrapper--tablet-desktop">вы не разочаруетесь!</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="advantages__item advantages__item--full advantage advantage--big">
+              <div class="advantage__description advantage__description--big">
+                <h3 class="advantage__title title">
+                  Там есть <br class="word-wrapper word-wrapper--tablet-desktop">мост дьявола
+                </h3>
+                <p class="advantage__number">— №2 —</p>
+                <p class="advantage__text">Да, по нему можно пройти! <br class="word-wrapper word-wrapper--tablet-desktop">если вы осмелитесь, конечно</p>
+              </div>
+              <div class="advantage__photo-wrapper advantage__photo-wrapper--first">
+                <p class="advantage__photo photo">
+                  <picture class="photo__wrapper">
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantages/photo-bridge-desktop.webp, img/advantages/photo-bridge-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/advantages/photo-bridge-tablet.webp, img/advantages/photo-bridge-tablet@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/advantages/photo-bridge-desktop.jpg, img/advantages/photo-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/advantages/photo-bridge-tablet.jpg, img/advantages/photo-bridge-tablet@2x.jpg 2x">
+                    <img class="photo__image photo__image--bridge img" src="img/advantages/photo-bridge.jpg" srcset="img/advantages/photo-bridge@2X.jpg 2x" width="320" height="260" alt="Мост дьявола в каньоне" loading="lazy">
+                  </picture>
+                </p>
+              </div>
+            </li>
+            <li class="advantages__item advantage">
+              <div class="advantage__description">
+                <h3 class="advantage__title title">
+                  Небольшая <br class="word-wrapper word-wrapper--tablet-desktop">площадь
+                </h3>
+                <p class="advantage__number">— №3 —</p>
+                <p class="advantage__text">Все интересные места находятся очень близко</p>
+              </div>
+            </li>
+            <li class="advantages__item advantage">
+              <div class="advantage__description">
+                <h3 class="advantage__title title">
+                  Красивая <br class="word-wrapper word-wrapper--tablet-desktop">дорога
+                </h3>
+                <p class="advantage__number">— №4 —</p>
+                <p class="advantage__text">Ехать в седону из <br class="word-wrapper word-wrapper--tablet-only">лас-вегаса совсем <br class="word-wrapper word-wrapper--tablet-desktop">не скучно!</p>
+              </div>
+            </li>
+            <li class="advantages__item advantage">
+              <div class="advantage__description">
+                <h3 class="advantage__title title">
+                  Мало <br class="word-wrapper word-wrapper--tablet-desktop">туристов
+                </h3>
+                <p class="advantage__number">— №5 —</p>
+                <p class="advantage__text">Большинство едет в <br class="word-wrapper word-wrapper--tablet-only">гранд каньон и <br class="word-wrapper word-wrapper--tablet-desktop">толпится там</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+        <section class="page-main__hotel-search hotel-search">
+          <div class="hotel-search__wrapper">
+            <h2 class="hotel-search__title title visually-hidden">Поиск гостиниц</h2>
+            <p class="hotel-search__slogan slogan">Заинтересовались?</p>
+            <p class="hotel-search__description">Укажите предполагаемые даты поездки, <br class="word-wrapper word-wrapper--tablet-desktop">и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <p class="hotel-search__button-wrapper">
+              <a class="button hotel-search__button" href="#">Найти гостиницу</a>
+            </p>
+          </div>
+        </section>
+        <section class="page-main__map map">
+          <h2 class="title visually-hidden">Где находится Седона</h2>
+          <iframe class="map__insertion" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d659883.4387209404!2d-112.38877774228844!3d34.98378835494907!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1690805364840!5m2!1sru!2sru" width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" loading="lazy"></iframe>
         </section>
       </main>
+
       <footer class="page__footer page-footer">
         <div class="page-footer__wrapper">
           <p class="page-footer__hashtag">#visitsedona</p>
@@ -244,26 +267,8 @@
             </a>
           </div>
         </div>
-        <p class="page-footer__copy page-footer__copy--course course-copy">Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a class="course-copy__button" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+        <p class="page-footer__copy page-footer__copy--course course-copy">Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a class="course-copy__button" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
       </footer>
-      <section class="modal modal--closed modal--success">
-        <div class="modal__wrapper modal__wrapper--text">
-          <h2 class="modal__title title">Ваш отзыв отправлен!</h2>
-          <p class="modal__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
-        </div>
-        <div class="modal__wrapper modal__wrapper--button">
-          <button class="modal__button button">закрыть окно</button>
-        </div>
-      </section>
-      <section class="modal modal--closed modal--failure">
-        <div class="modal__wrapper modal__wrapper--text">
-          <h2 class="modal__title title">Что-то пошло не так!</h2>
-          <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        </div>
-        <div class="modal__wrapper modal__wrapper--button">
-          <button class="modal__button button">ok</button>
-        </div>
-      </section>
     </div>
   </body>
 </html>
