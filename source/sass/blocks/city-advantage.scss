@@ -46,7 +46,7 @@
     height: 37px;
     left: -49px;
     bottom: -2px;
-    background-image: url(../img/icons/icon-house--mobile.svg);
+    background-image: url(../img/advantages/icon-house.svg);
   }
 
   &--souvenirs::before {
@@ -54,7 +54,7 @@
     height: 38px;
     left: -45px;
     bottom: -1px;
-    background-image: url(../img/icons/icon-gift--mobile.svg);
+    background-image: url(../img/advantages/icon-gift.svg);
   }
 
   &--meal::before {
@@ -62,7 +62,7 @@
     height: 35px;
     left: -52px;
     bottom: -4px;
-    background-image: url(../img/icons/icon-burger--mobile.svg);
+    background-image: url(../img/advantages/icon-burger.svg);
   }
 
   @media (min-width: $tablet-width) {
@@ -77,19 +77,19 @@
     &--home::before {
       height: 72px;
       top: -98px;
-      background-image: url(../img/icons/icon-house--mobile.svg);
+      background-image: url(../img/advantages/icon-house.svg);
     }
 
     &--souvenirs::before {
       height: 75px;
       top: -101px;
-      background-image: url(../img/icons/icon-gift--mobile.svg);
+      background-image: url(../img/advantages/icon-gift.svg);
     }
 
     &--meal::before {
       height: 68px;
       top: -94px;
-      background-image: url(../img/icons/icon-burger--mobile.svg);
+      background-image: url(../img/advantages/icon-burger.svg);
     }
   }
 }

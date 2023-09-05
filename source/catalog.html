@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Sedona</title>
+    <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/favicon16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="img/favicons/favicon32.png" sizes="32x32" type="image/png">
@@ -11,7 +13,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
     <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
     <svg style="display: none">
@@ -74,7 +76,7 @@
               <a class="main-nav__link" href="form.html">Форма Отзыва</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">html academy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru/" target="_blank">html academy</a>
             </li>
           </ul>
           <button class="main-nav__toggle toggle toggle--opened">
@@ -111,7 +113,7 @@
               <h1 class="page-lead__title title">
                 Фото и видео
               </h1>
-              <p class="page-lead__text">Не можете решиться на путешествие из-за курса? <br class="word-wrapper word-wrapper--tablet-desktop">Фотографии помогут вам забыть о политике и экономике.</p>
+              <p class="page-lead__text">Не можете решиться на путешествие из-за курса?<br class="word-wrapper word-wrapper--tablet-desktop"> Фотографии помогут вам забыть о политике и экономике.</p>
             </div>
           </div>
           <section class="galleries__gallery gallery">
@@ -139,7 +141,7 @@
                         <source type="image/webp" srcset="img/gallery/sunset-road-mobile.webp 1x, img/gallery/sunset-road-mobile@2x.webp 2x">
                         <source media="(min-width: 1200px)" srcset="img/gallery/sunset-road-desktop.jpg 1x, img/gallery/sunset-road-desktop@2x.jpg 2x">
                         <source media="(min-width: 768px)" srcset="img/gallery/sunset-road-tablet.jpg 1x, img/gallery/sunset-road-tablet@2x.jpg 2x">
-                        <img class="photo__image img" src="img/gallery/sunset-road-mobile.jpg" srcset="img/gallery/sunset-road-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога в долине в закатном свете">
+                        <img class="photo__image img" src="img/gallery/sunset-road-mobile.jpg" srcset="img/gallery/sunset-road-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога в долине в закатном свете" loading="lazy">
                       </picture>
                     </p>
                   </div>
@@ -160,9 +162,11 @@
                   <div class="photo-post__photo-wrapper">
                     <p class="photo-post__photo photo photo--plants">
                       <picture class="photo__wrapper">
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/plants-desktop.webp 1x, img/gallery/plants-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/plants-tablet.webp 1x, img/gallery/plants-tablet@2x.webp 2x">
                         <source media="(min-width: 1200px)" srcset="img/gallery/plants-desktop.jpg 1x, img/gallery/plants-desktop@2x.jpg 2x">
                         <source media="(min-width: 768px)" srcset="img/gallery/plants-tablet.jpg 1x, img/gallery/plants-tablet@2x.jpg 2x">
-                        <img class="photo__image img" src="img/gallery/plants-mobile.jpg" srcset="img/gallery/plants-mobile@2x.jpg 2x" width="280" height="280" alt="Растения в пустыне">
+                        <img class="photo__image img" src="img/gallery/plants-mobile.jpg" srcset="img/gallery/plants-mobile@2x.jpg 2x" width="280" height="280" alt="Растения в пустыне" loading="lazy">
                       </picture>
                     </p>
                   </div>
@@ -183,9 +187,11 @@
                   <div class="photo-post__photo-wrapper">
                     <p class="photo-post__photo photo photo--forest-road">
                       <picture class="photo__wrapper">
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/forest-road-desktop.webp 1x, img/gallery/forest-road-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/forest-road-tablet.webp 1x, img/gallery/forest-road-tablet@2x.webp 2x">
                         <source media="(min-width: 1200px)" srcset="img/gallery/forest-road-desktop.jpg 1x, img/gallery/forest-road-desktop@2x.jpg 2x">
                         <source media="(min-width: 768px)" srcset="img/gallery/forest-road-tablet.jpg 1x, img/gallery/forest-road-tablet@2x.jpg 2x">
-                        <img class="photo__image img" src="img/gallery/forest-road-mobile.jpg" srcset="img/gallery/forest-road-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога в лесу">
+                        <img class="photo__image img" src="img/gallery/forest-road-mobile.jpg" srcset="img/gallery/forest-road-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога в лесу" loading="lazy">
                       </picture>
                     </p>
                   </div>
@@ -206,9 +212,11 @@
                   <div class="photo-post__photo-wrapper">
                     <p class="photo-post__photo photo photo--bridge">
                       <picture class="photo__wrapper">
+                        <source type="image/webp" media="(min-width: 1200px)" srcset="img/gallery/bridge-desktop.webp 1x, img/gallery/bridge-desktop@2x.webp 2x">
+                        <source type="image/webp" media="(min-width: 768px)" srcset="img/gallery/bridge-tablet.webp 1x, img/gallery/bridge-tablet@2x.webp 2x">
                         <source media="(min-width: 1200px)" srcset="img/gallery/bridge-desktop.jpg 1x, img/gallery/bridge-desktop@2x.jpg 2x">
                         <source media="(min-width: 768px)" srcset="img/gallery/bridge-tablet.jpg 1x, img/gallery/bridge-tablet@2x.jpg 2x">
-                        <img class="photo__image img" src="img/gallery/bridge-mobile.jpg" srcset="img/gallery/bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Мост Дьявола, перекинутый через каньон">
+                        <img class="photo__image img" src="img/gallery/bridge-mobile.jpg" srcset="img/gallery/bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Мост Дьявола, перекинутый через каньон" loading="lazy">
                       </picture>
                     </p>
                   </div>
@@ -230,9 +238,11 @@
               <div class="video-gallery__video-wrapper">
                 <!-- <video class="video-gallery__video video visually-hidden" width="320" height="200" controls></video> -->
                 <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-gallery/video-desktop.webp 1x, img/video-gallery/video-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/video-gallery/video-tablet.webp 1x, img/video-gallery/video-tablet@2x.webp 2x">
                   <source media="(min-width: 1200px)" srcset="img/video-gallery/video-desktop.jpg 1x, img/video-gallery/video-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/video-gallery/video-tablet.jpg 1x, img/video-gallery/video-tablet@2x.jpg 2x">
-                  <img class="video-gallery__video video" src="img/video-gallery/video-mobile.jpg" srcset="img/video-gallery/video-mobile@2x.jpg 2x" width="320" height="201" alt="">
+                  <img class="video-gallery__video video" src="img/video-gallery/video-mobile.jpg" srcset="img/video-gallery/video-mobile@2x.jpg 2x" width="320" height="201" alt="" loading="lazy">
                 </picture>
                 <div class="video-gallery__video-controls-wrapper">
                   <div class="video-gallery__video-controls video-controls">
@@ -311,14 +321,14 @@
           </ul>
           <div class="page-footer__copy copy">
             Разработано
-            <a class="copy__logo" aria-label="Сайт HTML Academy">
+            <a class="copy__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy" target="_blank">
               <svg width="27" height="35" role="img" aria-hidden="true" focusable="false">
                 <use xlink:href="img/sprite.svg#copy-logo" fill="currentColor"></use>
               </svg>
             </a>
           </div>
         </div>
-        <p class="page-footer__copy page-footer__copy--course course-copy">Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a class="course-copy__button" href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
+        <p class="page-footer__copy page-footer__copy--course course-copy">Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a class="course-copy__button" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
       </footer>
     </div>
   </body>
