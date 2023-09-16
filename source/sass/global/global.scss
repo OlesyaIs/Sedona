@@ -4,7 +4,9 @@ img {
   height: auto;
 }
 
-.fit-grid > * { min-width: 0; }
+.fit-grid > * {
+  min-width: 0;
+}
 
 .fit-grid img,
 .fit-grid video,
@@ -13,7 +15,9 @@ img {
 .fit-grid input,
 .fit-grid select,
 .fit-grid button,
-.fit-grid progress { max-width: 100%; }
+.fit-grid progress {
+  max-width: 100%;
+}
 
 .visually-hidden {
   position: absolute;

@@ -11,9 +11,10 @@
   max-width: 445px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 44px;
+    margin-bottom: 40px;
+    padding-top: 13px;
     padding-bottom: 40px;
-    gap: 2.4em;
+    gap: 2.35em;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,7 +55,7 @@
   background-color: $video;
 }
 
-.video-gallery__video-controls-wrapper {
+.video-gallery__controls-wrapper {
   position: absolute;
   bottom: 0;
   padding: 0 20px;
@@ -66,6 +67,6 @@
   }
 }
 
-.video-gallery__mobile-video-controls-wrapper {
+.video-gallery__mobile-controls-wrapper {
   padding: 0 20px;
 }

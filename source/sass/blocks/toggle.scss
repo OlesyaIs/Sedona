@@ -1,12 +1,9 @@
 .toggle {
   padding: 0;
+  color: $basic;
 
-  &--opened {
+  &--close {
     color: $white;
-  }
-
-  &--closed {
-    color: $basic;
   }
 
   &:hover {
@@ -18,14 +15,16 @@
   }
 }
 
-.toggle__icon--closed {
+.toggle__icon--close {
   display: none;
 }
 
-.toggle--closed .toggle__icon--opened {
+// Стилизация кнопки сворачивания меню при открытом меню
+
+.toggle--close .toggle__icon--open {
   display: none;
 }
 
-.toggle--closed .toggle__icon--closed {
+.toggle--close .toggle__icon--close {
   display: block;
 }

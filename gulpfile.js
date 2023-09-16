@@ -20,7 +20,7 @@ const styles = () => {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(sass())
+    .pipe(sass)
     .pipe(postcss([
       autoprefixer(),
       csso()

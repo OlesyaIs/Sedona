@@ -1,12 +1,24 @@
+.logo-button {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 186px;
+}
+
 .logo-button__link {
   display: flex;
   justify-content: center;
-  width: 100%;
+  align-items: flex-start;
 }
 
 .logo-button__img {
-  width: 186px;
-  height: 96px;
+  width: 102px;
+  height: 84px;
+
+  @media (min-width: $desktop-width) {
+    width: 186px;
+    height: 96px;
+  }
 }
 
 .logo-sedona__background {

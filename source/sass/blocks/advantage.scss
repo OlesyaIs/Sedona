@@ -33,10 +33,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 42px 60px 62px;
+    padding: 42px 55px 62px;
 
     &--big {
-      padding: 51px 60px 52px;
+      padding: 45px 60px 52px;
     }
   }
 }
@@ -51,7 +51,7 @@
 .advantage:not(:last-of-type) .advantage__description:not(.advantage__description--big) {
   @media (max-width: $mobile-width-only) {
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       width: calc(100% - 40px);

@@ -9,7 +9,7 @@
   <symbol
     viewBox="0 0 23 23"
     xmlns="http://www.w3.org/2000/svg"
-    id="button-opened">
+    id="button-close">
       <path
         d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z"/>
   </symbol>
@@ -17,7 +17,7 @@
   <symbol
     viewBox="0 0 23 22"
     xmlns="http://www.w3.org/2000/svg"
-    id="button-closed">
+    id="button-open">
       <path d="M22.9 0H0V4H22.9V0Z"/>
       <path d="M22.9 9H0V13H22.9V9Z"/>
       <path d="M22.9 18H0V22H22.9V18Z"/>

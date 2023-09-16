@@ -47,7 +47,7 @@
   flex-grow: 1;
 
   &::after {
-    content: '';
+    content: "";
     height: auto;
     width: 58px;
     background-color: $contacts-icon-bg;
@@ -56,21 +56,21 @@
   }
 
   &--phone::after {
-    background-image: url(../img/phone.svg);
+    background-image: url("../img/phone.svg");
     background-size: 18px;
   }
 
   &--email::after {
-    background-image: url(../img/mail.svg);
+    background-image: url("../img/mail.svg");
     background-size: 16px 12px;
   }
 }
 
 .field__input {
   max-width: 100%;
-  min-width: 0px;
+  min-width: 1px;
   box-sizing: border-box;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -106,9 +106,8 @@
   }
 
   &--contact {
-    flex-grow: 1;
     padding: 14px 18px 10px;
-    min-width: 258px;
+    min-width: 222px;
     min-height: 58px;
     background-color: $input;
     border: 4px solid $input;
@@ -153,12 +152,11 @@
       padding: 14px 17px;
     }
   }
-
-
 }
 
 .field__title {
   line-height: 26px;
+  cursor: pointer;
 }
 
 .field--contact .field__title {
@@ -177,7 +175,7 @@
   max-width: max-content;
 
   &::before {
-    content: '';
+    content: "";
     flex-shrink: 0;
     width: 56px;
     height: 56px;
@@ -186,6 +184,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-left: 4px;
     column-gap: 20px;
   }
 }
@@ -208,27 +207,27 @@
 }
 
 .field__input[type="radio"]:checked + .field__title {
-    &::after {
-      content: '';
-      position: absolute;
-      top: center;
-      left: 17px;
-      width: 22px;
-      height: 22px;
-      background-color: $mark;
-      border-radius: 50%;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    top: center;
+    left: 17px;
+    width: 22px;
+    height: 22px;
+    background-color: $mark;
+    border-radius: 50%;
+  }
 }
 
 .field__input[type="checkbox"] + .field__title {
   position: relative;
   display: flex;
   align-items: center;
-  column-gap: 22px;
+  column-gap: 25px;
   max-width: max-content;
 
   &::before {
-    content: '';
+    content: "";
     flex-shrink: 0;
     width: 56px;
     height: 56px;
@@ -245,17 +244,17 @@
 }
 
 .field__input[type="checkbox"]:checked + .field__title {
-    &::after {
-      content: '';
-      position: absolute;
-      top: center;
-      left: 0;
-      width: 56px;
-      height: 56px;
-      background-image: url(../img/tick.svg);
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    top: center;
+    left: 0;
+    width: 56px;
+    height: 56px;
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .field__input[type="checkbox"]:active + .field__title {
